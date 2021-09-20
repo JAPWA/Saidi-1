@@ -994,18 +994,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
-if text == 'قسم مطورين السورس' then
-local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
-local Key = {
-{'𓆩•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•𓆪'},
-{'المبرمج طه','المبرمج جابوا'},
-{'المبرمج عمر','المبرمج ديشا'},
-{'قناة السورس','التواصل'},
-{'العوده ➷'},
-}
-send_inline_key(msg.chat_id_,Text,Key)
-end 
-
 if text == 'قسم الاغاني' then
 local Text = 'مرحب بيك في قسم الاغاني'
 local Key = {
@@ -1191,6 +1179,18 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+end 
+if text == 'قسم مطورين السورس' then
+local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
+local Key = {
+{'𓆩•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•𓆪'},
+{'المبرمج طه','المبرمج جابوا'},
+{'المبرمج عمر','المبرمج ديشا'},
+{'قناة السورس','التواصل'},
+{'العوده ➷'},
+}
+send_inline_key(msg.chat_id_,Text,Key)
 end 
 
 end
@@ -15870,7 +15870,7 @@ local List = {
 [[
  ☽ •𝐮𝐬𝐞𝐫 : #username 𖣬  
  ☽ •𝐦𝐬𝐠  : #msgs 𖣬 
- ☽ •𝐬𝐭𝐚 : #stast 𖣬 
+ ☽ •??𝐭𝐚 : #stast 𖣬 
  ☽ •𝐢𝐝  : #id 𖣬
  ☽ •𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
