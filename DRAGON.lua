@@ -1009,7 +1009,7 @@ end
 if text == 'قسم الاغاني' then
 local Text = 'مرحب بيك في قسم الاغاني'
 local Key = {
-{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'⩹━━━━━━❪ركن الاغاني❫━━━━━━⩺'},
 {'غنيلي'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'غنيلي محمد منير','غنيلي ويجز'},
@@ -1038,7 +1038,7 @@ end
 if text == 'قسم الالعاب' then
 local Text = 'مرحب بيك في قسم الالعاب'
 local Key = {
-{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'⩹━━━━━━❪ركن الالعاب❫━━━━━━⩺'},
 {'رتبتي','مطور','انا مين'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'انصحنى','كتبات'},
@@ -1103,7 +1103,7 @@ end
 if text == 'php قـسم ممـيزات' then
 local Text = 'مميزات خاصه ب اللي منصبين مميزات '
 local Key = {
-{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'⩹━━━━━━❪ركن مميزات❫━━━━━━⩺'},
 {'اغاني','مميزات'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'الافلام','العاب'},
@@ -1157,6 +1157,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
+
 if text == "اسعار السورسات" then
 if not DevSoFi(msg) then
 local Text = [[
@@ -1173,6 +1174,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
+
 if text == "اسعار السرفرات" then
 if not DevSoFi(msg) then
 local Text = [[
@@ -1189,7 +1191,7 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+end 
 
 end
 end
@@ -1594,9 +1596,59 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي{ 3x☆}')
 end
+if text == '⩹━━━━━━❪ركن الاغاني❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم الاغاني اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/34&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == '⩹━━━━━━❪ركن الالعاب❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم الالعاب اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/35&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == '⩹━━━━━━❪ركن الافلام❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم الافلام اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == '⩹━━━━━━❪ركن مميزات❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم مميزات اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == '⩹━━━━━━❪ركن الصور❫━━━━━━⩺' then
+local Text = [[ 
+❪ مرحبا بك في قسم الصور اتباع الازرار ❫
+]]
+keyboard = {}  
+keyboard.inline_keyboard = { 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == '𓆩•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•𓆪' then
 local Text = [[ 
-𓆩 قناة مبرمجين السورس ??
+𓆩 قناة مبرمجين السورس 𓆪
 𓆩 محتاج تنصب بوت حمايه تواصل معانا 𓆪
 ]]
 keyboard = {}  
@@ -1665,7 +1717,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'ᴊᴀʙᴡᴀ ༆',url="t.me/J_A_B_W_A"}},
+{{text = 'ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1678,7 +1730,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' ᴛᴀʜᴀ ༆',url="t.me/TahaSayed9"}},
+{{text = ' ᴛᴀʜᴀ',url="t.me/TahaSayed9"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
