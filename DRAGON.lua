@@ -3834,7 +3834,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "صور انيمي" or text == 'انيمي' and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
@@ -3970,7 +3970,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 if text == "افلام عربي" then  
 ght = math.random(1,33);  
-local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌚❤️'  
+local Text ='مرحبا اليك فلام عربي من افضل الافلام ??❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
@@ -5170,22 +5170,6 @@ sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
 end,nil)
 end
-end
-if text == "المساعد" or text == "مساعد" then
-local id = bot_data:get(ban_id.."id:msa3d:ban")
-local urrl = https.request('https://api.telegram.org/bot'..token..'/getchat?chat_id='..id)
-local json = JSON.decode(urrl)
-local name = json.result.first_name
-if json.result.username then
-username = json.result.username
-else
-username = 'SOURCEDRAGON'
-end
-local Name = '〈 المساعد 〉 -  '..name..'\n'
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = name, url="t.me/"..username}},}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..username..'&caption=' .. URL.escape(Name).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
@@ -15801,7 +15785,7 @@ local List = {
 𖤍 |↶ #username    ꙰🇪🇬.
 𖤍 |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
-𖤍 |↶ 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
+𖤍 |↶ ??𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -17980,14 +17964,14 @@ return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMe
 end
 if Text == "/Jab1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
-local Text ='تم اختيار فديو استوري  لك 🌚❤️' 
+local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if Text == '/Jab1' then
 if not CoSu(data) then
@@ -18002,9 +17986,9 @@ local linkgp = '𓆩 مرحبا اليك استوري  رومنسي 𓆪\n ['..t
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-send(msg.chat_id_, msg.id_,'يرجا تفعيل بوت في مجموعه') 
+send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك استوري  رومنسي 𓆪') 
 end 
 end,nil) 
 end
@@ -19457,7 +19441,7 @@ local Name_Bot = (database:get(bot_id..'Name:Bot') or 'صعيدي')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير ا��حب مال اني 🤓❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
+local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂??🏼‍♀️','اموت عليه 🌝','هوه غير ا��حب مال اني 🤓❤️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
