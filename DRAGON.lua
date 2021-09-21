@@ -3814,7 +3814,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if text == "/Sas1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
 local Text ='تم اختيار فديو استوري  لك 🌚❤️' 
 keyboard = {}  
@@ -14562,7 +14562,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار ??🚶‍♂👻](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -17907,7 +17907,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩 استوري 𓆪', callback_data="/ven2"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
+{{text = '𓆩 استوري 𓆪', callback_data="/Sas1"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
 {{text = '𓆩 استوري مضحك 𓆪', callback_data="/ven2"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/ven1"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
@@ -17986,9 +17986,39 @@ local linkgp = '𓆩 مرحبا اليك استوري  رومنسي 𓆪\n ['..t
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك استوري  رومنسي 𓆪') 
+end 
+end,nil) 
+end
+if Text == "/Sas1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩 مرحبا اليك استوري 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Sas1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩 مرحبا اليك استوري 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك استوري 𓆪') 
 end 
 end,nil) 
 end
