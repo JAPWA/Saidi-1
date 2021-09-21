@@ -3946,6 +3946,17 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/JABWA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "كتبات بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,33);  
+local Text ='مرحبا اليك كتبات بي الصوره 🌼❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = 'كتبات اخري', callback_data="/Jabwa1"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dfk9apa/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "هل تعلم" or text == "معلومه" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,18); 
 local Text ='مرحبا اليك معلومه جديده في صوره 🌚❤️' 
@@ -11395,7 +11406,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_,"⚠| عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_," ☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
 usertext = '\n ☽  الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
@@ -18103,6 +18114,18 @@ else
 send(msg.chat_id_, msg.id_,'𓆩  مرحبا اليك استوري مضحك 𓆪') 
 end 
 end,nil) 
+end
+if Text == '/Jabwa1' then
+Text = '✨🌻'
+ban = math.random(3,49); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'كتبات أخري', callback_data="/Jabwa1"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. Chat_id .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if Text == '/ven3' then
 if not CoSu(data) then
