@@ -3825,6 +3825,17 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "/Jab1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='تم اختيار فديو استوري  لك 🌚❤️' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "صور انيمي" or text == 'انيمي' and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
 local Text ='تم اختيار هذه الصوره لـك 🌚❤️' 
@@ -15534,7 +15545,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n• 🖤 | 𝑴𝑺𝑮 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑺 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝑪𝑯 : @S_a_i_d_i \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n• 🖤 | 𝑼𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑺 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝑪𝑯 : @S_a_i_d_i \n')
+send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n• 🖤 | ??𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑺 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝑪𝑯 : @S_a_i_d_i \n')
 else
 send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜\n|• 𝒎𝒔𝒈𝒔→ ↝'..Msguser..'↜\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉→  ↝@A_F_fwdka1 ↜\n')
 end 
@@ -16609,7 +16620,7 @@ Msᴀɢ ~ #msgs
 𝟔𝟔𝟔 𖡋  #stast •𖣰💞
 𝟔??𝟔 𖡋 #id • 𖣰💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
-𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
+??𝟔𝟔 𖡋 #msgs • 𖣰💞
 𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
@@ -17912,12 +17923,12 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩 استوري 𓆪', callback_data="/ven2"},{text = '𓆩 استوري حب 𓆪', callback_data="/ven1"}},   
+{{text = '𓆩 استوري 𓆪', callback_data="/ven2"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
 {{text = '𓆩 استوري مضحك 𓆪', callback_data="/ven2"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/ven1"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
@@ -17966,6 +17977,36 @@ Ok_id  = Text:match("(%d+)")
 if Text == 'okCaptcha'..data.sender_user_id_ then  
 DeleteMessage(Chat_id, {[0] = Msg_id}) 
 return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. Chat_id .. "&user_id="..Ok_id .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
+end
+if Text == "/Jab1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='تم اختيار فديو استوري  لك 🌚❤️' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Jab1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩 مرحبا اليك استوري  رومنسي 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'يرجا تفعيل بوت في مجموعه') 
+end 
+end,nil) 
 end
 if Text == '/ven3' then
 if not CoSu(data) then
