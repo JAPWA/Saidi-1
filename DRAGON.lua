@@ -998,7 +998,7 @@ if text == 'قسم الاغاني' then
 local Text = 'مرحب بيك في قسم الاغاني'
 local Key = {
 {'⩹━━━━━━❪ركن الاغاني❫━━━━━━⩺'},
-{'غنيلي'},
+{'غنيلي','غنيلي بفديو'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'غنيلي محمد منير','غنيلي ويجز'},
 {'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
@@ -1865,7 +1865,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ☽ •\n• لايمكنك استخدام البوت ☽ •\n• عليك الاشتراك في القناة ☽ •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☽ اهلا بك عزيزي \n ☽ لايمكنك استخدام البوت\n ☽ عليك الاشتراك في القناة\n ☽ اشترك اولا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -1901,7 +1901,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ☽ •\n• لايمكنك استخدام البوت ☽ •\n• عليك الاشتراك في القناة ☽ •\n• اشترك اولا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☽ اهلا بك عزيزي\n ☽ لايمكنك استخدام البوت\n ☽ عليك الاشتراك في القناة\n ☽ اشترك اولا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -6804,63 +6804,6 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false 
 end
-if text == ("رفع مساعد") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
-function Function_DRAGON(extra, result, success)
-bot_data:del(ban_id.."msa3d:ban")
-bot_data:sadd(ban_id.."msa3d:ban", result.sender_user_id_)
-bot_data:set(ban_id.."id:msa3d:ban", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply"," ☽ تم ترقيته مساعد في البوت")  
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
-return false 
-end
-if text and text:match("^رفع مساعد @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع مساعد @(.*)$")
-function Function_DRAGON(extra, result, success)
-if result.id_ then
-if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," ☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
-return false 
-end      
-bot_data:del(ban_id.."msa3d:ban")
-bot_data:sadd(ban_id.."msa3d:ban", result.id_)
-bot_data:set(ban_id.."id:msa3d:ban", result.id_)
-Reply_Status(msg,result.id_,"reply"," ☽ تم ترقيته مساعد في البوت")  
-else
-send(msg.chat_id_, msg.id_," ☽ لا يوجد حساب بهاذا المعرف")
-end
-end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
-return false 
-end
-if text and text:match("^رفع مساعد (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع مساعد (%d+)$")
-bot_data:del(ban_id.."msa3d:ban")
-bot_data:sadd(ban_id.."msa3d:ban", userid)
-bot_data:set(ban_id.."id:msa3d:ban", userid)
-Reply_Status(msg,userid,"reply"," ☽ تم ترقيته مساعد في البوت")  
-return false 
-end
-if text == ("تنزيل المساعد") and SudoBot(msg) then
-function Function_DRAGON(extra, result, success)
-local id = bot_data:get(ban_id.."id:msa3d:ban")
-Reply_Status(msg,id,"reply"," ☽ تم تنزيله من المساعد")  
-bot_data:del(ban_id.."msa3d:ban")
-bot_data:del(ban_id.."id:msa3d:ban")
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
-return false 
-end
-if text == ("تنزيل مساعد") and SudoBot(msg) then
-function Function_DRAGON(extra, result, success)
-local id = bot_data:get(ban_id.."id:msa3d:ban")
-Reply_Status(msg,id,"reply"," ☽ تم تنزيله من المساعد")  
-bot_data:del(ban_id.."msa3d:ban")
-bot_data:del(ban_id.."id:msa3d:ban")
-end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
-return false 
-end
 if text == ("مسح قائمه صعيدي") and Sudo(msg) then
 database:del(bot_id..'CoSu'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, '\n ☽ تم مسح قائمه صعيدي')
@@ -7734,6 +7677,79 @@ status  = '\n ☽ تم تنزيله من المدراء'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
+end
+if text == ("رفع مساعد") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+function Function_VENOM(extra, result, success)
+bot_data:del(ban_id.."msa3d:ban")
+bot_data:sadd(ban_id.."msa3d:ban", result.sender_user_id_)
+bot_data:set(ban_id.."id:msa3d:ban", result.sender_user_id_)
+Reply_Status(msg,result.sender_user_id_,"reply"," ☽ تم ترقيته مساعد في البوت")  
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
+return false 
+end
+if text and text:match("^رفع مساعد @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مساعد @(.*)$")
+function Function_VENOM(extra, result, success)
+if result.id_ then
+if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+send(msg.chat_id_,msg.id_," ☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+return false 
+end      
+bot_data:del(ban_id.."msa3d:ban")
+bot_data:sadd(ban_id.."msa3d:ban", result.id_)
+bot_data:set(ban_id.."id:msa3d:ban", result.id_)
+Reply_Status(msg,result.id_,"reply"," ☽ تم ترقيته مساعد في البوت")  
+else
+send(msg.chat_id_, msg.id_," ☽ لا يوجد حساب بهاذا المعرف")
+end
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
+return false 
+end
+if text and text:match("^رفع مساعد (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مساعد (%d+)$")
+bot_data:del(ban_id.."msa3d:ban")
+bot_data:sadd(ban_id.."msa3d:ban", userid)
+bot_data:set(ban_id.."id:msa3d:ban", userid)
+Reply_Status(msg,userid,"reply"," ☽ تم ترقيته مساعد في البوت")  
+return false 
+end
+if text == ("تنزيل المساعد") and SudoBot(msg) then
+function Function_VENOM(extra, result, success)
+local id = bot_data:get(ban_id.."id:msa3d:ban")
+Reply_Status(msg,id,"reply"," ☽ تم تنزيله من المساعد")  
+bot_data:del(ban_id.."msa3d:ban")
+bot_data:del(ban_id.."id:msa3d:ban")
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
+return false 
+end
+if text == ("تنزيل مساعد") and SudoBot(msg) then
+function Function_VENOM(extra, result, success)
+local id = bot_data:get(ban_id.."id:msa3d:ban")
+Reply_Status(msg,id,"reply"," ☽ تم تنزيله من المساعد")  
+bot_data:del(ban_id.."msa3d:ban")
+bot_data:del(ban_id.."id:msa3d:ban")
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
+return false 
+end
+if text == "المساعد" or text == "مساعد" then
+local id = bot_data:get(ban_id.."id:msa3d:ban")
+local urrl = https.request('https://api.telegram.org/bot'..token..'/getchat?chat_id='..id)
+local json = JSON.decode(urrl)
+local name = json.result.first_name
+if json.result.username then
+username = json.result.username
+else
+username = 'SOURCEVENOM'
+end
+local Name = '𓆩 المساعد 𓆪'..name..'\n'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = name, url="t.me/"..username}},}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..username..'&caption=' .. URL.escape(Name).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 ------------------------------------------------------------------------ adddev2 sudog
 if text == ("رفع مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
@@ -13713,6 +13729,16 @@ T = math.random(187,199)
 local abc = msg.id_/2097152/0.5
 https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
 end
+if text == "كتبات بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ban = math.random(3,49); 
+local Text ='مرحبا اليك كتبات بالصور 🌼❤️' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'استوري أخري', callback_data="/lp8qy"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
 local Text ='تم اختيار اغنيه بفديو  لك 🌚❤️ ' 
@@ -19314,37 +19340,17 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end
-if Text == '/lockCick' then
-if not Mod(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-local Text = '• تم تعطيل اطردني '
-bot_data:set(ban_id.."Cick:Me"..Chat_id,true)  
-keyboard = {} 
+if Text == '/lp8qy' then
+Text = 'مرحبا اليك كتبات بالصور 🌼❤️'
+ban = math.random(3,49); 
+keyboard = {}
 keyboard.inline_keyboard = {
 {
-{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
+{text = 'كتبات أخري', callback_data="/lp8qy"},
 },
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/opCick' then
-if not Mod(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-local Text = '• تم تفعيل اطردني '
-bot_data:del(ban_id.."Cick:Me"..Chat_id)  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/help8"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. Chat_id .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
