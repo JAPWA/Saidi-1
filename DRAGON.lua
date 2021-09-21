@@ -1088,7 +1088,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 
-if text == 'php قـسم ممـيزات' then
+if text == 'قسم مميزات php' then
 local Text = 'مميزات خاصه ب اللي منصبين مميزات '
 local Key = {
 {'⩹━━━━━━❪ركن مميزات❫━━━━━━⩺'},
@@ -1759,12 +1759,18 @@ send(msg.chat_id_, msg.id_, t)
 end
 
 
-if text == 'الاحصائيات' and SudoBot(msg) then 
+if text == 'الاحصائيات' and Sudo(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 Text = ' ☽ الاحصائيات  \n'..' ☽ عدد الجروبات  ⇇{'..Groups..'}'..'\n ☽  عدد المشتركين  ⇇{'..Users..'}'
-send(msg.chat_id_, msg.id_,Text) 
-return false
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Text, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == 'المشتركين' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -15870,7 +15876,7 @@ local List = {
 [[
  ☽ •𝐮𝐬𝐞𝐫 : #username 𖣬  
  ☽ •𝐦𝐬𝐠  : #msgs 𖣬 
- ☽ •??𝐭𝐚 : #stast 𖣬 
+ ☽ •????𝐚 : #stast 𖣬 
  ☽ •𝐢𝐝  : #id 𖣬
  ☽ •𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
