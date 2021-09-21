@@ -17906,6 +17906,20 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
+local Text = [[
+𓆩 اختار نوع استوري الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𓆩 استوري 𓆪', callback_data="/ven2"},{text = '𓆩 استوري حب 𓆪', callback_data="/ven1"}},   
+{{text = '𓆩 استوري مضحك 𓆪', callback_data="/ven2"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/ven1"}},   
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
 if tonumber(msg.reply_to_message_id_) ~= 0 then 
 function prom_reply(extra, result, success) 
