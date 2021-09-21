@@ -3804,6 +3804,16 @@ end
  
 end,nil)
 end
+if text == "كتبات بالصور" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ban = math.random(3,49); 
+local Text ='✨🌻' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'استوري أخري', callback_data="/lp8qy"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
 local Text ='تم اختيار فديو استوري  لك 🌚❤️' 
@@ -4950,7 +4960,7 @@ keyboard.inline_keyboard = {
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/c/1586763473/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/35&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --------------------------------------------------------------------------------------------------------------
 if text == ("انذار") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) and not database:get(bot_id..'NightRang:inthar:group'..msg.chat_id_) then
