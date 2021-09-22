@@ -14251,47 +14251,70 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 
-if text == 'انا مين' then
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
+if text == 'تفعيل رتبتي' and Manager(msg) then   
+if bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
+bot_data:del(ban_id..'ghiktr'..msg.chat_id_) 
+Text = '\n ☽ تم تفعيل رتبتي' 
+else
+Text = '\n ☽  بالتاكيد تم تفعيل رتبتي'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+if text == 'تعطيل رتبتي' and Manager(msg) then  
+if not bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
+bot_data:set(ban_id..'ghiktr'..msg.chat_id_,true) 
+Text = '\n ☽ تم تعطيل رتبتي' 
+else
+Text = '\n ☽ بالتاكيد تم تعطيل رتبتي'
+end
+send(msg.chat_id_, msg.id_,Text) 
+end
+
+if text == "انا مين" then
+local my_ph = bot_data:get(ban_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ☽ انا مين معطله") 
 return false  
 end
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'SOURCEDRAGON'
+end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](t.me/S_a_i_d_i)'
+local textt = ' ❤️ انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Banda = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = textt, url="http://t.me/"..username},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-send(msg.chat_id_, msg.id_,textt, 1, 'md') 
-end 
-end 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Banda).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-return false
+end,nil)
 end
-
-if text == "تفعيل انا مين"  then
+if text == "تعطيل انا مين"  and Manager(msg) then   
 if Constructor(msg) then  
-database:set(bot_id.."my_anamen:status"..msg.chat_id_,true) 
+bot_data:del(ban_id.."my_anamen:status"..msg.chat_id_) 
+send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
+return false end
+end
+if text == "تفعيل انا مين"  and Manager(msg) then   
+if Constructor(msg) then  
+bot_data:set(ban_id.."my_anamen:status"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل انا مين") 
 return false  
 end
-end
-
-if text == "تعطيل انا مين"  then
-if Constructor(msg) then  
-database:del(bot_id.."my_anamen:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
-return false end
 end
 
 if text == "تفعيل ردود السورس"  then
@@ -17867,21 +17890,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'اغاني' or text == 'الاغاني' or text == 'موسيقي'  then
-local Text = [[
-𓆩 اختار اغنيه من قائمة الاغاني𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '𓆩 اغاني مصري 𓆪', callback_data="/Saidi1"},{text = '𓆩 افلام اجنبي 𓆪', callback_data="/Jabwa2"}},   
-{{text = '𓆩 افلام رعب 𓆪', callback_data="/Sasa3"},{text = '𓆩 افلام كرتون 𓆪', callback_data="/Omer2"}},   
-{{text = '𓆩 افلام هنديه 𓆪', callback_data="/Jabwa3"},{text = '𓆩 افلام مسرحيات 𓆪', callback_data="/Taha2"}},   
-{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
 if tonumber(msg.reply_to_message_id_) ~= 0 then 
 function prom_reply(extra, result, success) 
@@ -18266,49 +18274,6 @@ DeleteMessage(Chat_id,{[0] = Msg_id})
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MO_ST_AFA2/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪') 
-end 
-end,nil) 
-end
-if Text == '/Saidi1' then
-local Text = [[
-𓆩 اختار اغنيه من قائمة الاغاني𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'حمو بيكا', callback_data="/Saidi2"},{text = 'حسن شكوش', callback_data="/Jabwa2"}},   
-{{text = 'عصام صاصا', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
-{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'مسلم', callback_data="/Taha2"}},   
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if Text == "/Saidi2" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(187,199); 
-local Text ='𓆩 مرحبا اليك اغنيه من اغاني حمو بيكا 𓆪' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MO_ST_AFA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if Text == '/Saidi2' then
-if not CoSu(data) then
-local notText = '✘ عذرا الاوامر هذه لا تخصك'
-https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
-return false
-end
-tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
-local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
-if linkgpp.ok == true then 
-local linkgp = '𓆩 مرحبا اليك اغنيه من اغاني حمو بيكا 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
-DeleteMessage(Chat_id,{[0] = Msg_id})  
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MO_ST_AFA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك اغنيه من اغاني حمو بيكا 𓆪') 
 end 
 end,nil) 
 end
