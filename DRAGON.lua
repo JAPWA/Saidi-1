@@ -1389,11 +1389,15 @@ echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n
 echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
-if text == 'تحديث السورس ' and DevSoFi(msg) then 
+if text == 'تحديث السورس ' and sudo2(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/Ffasit/photo/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس ايها المبرمج الفاشل')
-dofile('DRAGON.lua')  
+os.execute('wget https://raw.githubusercontent.com/ahmedyad200/CLASSIK/master/AVIRA.lua')
+send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس يا سيدي')
+dofile('AVIRA.lua')  
+end
+if text == 'الاصدار ' and sudo2(msg) then 
+database:del(bot_id..'Srt:Bot') 
+send(msg.chat_id_, msg.id_,' ☽ اصدار سورس صعيدي { s: 1.2}')
 end
 if text == 'جلب المشتركين' and DevSoFi(msg) then 
 local list = database:smembers(bot_id..'User_Bot') 
@@ -16286,7 +16290,7 @@ Msᴀɢ ~ #msgs
 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-┄─━━𖦹━━─┄
+┄─━━??━━─┄
 𖣰𖡻 𖡋𝗜𝗗• #id •𓀎
 𖣰𖡻 𖡋𝗨𝗦??• #username •𓀎
 𖣰𖡻 𖡋𝗦𝗧𝗔• #stast •𓀎
@@ -18264,6 +18268,19 @@ else
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪') 
 end 
 end,nil) 
+end
+if Text == '/Saidi1' then
+local Text = [[
+𓆩 اختار اغنيه من قائمة الاغاني𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'حمو بيكا', callback_data="/Saidi1"},{text = 'حسن شكوش', callback_data="/Jabwa2"}},   
+{{text = 'عصام صاصا', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
+{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'مسلم', callback_data="/Taha2"}},   
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if Text == '/ven3' then
 if not CoSu(data) then
