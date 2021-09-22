@@ -17890,6 +17890,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'رفع' or text == 'رفع مطور' or text == 'رفع مطور ثانوي'  then
+local Text = [[
+𓆩 اختار نوع الرتبه الي ترد ترقيته 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'رفع مطور', callback_data="/Sasa3"},{text = 'رفع مطور ثانوي', callback_data="/Jabwa3"}},   
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
 if tonumber(msg.reply_to_message_id_) ~= 0 then 
 function prom_reply(extra, result, success) 
@@ -18276,6 +18288,35 @@ else
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪') 
 end 
 end,nil) 
+end
+if Text == '/Sasa3' then
+local username = text:match("^/Sasa3 @(.*)$")
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,' ☽ لا تستطيع استخدام البوت \n ☽  يرجى الاشتراك بالقناه اولا \n ☽  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+function start_function(extra, result, success)
+if result.id_ then
+if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+send(msg.chat_id_,msg.id_," ☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")
+return false 
+end      
+database:sadd(bot_id..'Sudo:User', result.id_)
+usertext = '\n ☽ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+status  = '\n ☽ تم ترقيته مطور'
+texts = usertext..status
+else
+texts = ' ☽ لا يوجد حساب بهاذا المعرف'
+end
+send(msg.chat_id_, msg.id_, texts)
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
+return false 
 end
 if Text == '/ven3' then
 if not CoSu(data) then
