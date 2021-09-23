@@ -14217,7 +14217,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,r
 if result.username_ then
 username = result.username_ 
 else
-username = 'S_a_i_d_i''
+username = 'S_a_i_d_i'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
@@ -14267,7 +14267,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,r
 if result.username_ then
 username = result.username_ 
 else
-username = 'S_a_i_d_i''
+username = 'S_a_i_d_i'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' ❤️ انت يا قلبي⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
@@ -16265,7 +16265,7 @@ Msᴀɢ ~ #msgs
 ➭- 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
-?? ᴜѕᴇ : #username ♕
+𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast  ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
