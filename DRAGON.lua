@@ -1142,7 +1142,7 @@ keyboard.inline_keyboard = {
 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
 
@@ -1467,7 +1467,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = '𓆩انت الان المطور الاساسي في البوت𓆪\n𓆩سورس صعيدي𓆪\n𓆩يمكنك تحكم في البوتات من الكيبورد أسفل𓆪\n[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)'
+local Text = '𓆩انت الان المطور الاساسي في البوت𓆪\n𓆩سورس صعيدي𓆪\n𓆩يمكنك تحكم في البوتات من الكيبورد𓆪\n[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
@@ -3472,7 +3472,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/406&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
@@ -3489,7 +3489,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AF_A8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مصطفي' or text == 'درش' then
@@ -3570,7 +3570,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/753&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'صاحب السورس' or text == 'مبرمج السورس' then
@@ -15867,7 +15867,7 @@ local List = {
 🇪🇬 ꙰  - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-🌯|✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
+🌯|✙• 𝐮𝐬𝐞𝐫??𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯|✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯|✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯|✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
@@ -16299,7 +16299,7 @@ Msᴀɢ ~ #msgs
 [[
 𖤍 |↶ #id    ꙰🇪🇬.
 𖤍 |↶ #username    ꙰🇪🇬.
-𖤍 |↶ #msgs    ꙰🇪🇬.
+?? |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
 𖤍 |↶ 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
@@ -16721,7 +16721,7 @@ Msᴀɢ ~ #msgs
 𝗖𝗛☤🇪🇬 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-⭐️𝖘𝖙𝖆 : #stast ـ??
+⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️??𝖉 : #id ـ 🍭
@@ -17438,7 +17438,7 @@ keyboard.inline_keyboard = {
 {text = 'ااوامر اصحاب الرتب ⇊', callback_data="/help2"},
 },
 {
-{text = '𓆩 القائمه الرائسيه 𓆪', callback_data="/add"},
+{text = '𓆩 القائمه الرائسيه ??', callback_data="/add"},
 },
 {
 {text = '𓆩 تــغــير الــلــغــه 𓆪', callback_data="/adui74"},
@@ -18475,7 +18475,7 @@ local Teext =[[
 𓆩 اذاعه بالتوجيه خاص 𓆪
 𓆩 اذاعه بالتثبيت 𓆪
 𓆩 جلب نسخه البوت 𓆪
-𓆩 رفع نسخه البوت ??
+𓆩 رفع نسخه البوت 𓆪
 𓆩 ضع عدد الاعضاء + العدد 𓆪
 𓆩 ضع كليشه المطور 𓆪
 𓆩 تفعيل/تعطيل الاذاعه 𓆪
