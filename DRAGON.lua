@@ -3361,44 +3361,6 @@ end
 end
 end,nil)   
 end
-if text == "تفعيل تنبيه المعرف" and Constructor(msg) and database:get(bot_id.."AL:Sre:stats") == "✔" then
-send(msg.chat_id_, msg.id_, '•تم تفعيل تنبيه المعرف')
-database:set(bot_id.."Ttn:Userr:stats"..msg.chat_id_,"open")
-end
-if text == "تعطيل تنبيه المعرف" and Constructor(msg) and database:get(bot_id.."AL:Sre:stats") == "✔" then
-send(msg.chat_id_, msg.id_, '•تم تعطيل تنبيه المعرف')
-database:set(bot_id.."Ttn:Userr:stats"..msg.chat_id_,"close")
-end
-if text and database:get(bot_id.."Ttn:Userr:stats"..msg.chat_id_) == "open" then  
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-if data.id_ then 
-if data.id_ ~= bot_id then
-local DRAGONChengUserName = database:get(bot_id.."DRAGON:Cheng:UserName"..data.id_)
-if not data.username_ then 
-if DRAGONChengUserName then 
-send(msg.chat_id_, msg.id_, 1, "مسح معرفه خمطو بساع بساع  \n هاذه معرفه  : [@"..DRAGONChengUserName..']')
-database:del(bot_id.."DRAGON:Cheng:UserName"..data.id_) 
-end
-end
-if data.username_ then 
-if DRAGONChengUserName ~= data.username_ then 
-local Text = {
-'شكو غيرت معرفك شنو نشروك بقنوات نحراف 🌞😹😹😹',
-"هاها شو غيرت معرفك بس لا هددوك 🤞😂😂",
-"شسالفه شو غيرت معرفك 😐🌝",
-"غير معرفه خمطو بساع بساع \n هاذه معرفه : @"..data.username_.."",
-'ها عار مو جان معرفك \n شكو غيرته ل @'..data.username_..' ',
-'ها يول شو مغير معرفك', 
-"منور معرف جديد : "..data.username_.."",
-}
-send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
-end  
-database:set(bot_id.."DRAGON:Cheng:UserName"..data.id_, data.username_) 
-end
-end
-end
-end,nil)   
-end
 if text == "تفعيل تنبيه الصور" and Manager(msg) and database:get(bot_id.."AL:Sre:stats") == "✔" then
 send(msg.chat_id_, msg.id_, '•تم تفعيل تنبيه الصور')
 database:set(bot_id.."Ttn:Ph:stats"..msg.chat_id_,"open")
