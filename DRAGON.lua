@@ -15317,9 +15317,9 @@ local interaction = Total_Msg(Msguser)
 local rtpg = rtpa
 local sofia = {
 	
-"ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ɪɴᴈᴏʀᴍᴀᴛɪᴏɴ ɪs ʙᴇʟᴏᴡ",
+"╭╾╾╾sᴏᴜʀᴄᴇ sᴀɪᴅɪ╾╾╾╮",
 
-"𝚈𝙾𝚄𝚁 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝙸𝚂 𝙱𝙴𝙻𝙾𝚆",
+"╭╾╾╾sᴏᴜʀᴄᴇ sᴀɪᴅɪ╾╾╾╮",
 
 }
 local rdphoto = sofia[math.random(#sofia)]
@@ -15429,9 +15429,9 @@ local interaction = Total_Msg(Msguser)
 local rtpg = rtpa
 local sofia = {
 	
-"ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ɪɴᴈᴏʀᴍᴀᴛɪᴏɴ ɪs ʙᴇʟᴏᴡ",
+"╭╾╾╾sᴏᴜʀᴄᴇ sᴀɪᴅɪ╾╾╾╮",
 
-"𝚈𝙾??𝚁 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝙸𝚂 𝙱𝙴𝙻𝙾𝚆",
+"╭╾╾╾sᴏᴜʀᴄᴇ sᴀɪᴅɪ╾╾╾╮",
 
 }
 local rdphoto = sofia[math.random(#sofia)]
