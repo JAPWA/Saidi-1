@@ -19309,56 +19309,6 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end
-
-if Text and Text:match("^yesS(.*)$") then  
-local delallph = Text:match("^yesS(.*)$")
-if msg.sender_user_id_ == tonumber(SUDO) then 
-local Texxt = "🚧 ┇ حسننا الان يمكنك ارسال معرف المطور الاساسي الجديد ..."
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = 'إالـغـاء الأمـر', callback_data="noS"..msg.sender_user_id_}}}
-https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..msg.chat_id_..'&text='..URL.escape(Texxt).."&message_id="..msg_idd.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-bot_data:set(ban_id..":SUDO:USERNAME:"..msg.sender_user_id_,data.message_id_)
-return false
-end
-end
-if Text and Text:match("^noS(.*)$") then  
-local delallph = Text:match("^noS(.*)$")
-print(msg.sender_user_id_,SUDO)
-print(msg.sender_user_id_== tonumber(SUDO))
-if msg.sender_user_id_ == tonumber(SUDO) then 
---DeleteMessage(msg.chat_id_,{[0] = msg.message_id_})
-local Teext = "🚧 ┇ تم الغاء الامر بنجاح ."
-bot_data:del(ban_id..":SUDO:USERNAME:"..msg.sender_user_id_)
-https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..msg.chat_id_..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true') 
-return false
-end
-end
-if Text == 'nzllne'..data.sender_user_id_ then if bot_data:sismember(ban_id.."Sudo:User",data.sender_user_id_) then dev = "المطور ،" else dev = "" end
-if bot_data:sismember(ban_id..'CoSu'..msg.chat_id_, data.sender_user_id_) then cu = 'مالك ،' else cu = "" end
-if bot_data:sismember(ban_id.."Basic:Constructor"..msg.chat_id_, data.sender_user_id_) then crr = "منشئ اساسي ،" else crr = "" end
-if bot_data:sismember(ban_id..'Constructor'..msg.chat_id_, data.sender_user_id_) then cr = "منشئ ،" else cr = "" end
-if bot_data:sismember(ban_id..'Manager'..msg.chat_id_, data.sender_user_id_) then own = "مدير ،" else own = "" end
-if bot_data:sismember(ban_id..'S00F4:MN:TF'..msg.chat_id_, data.sender_user_id_) then mn = 'منظف ،' else mn = '' end
-if bot_data:sismember(ban_id..'Mod:User'..msg.chat_id_, data.sender_user_id_) then mod = "ادمن ،" else mod = "" end
-if bot_data:sismember(ban_id..'Special:User'..msg.chat_id_, data.sender_user_id_) then vip = "مميز ،" else vip = "" end
-if Can_or_NotCan(data.sender_user_id_,msg.chat_id_) ~= false then local text = "\n ⦁ تم تنزيلك من الرتب التاليه \n ⦁  { "..dev..""..crr..""..cr..""..own..""..mod..""..mn..""..vip.." } \n"
-else
-local text = "\n ⦁ انت لاتمتلك رتبه \n"
-end
-bot_data:srem(ban_id.."Sudo:User", data.sender_user_id_)
-bot_data:srem(ban_id.."CoSu"..msg.chat_id_,data.sender_user_id_)
-bot_data:srem(ban_id.."Basic:Constructor"..msg.chat_id_,data.sender_user_id_)
-bot_data:srem(ban_id..'Constructor'..msg.chat_id_, data.sender_user_id_)
-bot_data:srem(ban_id..'Manager'..msg.chat_id_, data.sender_user_id_)
-bot_data:srem(ban_id..'Mod:User'..msg.chat_id_, data.sender_user_id_)
-bot_data:srem(ban_id..'S00F4:MN:TF'..msg.chat_id_, data.sender_user_id_)
-bot_data:srem(ban_id..'Special:User'..msg.chat_id_, data.sender_user_id_)
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ՏΌႮᎡᏟᎬ ᏙᎬΝΌᎷ',url='http://t.me/SOURCEVENOM'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ● تم تنزيلك من جميع الرتب")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
 text = msg.content_.text_
