@@ -14212,7 +14212,7 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
 
-if text == "رتبتي" and not bot_data:get(bot_id..'ghiktr'..msg.chat_id_) then     
+if text == "رتبتي" then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
@@ -14221,7 +14221,6 @@ username = 'S_a_i_d_i'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
-local DRAGON = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14232,76 +14231,53 @@ local function getpro(extra, result, success)
 if result.photos_[0] then 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..username.."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
 
-if text == 'تفعيل رتبتي' and Manager(msg) then   
-if bot_data:get(bot_id..'ghiktr'..msg.chat_id_)  then
-bot_data:del(bot_id..'ghiktr'..msg.chat_id_) 
-Text = '\n ☽ تم تفعيل رتبتي' 
-else
-Text = '\n ☽  بالتاكيد تم تفعيل رتبتي'
-end
-send(msg.chat_id_, msg.id_,Text) 
-end
-if text == 'تعطيل رتبتي' and Manager(msg) then  
-if not bot_data:get(bot_id..'ghiktr'..msg.chat_id_)  then
-bot_data:set(bot_id..'ghiktr'..msg.chat_id_,true) 
-Text = '\n ☽ تم تعطيل رتبتي' 
-else
-Text = '\n ☽ بالتاكيد تم تعطيل رتبتي'
-end
-send(msg.chat_id_, msg.id_,Text) 
-end
-
-if text == "انا مين" then
-local my_ph = bot_data:get(bot_id.."my_anamen:status"..msg.chat_id_)
+if text == 'انا مين' then
+local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ☽ انا مين معطله") 
 return false  
 end
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-if result.username_ then
-username = result.username_ 
-else
-username = 'S_a_i_d_i'
-end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ❤️ انت يا قلبي⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
-local DRAGON = 'https://t.me/Qtdao/71'
+local textt = '['..Rutba(msg.sender_user_id_,msg.chat_id_)..'](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = textt, url="http://t.me/"..username},
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
+send(msg.chat_id_, msg.id_,textt, 1, 'md') 
+end 
+end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
+return false
 end
-if text == "تعطيل انا مين"  and Manager(msg) then   
+
+if text == "تفعيل انا مين"  then
 if Constructor(msg) then  
-bot_data:del(bot_id.."my_anamen:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
-return false end
-end
-if text == "تفعيل انا مين"  and Manager(msg) then   
-if Constructor(msg) then  
-bot_data:set(bot_id.."my_anamen:status"..msg.chat_id_,true) 
+database:set(bot_id.."my_anamen:status"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل انا مين") 
 return false  
 end
+end
+
+if text == "تعطيل انا مين"  then
+if Constructor(msg) then  
+database:del(bot_id.."my_anamen:status"..msg.chat_id_) 
+send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
+return false end
 end
 
 if text == "تفعيل ردود السورس"  then
