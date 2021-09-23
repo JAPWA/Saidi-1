@@ -19294,13 +19294,13 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 العاب السورس 𓆪', callback_data="/mute-name"},{text = '𓆩 مميزات 𓆪', callback_data="/change-photo"},
+{text = '◗العاب السورس◖', callback_data="/mute-name"},{text = '◗مميزات◖', callback_data="/change-photo"},
 },
 {
-{text = '𓆩 العاب متطوره 𓆪', callback_data="/sofi"},
+{text = '◗العاب متطوره◖', callback_data="/sofi"},
 },
 {
-{text = '𓆩 الاوامر 𓆪', callback_data="/help12"},
+{text = '◗الاوامر◖', callback_data="/help12"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19312,9 +19312,21 @@ end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
 text = msg.content_.text_
+if Text == '/lp8qy' then
+Text = '✨🌻'
+ban = math.random(3,49); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'كتبات أخري', callback_data="/lp8qy"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. Chat_id .. '&photo=https://t.me/dfk9apa/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 --------------------------------------------------------------------------------------------------------------
-if text and not bot_data:sismember(ban_id..'Spam:Texting'..msg.sender_user_id_,text) then
-bot_data:del(ban_id..'Spam:Texting'..msg.sender_user_id_) 
+if text and not database:sismember(bot_id..'Spam:Texting'..msg.sender_user_id_,text) then
+database:del(bot_id..'Spam:Texting'..msg.sender_user_id_) 
 end
 --------------------------------------------------------------------------------------------------------------
 if text and database:get(bot_id.."Del:Cmd:Group"..msg.chat_id_..':'..msg.sender_user_id_) == 'true' then
