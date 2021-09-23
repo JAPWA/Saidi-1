@@ -1467,7 +1467,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = '𓆩 انت الان المطور الاساسي في البوت 𓆪\n𓆩 سورس صعيدي 𓆪\n𓆩 يمكنك تحكم في البوتات من الكيبورد أسفل 𓆪\n[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)'
+local Text = '𓆩انت الان المطور الاساسي في البوت𓆪\n𓆩سورس صعيدي𓆪\n𓆩يمكنك تحكم في البوتات من الكيبورد أسفل𓆪\n[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
@@ -3486,10 +3486,10 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
-{{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AF_A8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مصطفي' or text == 'درش' then
@@ -3634,8 +3634,8 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓆩 مبرمج السورس 𓆪', url="t.me/J_A_B_W_A"}}, 
-{{text = '𓆩 ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ 𓆪', url="t.me/Bot_JABWA_Bot"}}, 
+{{text = '𓆩 ᴛᴡᴀѕʟ 𓆪', url="t.me/Bot_JABWA_Bot"}}, 
+{{text = '𓆩 sᴏᴜʀᴄᴇ sᴀɪᴅɪ 𓆪', url="t.me/S_a_i_d_i"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/c/1522880126/3=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3649,8 +3649,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = '𓆩 ᴛᴡᴀѕʟ 𓆪', url="t.me/Bot_JABWA_Bot"}}, 
 {{text = '𓆩 sᴏᴜʀᴄᴇ sᴀɪᴅɪ 𓆪', url="t.me/S_a_i_d_i"}}, 
-{{text = '𓆩 ᴛᴡᴀѕʟ sᴏᴜʀᴄᴇ 𓆪', url="t.me/Bot_JABWA_Bot"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/S_a_i_d_i&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3695,33 +3695,6 @@ keyboard = {} keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
-end
-if text and text:match("^كلهم (.*)$") or text:match("^@كلهم (.*)$") and CoSu(msg) then 
-local ttag = text:match("^كلهم (.*)$") or text:match("^@كلهم (.*)$") 
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'- لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n- اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
-},function(ta,DRAGON)
-local t = "\n☆ "..ttag.." \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
-x = 0
-local list = DRAGON.members_
-for k, v in pairs(list) do
-x = x + 1
-if database:get(bot_id..'user:Name'..v.user_id_) then
-t = t..""..x.." → {[@"..database:get(bot_id..'user:Name'..v.user_id_).."]}\n"
-else
-t = t..""..x.." → {"..v.user_id_.."}\n"
-end
-end
-send(msg.chat_id_,msg.id_,t)
-end,nil)
 end
 if text == 'مبرمجين السورس' or text == 'مطورين السورس' then
 local Text = [[
@@ -4852,7 +4825,7 @@ local Text = [[
  من أحسن السورسات على التليجرام سورس صعيدي
 حمايه↤سرعه↤دقه↤وامان
  قناه السورس ⇈⇊
-[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙰](http://t.me/S_a_i_d_i)
+[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰??𝙳𝙰](http://t.me/S_a_i_d_i)
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -6064,7 +6037,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر عمك جابوا عام")
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر عمك مصطفى عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1549578895) then  
@@ -6118,7 +6091,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا يمكنك حظر المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1965534755) then
-send(msg.chat_id_, msg.id_, " ☽ لا يمكنك حظر عمك جابوا عام\n")
+send(msg.chat_id_, msg.id_, " ☽ لا يمكنك حظر عمك مصطفى عام\n")
 return false 
 end
 if result.id_ == tonumber(1549578895) then
@@ -6166,7 +6139,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " لا تسطيع حظر عمك جابوا عام")
+send(msg.chat_id_, msg.id_, " لا تسطيع حظر عمك مصطفى عام")
 return false 
 end
 if tonumber(userid) == tonumber(1549578895) then  
@@ -6215,7 +6188,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم عمك جابوا عام")
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم عمك مصطفى عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1549578895) then  
@@ -6268,7 +6241,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1965534755) then
-send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم عمك جابوا عام\n")
+send(msg.chat_id_, msg.id_, " ☽ لا يمكنك كتم عمك مصطفى عام\n")
 return false 
 end
 if result.id_ == tonumber(1549578895) then
@@ -6316,7 +6289,7 @@ send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم عمك جابوا عام")
+send(msg.chat_id_, msg.id_, " ☽ لا تسطيع كتم عمك مصطفى عام")
 return false 
 end
 if tonumber(userid) == tonumber(1549578895) then  
@@ -11637,7 +11610,7 @@ local text =
 '\n❲[`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´](t.me/S_a_i_d_i)❳'..
 '\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'..
 '\n ☽ اعدادات الجروب كتالي ☆'..
-'\nء⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'..
+'\nء⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃?? 𖥳❳⊷━━━━⩺'..
 '\n ☽  علامة ال {✓} تعني مفعل'..
 '\n ☽  علامة ال {✘} تعني معطل'..
 '\nء⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'..
@@ -15552,7 +15525,7 @@ local sofia = {
 	
 "ʏᴏᴜʀ ᴀᴄᴄᴏᴜɴᴛ ɪɴᴈᴏʀᴍᴀᴛɪᴏɴ ɪs ʙᴇʟᴏᴡ",
 
-"𝚈𝙾𝚄𝚁 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝙸𝚂 𝙱𝙴𝙻𝙾𝚆",
+"𝚈𝙾??𝚁 𝙰𝙲𝙲𝙾𝚄𝙽𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽 𝙸𝚂 𝙱𝙴𝙻𝙾𝚆",
 
 }
 local rdphoto = sofia[math.random(#sofia)]
@@ -15579,7 +15552,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_, '\n |✙•  ليس لديك صور في حسابك \n['..get_id_text..']')      
+send(msg.chat_id_, msg.id_, '\n |•  ليس لديك صور في حسابك \n['..get_id_text..']')      
 end 
 end
 else
@@ -15589,12 +15562,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@A_F_fwdka1↜     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@A_F_fwdka1↜    ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@S_a_i_d_i↜    ↝💘\n')
 else
-send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝@A_F_fwdka1↜\n')
+send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜\n')
 end 
 end
 end
@@ -15612,7 +15585,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n|• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n|• 𝒄?? → ↝ @A_F_fwdka1 ↜   🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n|• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n|• 𝒄?? → ↝ @S_a_i_d_i ↜   🖤༆\n')
 end
 end
 
@@ -16314,7 +16287,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ┄─━━??━━─┄
-𖣰𖡻 𖡋𝗜𝗗• #id •𓀎
+??𖡻 𖡋𝗜𝗗• #id •𓀎
 𖣰𖡻 𖡋𝗨𝗦??• #username •𓀎
 𖣰𖡻 𖡋𝗦𝗧𝗔• #stast •𓀎
 𖣰𖡻 𖡋𝗠𝗦𝗚• #msgs •𓀎
@@ -16749,7 +16722,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
-⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
+⭐️𝖚𝖘??𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️??𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
