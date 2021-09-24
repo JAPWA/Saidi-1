@@ -19470,6 +19470,8 @@ local Text = 'لتجربه العلبه عليك ان تكتب كشف الكذب
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
+if Text == '/sofi' then
+local Teext =[[
 𓆩 اهلا في قائمه الالعاب المتطوره سورس صعيدي 𓆪
 ]]
 keyboard = {} 
