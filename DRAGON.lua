@@ -15339,7 +15339,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝• 🖤\n|• 𝒓𝒂𝒏𝒌→ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝• 🖤\n|• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝• 🖤\n|• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝• 🖤\n|• 𝒄𝒉 →  ↝@A_F_fwdka1↜   ↝• 🖤\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, ban.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n• 🖤 | 𝑼𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑨 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝐶𝐻 : @S_a_i_d_i \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n|• 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝒊𝒅  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝒄𝒉 →   ↝@A_F_fwdka1↜ • 🖤\n')
@@ -15566,10 +15566,10 @@ local List = {
 𓄼🇪🇭 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇭 𝒊𝒅 : #id ‌‌‏⚚
 𓄼🇪🇭 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
-𓄼🇪🇭 ??𝒔𝒈𝒔 : #msgs 𓆊
+𓄼🇪🇭 𝑴𝒔𝒈𝒔 : #msgs 𓆊
 ]],
 [[
-➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
+➞: 𝒔??𝒂𓂅 #stast 𓍯➸💞.
 ➞: ??𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
@@ -16007,7 +16007,7 @@ local List = {
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
-𝐒𝐭??𝐬𝐓 ☤🇪🇬- #stast 
+𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
 𝗖𝗛☤🇪🇬 - ↝@S_a_i_d_i↜ ☽ .
 ]],
