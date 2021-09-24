@@ -3193,40 +3193,40 @@ end
 if text == 'مميزات' then
 local Text = [[ 
  ─────── ☽ ───────
-☽ لستخدام المميزات اتبع مايلي ⇈⇊
+ ☽ لستخدام المميزات اتبع مايلي ⇈⇊
  ─────── ☽ ───────
-☽ قران ⤌ لعرض الميزه
-☽ اذكار ⤌ لعرض الميزه
-☽ الصلاوات ⤌ لعرض الميزه
-☽متحركه ⤌ لعرض الميزه
-☽ غنيلي ⤌ لعرض الميزه
-☽ بوستات ⤌ لعرض الميزه
-☽ استوري ⤌ لعرض الميزه
-☽ تصميم ⤌ لعرض الميزه
-☽حساب العمر ⤌ لعرض الميزه
-☽حساب الوزن ⤌ لعرض الميزه
-☽ نسبه الحب ⤌ لعرض الميزه
-☽ نسبه الغباء ⤌ لعرض الميزه
-☽ جمالي ⤌ لعرض الميزه
-☽ افلام ⤌ لعرض الميزه
-☽ اغاني ⤌ لعرض الميزه
-☽ روايات ⤌ لعرض الميزه
-☽ ثمات ⤌ لعرض الميزه
-☽همسه ⤌ لعرض الميزه
-☽ معني + اسمك ⤌ لعرض الميزه
-☽ خلفيات ⤌ لعرض الميزه
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- ☽ 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i) 
-╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+ ☽ قران ⤌ لعرض الميزه
+ ☽ اذكار ⤌ لعرض الميزه
+ ☽ الصلاوات ⤌ لعرض الميزه
+ ☽ متحركه ⤌ لعرض الميزه
+ ☽ غنيلي ⤌ لعرض الميزه
+ ☽ بوستات ⤌ لعرض الميزه
+ ☽ استوري ⤌ لعرض الميزه
+ ☽ تصميم ⤌ لعرض الميزه
+ ☽ حساب العمر ⤌ لعرض الميزه
+ ☽ حساب الوزن ⤌ لعرض الميزه
+ ☽ نسبه الحب ⤌ لعرض الميزه
+ ☽ نسبه الغباء ⤌ لعرض الميزه
+ ☽ جمالي ⤌ لعرض الميزه
+ ☽ افلام ⤌ لعرض الميزه
+ ☽ اغاني ⤌ لعرض الميزه
+ ☽ روايات ⤌ لعرض الميزه
+ ☽ ثمات ⤌ لعرض الميزه
+ ☽ همسه ⤌ لعرض الميزه
+ ☽ معني + اسمك ⤌ لعرض الميزه
+ ☽ خلفيات ⤌ لعرض الميزه
+▱▰▱▰▱▰▱▰▱▰▱▰▱▰
+𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔 ](t.me/S_a_i_d_i)𓆪
+▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  '𖣘 𝙹𝙰𝙱𝚆𝙰 𖣘' ,url="t.me/J_A_B_W_A"}},
-{{text = '𖣘 𝚂𝙾𝚄𝚁𝙲𝙴 𝚂𝙰𝙸𝙳𝙸 𖣘', url="t.me/S_a_i_d_i"}}, 
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/406/903&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
@@ -17106,7 +17106,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𓆩 افلام عربي 𓆪', callback_data="/Sasa2"},{text = '𓆩 افلام اجنبي 𓆪', callback_data="/Jabwa2"}},   
 {{text = '𓆩 افلام رعب 𓆪', callback_data="/Sasa3"},{text = '𓆩 افلام كرتون 𓆪', callback_data="/Omer2"}},   
-{{text = '𓆩 افلام هنديه 𓆪', callback_data="/Jabwa3"},{text = '?? افلام مسرحيات 𓆪', callback_data="/Taha2"}},   
+{{text = '𓆩 افلام هنديه 𓆪', callback_data="/Jabwa3"},{text = '𓆩 افلام مسرحيات 𓆪', callback_data="/Taha2"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
