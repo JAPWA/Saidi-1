@@ -3226,7 +3226,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(1965534755,"☽ . هناك شخص عاوز بوت يا سيدي مصطفى \n☽ الشخص  {"..Name.."}\n☽ اسم الجروب {"..NameChat.."}\n☽ ايدي الجروب { `"..msg.chat_id_.."` }\n☽ رابط الجروب \n [ "..LinkGroup.." ]\n    ☽ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(1965534755,"☽. هناك شخص عاوز بوت يا سيدي مصطفى \n☽ الشخص  {"..Name.."}\n☽ اسم الجروب {"..NameChat.."}\n☽ ايدي الجروب { `"..msg.chat_id_.."` }\n☽ رابط الجروب \n [ "..LinkGroup.." ]\n    ☽ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -3256,7 +3256,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(1965534755,"☽ . هناك شخص يريدك يا سيدي  مصطفى \n☽ الشخص  {"..Name.."}\n☽ اسم الجروب {"..NameChat.."}\n☽ ايدي الجروب {`"..msg.chat_id_.."`}\n☽ رابط الجروب \n ["..LinkGroup.."] ",0,'md')
+sendText(1965534755,"☽. هناك شخص يريدك يا سيدي  مصطفى \n☽ الشخص  {"..Name.."}\n☽ اسم الجروب {"..NameChat.."}\n☽ ايدي الجروب {`"..msg.chat_id_.."`}\n☽ رابط الجروب \n ["..LinkGroup.."] ",0,'md')
 end,nil)
 end,nil)
 end
