@@ -15200,7 +15200,7 @@ send(msg.chat_id_, msg.id_,' ☽ لا استطيع اصيح معرف بوتات'
 return false  
 end
 if result and result.type_ and result.type_.channel_ and result.type_.channel_.is_supergroup_ == true then
-send(msg.chat_id_, msg.id_,'⚠| لا اسطيع صيح معرفات الجروبات') 
+send(msg.chat_id_, msg.id_,' ☽ لا اسطيع صيح معرفات الجروبات') 
 return false  
 end
 if result.id_ then
@@ -15226,7 +15226,7 @@ local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sen
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' ☽ هوا ابن القمر دا الي ضافك?? ⇇'..Name
+Text = ' ☽ هوا ابن القمر دا الي ضافك 😹 ⇇'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
@@ -15248,7 +15248,7 @@ local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sen
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' ☽ هوا ابن القمر دا الي ضافك😹 ⇇'..Name
+Text = ' ☽ هوا ابن القمر دا الي ضافك 😹 ⇇'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
@@ -15511,12 +15511,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝• 🖤\n|• 𝒓𝒂𝒏𝒌→ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝• 🖤\n|• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝• 🖤\n|• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝• 🖤\n|• 𝒄𝒉 →  ↝@S_a_i_d_i↜   ↝• 🖤\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n• 🖤 | 𝑼𝑬𝑺 : '..username..' \n• 🖤 | 𝑴𝑺𝑮 : '..Msguser..' \n• 🖤 | 𝑺𝑻𝑨 : '..Rutba(msg.sender_user_id_,msg.chat_id_)..'  \n• 🖤 | 𝑰𝑫 :  '..msg.sender_user_id_..' \n• 🖤 | 𝑩𝑰𝑶 : '..getbioY..' \n• 🖤 | 𝐶𝐻 : @S_a_i_d_i \n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n|• 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝒊𝒅  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝒄𝒉 →   ↝@S_a_i_d_i↜ • 🖤\n')
+send(msg.chat_id_, msg.id_,'[\n🖤⁞ بيك عزيزي ↝'..Name..'↜ \n|• 𝑼𝑺𝑬𝑹 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝑴𝑺𝑮𝑺 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝑹𝑨𝑵𝑲 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝑰𝑫  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝑪𝑯 →   ↝@S_a_i_d_i↜ • 🖤\n')
 else
-send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜\n|• 𝒎𝒔𝒈𝒔→ ↝'..Msguser..'↜\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉→  ↝@S_a_i_d_i ↜\n')
+send(msg.chat_id_, msg.id_, '\n🖤⁞ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝑼𝑺𝑬𝑹 → ↝'..username..'↜\n|• 𝑴𝑺𝑮𝑺→ ↝'..Msguser..'↜\n|• 𝑰𝑫 →  ↝'..msg.sender_user_id_..'↜\n|• 𝑪𝑯→  ↝@S_a_i_d_i ↜\n')
 end 
 end
 end
@@ -15535,7 +15535,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 →  ↝'..username..'↜   ↝🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   ↝🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   ↝🖤༆\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜   ↝🖤༆\n|• 𝒄𝒉→ ↝@S_a_i_d_i↜   ↝🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝑼𝑺𝑬𝑹 →  ↝'..username..'↜   ↝🖤\n|• 𝑴𝑺𝑮𝑺 → ↝'..Msguser..'↜   ↝🖤\n|• 𝑹𝑨𝑵𝑲 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   ↝🖤\n|• 𝑰𝑫 →  ↝'..msg.sender_user_id_..'↜   ↝🖤\n|• 𝑪𝑯→ ↝@S_a_i_d_i↜   ↝🖤\n')
 end
 end
 
@@ -15620,7 +15620,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_, '\n |✙•  ليس لديك صور في حسابك \n['..get_id_text..']')      
+send(msg.chat_id_, msg.id_, '\n🖤⁞ ليس لديك صور في حسابك \n['..get_id_text..']')      
 end 
 end
 else
@@ -15630,12 +15630,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝑴𝑺𝑮𝑺 ↬  ↝'..username..'↜     ↝💘\n|• 𝑴𝑺𝑮𝑺↬  ↝'..Msguser..'↜     ↝💘\n|• 𝑹𝑨𝑵𝑲↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝑰𝑫↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝑪𝑯↬  ↝@S_a_i_d_i↜     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@S_a_i_d_i↜    ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝑼𝑺𝑬𝑹 ↬  ↝'..username..'↜    ↝💘\n|• 𝑴𝑺𝑮𝑺↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝑹𝑨𝑵𝑲↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝑰𝑫↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝑪𝑯↬   ↝@S_a_i_d_i↜    ↝💘\n')
 else
-send(msg.chat_id_, msg.id_, '\n ☽ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝@S_a_i_d_i↜\n')
+send(msg.chat_id_, msg.id_, '\n🖤⁞ الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝑼𝑺𝑬𝑹 ↬ ↝'..username..'↜\n|• 𝑴𝑺𝑮𝑺↬ ↝'..Msguser..'↜\n|• 𝑰𝑫↬  ↝'..msg.sender_user_id_..'↜\n|• 𝑪𝑯↬  ↝@S_a_i_d_i↜\n')
 end 
 end
 end
@@ -15653,7 +15653,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n|• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n|• 𝒄?? → ↝ @S_a_i_d_i ↜   🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝑼𝑺𝑬𝑹 → ↝'..username..'↜   🖤\n|• 𝑴𝑺𝑮𝑺 → ↝'..Msguser..'↜   🖤\n|• 𝑹𝑨𝑵𝑲 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤\n|• 𝑰𝑫  →   ↝'..msg.sender_user_id_..'↜   🖤\n|• 𝑪𝑯 → ↝ @S_a_i_d_i ↜   🖤༆\n')
 end
 end
 
@@ -17891,7 +17891,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩 استوري ??', callback_data="/Sas1"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
+{{text = '𓆩 استوري 𓆪', callback_data="/Sas1"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
 {{text = '𓆩 استوري مضحك 𓆪', callback_data="/Omer1"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/Taha1"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
