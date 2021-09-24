@@ -1045,7 +1045,7 @@ local Text = [[
 ]]
 keyboard.inline_keyboard = {
 {{text = 'قناة سورس صعيدي', url="t.me/S_a_i_d_i"}},
-{{text = 'كـل ما هوا لطـيف ❀',url="t.me/POSTAT_JABWA"}}, 
+{{text = 'كـل ما هوا لطـيف ❀',url="t.me/POSTAT_MOSTAFA"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1387,7 +1387,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر اضـف ومـسـح' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم اضـف ومـسـح 🌚💘'
+local Text = 'مـرحـبــا بــك في قسـم اضـف ومـسـح ❤️💘'
 local Key = {
 {'اضف رد عام','مسح رد عام'},
 {'مسح رد استارت','اضف رد استارت'},
@@ -1399,7 +1399,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر تفعيل و تعطـيل' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم تفعيل وتعطـيل 🌚💘'
+local Text = 'مـرحـبــا بــك في قسـم تفعيل وتعطـيل ❤️💘'
 local Key = {
 {'تعطيل الاذاعه','تفعيل الاذاعه'},
 {'تعطيل المغادره','تفعيل المغادره'},
@@ -1411,7 +1411,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر الحـمـايه' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم الحـمـآيه الخـاص بــي بــوتك 🌚💘'
+local Text = 'مـرحـبــا بــك في قسـم الحـمـآيه الخـاص بــي بــوتك ❤️💘'
 local Key = {
 {'قائمه الكتم العام','المطورين','قائمه العام'},
 {'المشتركين','الجروبات ','الردود العامه'},
@@ -1423,7 +1423,7 @@ local Key = {
 send_inline_key(msg.chat_id_,Text,Key)
 end 
 if text == 'اوامـر الاذاعـه' and DevSoFi(msg) then 
-local Text = 'مـرحـبــا بــك في قسـم الاذاعه 🌚💘'
+local Text = 'مـرحـبــا بــك في قسـم الاذاعه ❤️💘'
 local Key = {
 {'اذاعه ','اذاعه خاص '},
 {'اذاعه بالتثبيت '},
@@ -3314,7 +3314,7 @@ keyboard.inline_keyboard = {
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/406&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/753&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
@@ -3331,75 +3331,76 @@ keyboard.inline_keyboard = {
 {{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/163&caption=' .. URL.escape(Text).."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/753&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
-اهلا بك في سورس صعيدي الجمدان
- عايز بوت بأسعار منسبه وبوت مميز كلمني
+𓆩 اهلا بك في سورس صعيدي الجمدان 𓆪
+𓆩 عايز بوت بأسعار منسبه وبوت مميز كلمني 𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑩𝑶𝑫𝒀',url="t.me/Xx_BoDa_UXB"},{text = '𝑩𝑶𝑻 𝑩𝑶𝑫𝒀', url="t.me/BUDA_UM_BOT"}},
-{{text = '𝑨𝑯𝑴𝑬𝑯',url="t.me/A7maaaaaaaaaaaaaaa"},{text = '𝑴𝑨𝑹𝑰𝑨𝑴', url="t.me/M_e_r_oOoOo"}},
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ʙᴏᴛ ᴊᴀʙᴡᴀ', url="t.me/Bot_JABWA_Bot"}},
+{{text = '• ᴅᴇᴠ ᴅᴇѕʜᴀ',url="t.me/XxDesha86Xx"},{text = '• ʙᴏᴛ ᴅᴇѕʜᴀ', url="t.me/desha100_BOT"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/38&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/S_a_i_d_i/753&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/162&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'جـابــوا' or text == 'جابوا' or text == 'مين عملك السورس' or text == 'مبرمح السورس²' then
+if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'صاحب السورس' or text == 'مبرمج السورس' then
 local Text = [[
-جـابــوا مـبــرمـج السـورس² لو حابب تتواصل معاه
+جابوا مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐃𝐄𝐕 𝐉𝐀𝐁𝐖𝐀',url="t.me/J_A_B_W_A"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'مـبــرمـج السـورس' or text == 'مبرمج السورس' or text == 'بودي' or text == 'صاحب السورس' then
+if text == 'المبرمج طه' or text == 'طه' or text == 'taha 7x' or text == '²مبرمج السورس' then
 local Text = [[
-بــودي مـبــرمـج السـورس لو حابب تتواصل معاه
+طه مبرمج السورس² لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑫𝑬𝑽 𝑩𝑶𝑫𝒀',url="t.me/Xx_BoDa_UXB"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = '• ᴅᴇᴠ ᴛᴀʜᴀ',url="t.me/TahaSayed9"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Xx_BoDa_UXB&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TahaSayed9&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المطور احمد' or text == 'احمد' or text == 'مطور السورس' or text == 'مـطـور السـورس' then
+if text == 'المبرمج عمر' or text == 'عمر' or text == 'عموري' or text == '³مبرمج السورس' then
 local Text = [[
-احمد مـبــرمـج السـورس لو حابب تتواصل معاه
+عمر مبرمج السورس³ لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑫𝑬𝑽 𝑨𝑯𝑴𝑬𝑯',url="t.me/A7maaaaaaaaaaaaaaa"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A7maaaaaaaaaaaaaaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOT3mora&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'الواد طه' or text == 'مـرات بــودي' or text == 'مـريم' or text == 'مريم' then
+if text == 'المبرمج ابو المجد' or text == 'ابو المجد' or text == 'محمد' or text == '⁴مبرمج السورس' then
 local Text = [[
-مـريم مـرات بــودي قمـر السـورس 🌔❤
+ابو المجد مبرمج السورس⁴ لو حابب تتواصل معاه
+اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝑴𝑨𝑹𝑰𝑨𝑴',url="t.me/M_e_r_oOoOo"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = '• ᴅᴇᴠ ᴅᴇѕʜᴀ',url="t.me/A_B_O_2"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/M_e_r_oOoOo&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_B_O_2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺' or text == 'عاوز بوت' then
 local Text = [[ 
@@ -3505,8 +3506,9 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'جـابــوا مـبــرمـج السـورس',url="t.me/J_A_B_W_A"}},
-{{text = 'بــودي مـبــرمـج السـورس',url="t.me/Xx_BoDa_UXB"}},
-{{text = 'احمد مـبــرمـج السـورس',url="t.me/A7maaaaaaaaaaaaaaa"}},
+{{text = 'طـه مـبــرمـج السـورس',url="t.me/YtIIIl"}},
+{{text = 'عمـر مـبــرمـج السـورس',url="t.me/BOT3mora"}},
+{{text = 'ابــو المـجـد مـبــرمـج السـورس',url="t.me/A_B_O_2"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3536,123 +3538,145 @@ end
  
 end,nil)
 end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
-local Text ='تم اختيار فديو استوري  لك 🌚💘' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == "صور انيمي" or text == 'انيمي' and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text ='تم اختيار هذه الصوره لـك 🌚💘' 
+local Text ='تم اختيار هذه الصوره لـك 🌼❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/taha_ow/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "رامزيات ولاد" or text ==  "صور ولاد"  and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'
+local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌼❤️'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Boys_app/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "رامزيات بنات" or text ==  "صور بنات"  and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'  
+local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌼❤️'  
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Girl_ap/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "رامزيات كابلز" or text ==  "صور كابلز"  and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'  
+local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌼❤️'  
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOY_GIRLM/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "بوستات بالصوره" then  
+if text == "بوستات بالصور" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "روايات رومانسيه" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك روايات رومانسيه 🌼❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AF_A_A/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "لو خيروك بالصور" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك لو خيروك بالصوره 🌼❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "بوستات بالصور" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك بوسات بي الصوره 🌼❤️'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/JABWA4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "هل تعلم" or text == "معلومه" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,18); 
-local Text ='مرحبا اليك معلومه جديده في صوره🌚💘' 
+local Text ='مرحبا اليك معلومه جديده في صوره 🌼❤️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MALUEMA/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "صور كرتون" then  
 ght = math.random(1,33);  
-local Text ='إليك صور كرتون إنمي 🌚💘'  
+local Text ='إليك صور كرتون إنمي 🌼❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/swary0/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "خلفيات رومانسيه" then  
 ght = math.random(1,33);  
-local Text ='مرحبا اليك خلفيه جميله يا بتاع الحب 🌚💘'  
+local Text ='مرحبا اليك خلفيه جميله يا بتاع الحب 🌼❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/jrumdi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "افلام اجنبي" then  
 ght = math.random(1,33);  
-local Text ='مرحبا اليك فلام من الافلام الاجنبيه 🌚💘'
+local Text ='مرحبا اليك فلام من الافلام الاجنبيه 🌼❤️'
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jdjie1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "افلام عربي" then  
 ght = math.random(1,33);  
-local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌚💘'  
+local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌼❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jndjkdkd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3663,29 +3687,29 @@ local Text ='إليك حلقه من بعض أفلام الكرتون يطفل �
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/y_giu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "فديو اجنبي" then  
 ght = math.random(1,33);  
-local Text ='تم أختيار الفيديو الأجنبي إليك الأن 🌚💘'  
+local Text ='تم أختيار الفيديو الأجنبي إليك الأن 🌼❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/agany001/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "غنيلي بفديو" then  
 ght = math.random(1,33);  
-local Text ='تم اختيار اغنيه عشوائية من اغني بفديو 🌚💘'  
+local Text ='تم اختيار اغنيه عشوائية من اغني بفديو 🌼❤️'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text =  '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´' ,url="t.me/S_a_i_d_i"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/jfudb637/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4352,7 +4376,7 @@ local TWEET_Msg = {
 " الجمال يلفت الأنظار لكن الطيبه تلفت القلوب🙂 .!",
 "لا تحقرون صغيره إن الجبال من الحصي 💖",
 "لا تمد عينك في يد غيرك 💕",
-"‏ بعض الاِعتذارات يجب أن تُرفَضّ. 🌚.",
+"‏ بعض الاِعتذارات يجب أن تُرفَضّ. ❤️.",
 "‏ هل كانت كل الطرق تؤدي إليكِ، أم أنني كنتُ أجعلها كذلك. 🤫 .!",
 "ويُرهقني أنّي مليء بما لا أستطيع قوله.✨ ",
 "‏أَكَان عَلَيَّ أَنْ أغْرَس انيابي فِي قَلْبِك لتشعر بِي ؟. 😁",
@@ -4364,7 +4388,7 @@ local TWEET_Msg = {
 " لا تملح الا لمن يستحقاها ويحافظ عليها😛",
 "لا يدخل الجنه من لايأمن من جازه بوائقه 😿.",
 "لا دين لمن لا عهد له 💞 ",
-"لا تظلم حتى لا تتظلم 🌚.",
+"لا تظلم حتى لا تتظلم ❤️.",
 "عامل الناس بأخلاقك ولا بأخلاقهم 💞⛷️",
 "لا تقف قصاد الريح ولا تمشي معها.... 💚 ",
 "‏ ‏أحببتك وأنا منطفئ، فما بالك وأنا في كامل توهجي ؟ 🙂 .!",
@@ -4403,29 +4427,29 @@ return false
 end
 if text == "أذكار الصباح" or text == "اذكار الصباح" then 
 local TWEET_Msg = { 
-" اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ 🌚💘",
-" قُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ 🌚💘",
-" قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ 🌚💘",
-" قُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَ النَّاسِ 🌚💘",
-" أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر 🌚💘",
-" اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا عَبْـدُك ، وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما صَنَـعْت ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ لا يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ 🌚💘",
-" رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً 🌚💘",
-" اللّهُـمَّ ما أَصْبَـَحَ بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر 🌚💘",
-" أَصْبَـحْـنا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ 🌚💘",
-" اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ 🌚💘",
-" اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ 🌚💘",
-" اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي 🌚💘",
-" يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلُنِي إلَى نَفْسِي طَـرْفَةَ عَيْنٍ 🌚💘",
-" أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه 🌚💘",
-" اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِـرْكِه ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم 🌚💘",
+" اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ ❤️💘",
+" قُلْ هُوَ اللَّهُ أَحَدٌ، اللَّهُ الصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ ❤️💘",
+" قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ❤️💘",
+" قُلْ أَعُوذُ بِرَبِّ النَّاسِ، مَلِكِ النَّاسِ، إِلَهِ النَّاسِ، مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ، الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ، مِنَ الْجِنَّةِ وَ النَّاسِ ❤️💘",
+" أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر ❤️💘",
+" اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا عَبْـدُك ، وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما صَنَـعْت ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ لا يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ ❤️💘",
+" رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً ❤️💘",
+" اللّهُـمَّ ما أَصْبَـَحَ بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر ❤️💘",
+" أَصْبَـحْـنا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ ❤️💘",
+" اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ ❤️💘",
+" اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ ❤️💘",
+" اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي ❤️💘",
+" يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلُنِي إلَى نَفْسِي طَـرْفَةَ عَيْنٍ ❤️💘",
+" أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه ❤️💘",
+" اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِـرْكِه ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم ❤️💘",
 " أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق ??💘",
-" اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد 🌚💘",
-" اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ 🌚💘",
-" أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لاَ إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إلَيهِ 🌚💘",
-" يَا رَبِّ , لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ , وَلِعَظِيمِ سُلْطَانِكَ 🌚💘",
-" لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلُّ شَيْءِ قَدِيرِ 🌚💘",
-" اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ ، عَلَيْكَ تَوَكَّلْتُ ، وَأَنْتَ رَبُّ الْعَرْشِ الْعَظِيمِ , مَا شَاءَ اللَّهُ كَانَ ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ ، وَلا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ , أَعْلَمُ أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا , اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي ، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا ، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ 🌚💘",
-" سُبْحـانَ اللهِ وَبِحَمْـدِهِ 🌚💘",
+" اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد ❤️💘",
+" اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ ❤️💘",
+" أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لاَ إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إلَيهِ ❤️💘",
+" يَا رَبِّ , لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ , وَلِعَظِيمِ سُلْطَانِكَ ❤️💘",
+" لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلُّ شَيْءِ قَدِيرِ ❤️💘",
+" اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ ، عَلَيْكَ تَوَكَّلْتُ ، وَأَنْتَ رَبُّ الْعَرْشِ الْعَظِيمِ , مَا شَاءَ اللَّهُ كَانَ ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ ، وَلا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ , أَعْلَمُ أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا , اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي ، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا ، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ ❤️💘",
+" سُبْحـانَ اللهِ وَبِحَمْـدِهِ ❤️💘",
 }
 send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
 return false 
@@ -4538,7 +4562,7 @@ local Text = [[
 من أحسن السورسات على التليجرام سورس صعيدي
 حمايه↤سرعه↤دقه↤وامان
  قناه السورس ⇈⇊
-[𝑾𝑬𝑳𝑪𝑶𝑴𝑺 𝑻𝑶 `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´](http://t.me/S_a_i_d_i)
+[`ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ѕᴏ𝗎ʀᴄᴇ ѕᴀɪᴅᴀ´](http://t.me/S_a_i_d_i)
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -4796,7 +4820,7 @@ end
 end
 if text == "تويت بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,28); 
-local Text ='مرحبا إليك تويت بالصور🌚💘' 
+local Text ='مرحبا إليك تويت بالصور❤️💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
@@ -4805,19 +4829,9 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,33); 
-local Text ='مرحبا اليك لو خيروك بالصور 🌚💘' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 if text == "حروف بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,15); 
-local Text ='مرحبا إليك حروف بالصوره🌚💘' 
+local Text ='مرحبا إليك حروف بالصوره❤️💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}}, 
@@ -6292,7 +6306,7 @@ local file = name_t[2]..'.lua'
 local file_bot = io.open("File_Bot/"..file,"r")
 if file_bot then
 io.close(file_bot)
-t = " 𖥳 بالتاكيد تم تفعيل ملف → "..file.." \n"
+t = " ?? بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " 𖥳 الملف  ⇇"..file.."\n 𖥳 تم تفعيل ملف \n"
 end
@@ -13343,7 +13357,7 @@ end
 
 if text == "غنيلي بفيديو" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
-local Text ='تم اختيار اغنيه بفديو  لك 🌚💘 ' 
+local Text ='تم اختيار اغنيه بفديو  لك ❤️💘 ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
@@ -13355,7 +13369,7 @@ end
 
 if text == "ثيم" then  
 ght = math.random(1,33);  
-local Text ='الستخدم ثيم اخر اكتب ثيم لك 🌚💘'  
+local Text ='الستخدم ثيم اخر اكتب ثيم لك ❤️💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
  {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
@@ -13907,7 +13921,7 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = 'رتبتك ياقلبي 🌚💘 ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = 'رتبتك ياقلبي ❤️💘 ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14319,7 +14333,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نعم الله عليك..🌚💘](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نعم الله عليك..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14358,7 +14372,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[العفو ياروحي..🌚💘](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[العفو ياروحي..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14368,7 +14382,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..🌚♥️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..❤️♥️](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14518,11 +14532,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..🌚💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..❤️💔](t.me/S_a_i_d_i)')
 return false
 end
 
-if text == "🙂"  or text == "🌚" then
+if text == "🙂"  or text == "❤️" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
@@ -14558,7 +14572,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[دايما ياحبيبي..🌚💜](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[دايما ياحبيبي..❤️💜](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14608,7 +14622,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الخير يعمري..🌚💘](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[انت الخير يعمري..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14679,7 +14693,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام..🌚🖤](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام..❤️🖤](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -14861,7 +14875,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نورك يا قلبي..🌚💘](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نورك يا قلبي..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -14903,7 +14917,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💘](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -15105,7 +15119,7 @@ local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sen
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' 𖥳 هوا ابن القمر دا الي ضافك😹 ⇇'..Name
+Text = ' 𖥳 هوا ابن القمر دا الي ضافك?? ⇇'..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
@@ -17726,9 +17740,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'روابط الحذف' or text == 'رابط  حذف' or text == 'رابط الحذف' then
 local Text = [[
-مواقع  مسح حسابات
-علشان ترتاح من التلي 😹💔⁞“
-]]
+𓆩 مواقع حذف جميع حسابات المديا 𓆪
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'Telegram',url="https://my.telegram.org/auth?to=delete"}},
@@ -17741,8 +17753,8 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 local Text = [[
-بوت  مسح حسابات،🍂
-فكر قبل لا تتسرع وتروح
+𓆩 بوت  مسح حسابات 𓆪
+𓆩 فكر قبل لا تتسرع وتروح 𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17750,6 +17762,20 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if text == 'الرابط' or text == 'رابط' or text == 'رابط البار'  then
+local Text = [[
+𓆩 اختار نوع الرابط الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'رابط اونلاين', callback_data="/ven2"},{text = 'رابط بالصور', callback_data="/ven1"}},   
+{{text = 'رابط بنص', callback_data="/ven3"}},
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
@@ -17786,7 +17812,7 @@ end -- end msg
 function tdcli_update_callback(data)  -- clback
 if data.ID == "UpdateChannel" then 
 if data.channel_.status_.ID == "ChatMemberStatusKicked" then 
-database:srem(bot_id..'Chek:Groups','-100'..data.channel_.id_)  
+bot_data:srem(ban_id..'Chek:Groups','-100'..data.channel_.id_)  
 end
 end
 if data.ID == "UpdateNewCallbackQuery" then
@@ -17799,6 +17825,88 @@ if Text == 'okCaptcha'..data.sender_user_id_ then
 DeleteMessage(Chat_id, {[0] = Msg_id}) 
 return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. Chat_id .. "&user_id="..Ok_id .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
 end
+if Text == '/ven3' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local link = bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_)            
+if link then                              
+send(msg.chat_id_,msg.id_,'.\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..link..')')                          
+else                
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
+if linkgpp.ok == true then 
+linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+else
+linkgp = ' لا يوجد رابط ارسل ضع رابط'
+end  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+send(msg.chat_id_, msg.id_,linkgp)              
+end      
+end,nil)
+end
+if Text == '/ven1' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(linkgp).."&parse_mode=markdown&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'☽ لا يوجد رابط ارسل ضع رابط') 
+end 
+end,nil) 
+end
+if Text == '/ven2' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+local inline = {{{text = ta.title_, url=linkgpp.result}},} 
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+send_inline_key(msg.chat_id_,linkgp,nil,inline,msg.id_/2097152/0.5) 
+else 
+send(msg.chat_id_, msg.id_,'☽ لا يوجد رابط ارسل ضع رابط') 
+end 
+end,nil) 
+end
+if Text == '/devsoo' then
+local Teext =[[
+𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
+{{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴀʙᴏᴀʟᴍᴀɢᴅ', url="t.me/A_B_O_2"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+if Text == '/change-siusr' then
+local Teext =[[
+𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'كـل ما هوا لطـيف',url="t.me/POSTAT_MOSTAFA"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
 if Text == '/help1' then
 if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
@@ -17806,39 +17914,39 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-اوامر حماية المجموعه ⇊
+ ⇊ اوامر حماية المجموعه ⇊
 ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
-قفل  ⇔  فتح + الامر 
-قفل  ⇔  فتح ❲ الكـــل ❳
-❲ بالتقيد ، بالطرد ، بالكتم ❳
+𓆩 قفل  ⇔  فتح + الامر 𓆪
+𓆩 قفل  ⇔  فتح ❲ الكـــل ❳ 𓆪
+𓆩 ❲ بالتقيد ⇔ بالطرد ⇔ بالكتم ❳ 𓆪
 ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
- 𖥳 الروابط
- 𖥳 المعرف
- 𖥳 التاك
- 𖥳 الشارحه
- 𖥳 التعديل
- 𖥳 التثبيت
- 𖥳 المتحركه
- 𖥳 الملفات
- 𖥳 الصور
- 𖥳 التفليش
- 𖥳 الماركداون
- 𖥳 البوتات
- 𖥳 الاباحي
- 𖥳 الازعاج
- 𖥳 السب
- 𖥳 التكرار
- 𖥳 الكلايش
- 𖥳 السيلفي
- 𖥳 الملصقات
- 𖥳 الفيديو
- 𖥳 الانلاين
- 𖥳 الدردشه
- 𖥳 التوجيه
- 𖥳 الاغاني
- 𖥳 الصوت
- 𖥳 الجهات
- 𖥳 الاشعارات
+𓆩 الروابط 𓆪
+𓆩 المعرف 𓆪
+𓆩 التاك 𓆪
+𓆩 الشارحه 𓆪
+𓆩 التعديل 𓆪
+𓆩 التثبيت 𓆪
+𓆩 المتحركه 𓆪
+𓆩 الملفات 𓆪
+𓆩 الصور 𓆪
+𓆩 التفليش 𓆪
+𓆩 الماركداون 𓆪
+𓆩 البوتات 𓆪
+𓆩 الاباحي 𓆪
+𓆩 الازعاج 𓆪
+𓆩 السب 𓆪
+𓆩 التكرار 𓆪
+𓆩 الكلايش 𓆪
+𓆩 السيلفي 𓆪
+𓆩 الملصقات 𓆪
+𓆩 الفيديو 𓆪
+𓆩 الانلاين 𓆪
+𓆩 الدردشه 𓆪
+𓆩 التوجيه 𓆪
+𓆩 الاغاني 𓆪
+𓆩 الصوت  𓆪
+𓆩 الجهات 𓆪
+𓆩 الاشعارات 𓆪
 ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
 
 ]]
@@ -19014,7 +19122,7 @@ return false
 end
 end
 if text and text ~="صراحه" and database:get(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_) == "sendrkkoe" then
-numj = {"الكلام ده صح 👍🙂","انت كداب يا ابو صلاح 😂😂","طب عيني في عينك كدا 🙄🧐","فعلا بتتكلم بجد 🌚🙂","👍😁 ده مظبوط",};
+numj = {"الكلام ده صح 👍🙂","انت كداب يا ابو صلاح 😂😂","طب عيني في عينك كدا 🙄🧐","فعلا بتتكلم بجد ❤️🙂","👍😁 ده مظبوط",};
 sendnuj = numj[math.random(#numj)]
 xl = ' ⟨  '..text..'  ⟩ \n '..sendnuj..'.'
 send(msg.chat_id_, msg.id_,xl) 
