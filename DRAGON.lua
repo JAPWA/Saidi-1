@@ -2990,7 +2990,7 @@ local textchuser = database :get(bot_id ..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ◍  يرجى الاشتراك بالقناه اولا \n  ◍  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ☽  يرجى الاشتراك بالقناه اولا \n  ☽  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
 end
 return false
 end
@@ -3000,7 +3000,7 @@ return false
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = getChatId(msg.chat_id_).ID }, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(database :get(bot_id ..'Num:Add:Bot') or 0) and not Debn(msg) then
-send(msg.chat_id_, msg.id_,' ☽  عدد اعضاء الكروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
+send(msg.chat_id_, msg.id_,' ☽  عدد اعضاء الكروب قليله يرجى جمع ⇇ {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -3008,7 +3008,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ☽ الـجـروب مـفعـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ☽ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ◍تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ☽ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ☽ تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
 database :sadd(bot_id ..'Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -3037,7 +3037,7 @@ local textchuser = database :get(bot_id ..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ◍  يرجى الاشتراك بالقناه اولا \n  ◍  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ☽  يرجى الاشتراك بالقناه اولا \n  ☽  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
 end
 return false
 end
@@ -3046,7 +3046,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if not database :sismember(bot_id ..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ☽ الـبوت مـعطـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ☽ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ◍ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ☽ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ☽ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
 database :srem(bot_id ..'Chek:Groups',msg.chat_id_)  
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -3074,7 +3074,7 @@ local textchuser = database :get(bot_id ..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ◍  يرجى الاشتراك بالقناه اولا \n  ◍  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ☽  لا تستطيع استخدام البوت \n  ☽  يرجى الاشتراك بالقناه اولا \n  ☽  اشترك هنا ['..database :get(bot_id ..'add:ch:username')..']')
 end
 return false
 end
@@ -3084,7 +3084,7 @@ return false
 end
 tdcli_function ({ ID = "GetChannelFull", channel_id_ = getChatId(msg.chat_id_).ID }, function(arg,data)  
 if tonumber(data.member_count_) < tonumber(database :get(bot_id ..'Num:Add:Bot') or 0) and not Debn(msg) then
-send(msg.chat_id_, msg.id_,' ☽  عدد اعضاء الكروب قليله يرجى جمع >> {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
+send(msg.chat_id_, msg.id_,' ☽  عدد اعضاء الكروب قليله يرجى جمع ⇇ {'..(database :get(bot_id ..'Num:Add:Bot') or 0)..'} عضو')
 return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -3200,7 +3200,7 @@ end,nil)
 end,nil)
 end
 
-if text and text:match("^هيفو$") or text and text:match("^Banda$") or text and text:match("^banda$") then
+if text and text:match("^عوز بوت$") or text and text:match("^عوز اعمل بوت$") or text and text:match("^banda$") then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 local Name1 = result.first_name_
@@ -3232,7 +3232,7 @@ end,nil)
 end
 
 
-if text and text:match("^مصطفي$") or text and text:match("^ديفد$") or text and text:match("^devid$") then
+if text and text:match("^مصطفي$") or text and text:match("^جابوا$") or text and text:match("^devid$") then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 local Name1 = result.first_name_
