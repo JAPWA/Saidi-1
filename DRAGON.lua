@@ -18214,7 +18214,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18244,7 +18244,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك استوري 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18274,7 +18274,7 @@ ght = math.random(2,22);
 local Text ='𓆩  مرحبا اليك استوري قرآن 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18304,7 +18304,7 @@ ght = math.random(2,22);
 local Text ='𓆩  مرحبا اليك استوري مضحك 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18334,7 +18334,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم عربي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18364,7 +18364,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم اجنبي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18394,7 +18394,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم رعب 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18424,7 +18424,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم هنديه 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18454,7 +18454,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم كرتون 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18484,7 +18484,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك مسرحيه 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/change-hhh"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
