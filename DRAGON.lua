@@ -971,7 +971,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -1503,7 +1503,7 @@ if text == '/start' and DevSoFi(msg) then
 local Text = '𓆩انت الان المطور الاساسي في البوت𓆪\n𓆩سورس صعيدي𓆪\n𓆩يمكنك تحكم في البوتات من الكيبورد𓆪\n[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
+{{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}}, 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -2303,7 +2303,7 @@ if result.photos_[0] then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪', url = "https://t.me/"..data.username_.."?startgroup=new"},
@@ -3603,6 +3603,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
+{{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 {{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12833,7 +12834,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14252,7 +14253,7 @@ local textt = 'رتبتك ياقلبي ❤️🌚 ⇇ '..Rutba(msg.sender_user_i
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14279,7 +14280,7 @@ local textt = '[انت المطور القميل🥺🤍](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14307,7 +14308,7 @@ local textt = '[انت المطور الاساسي² 😍💚](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14335,7 +14336,7 @@ local textt = '[انت المطور بس الصغنن 🌝💘](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14363,7 +14364,7 @@ local textt = '[نت المالك هن يعني حاجه فوق فوق راسي 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14391,7 +14392,7 @@ local textt = '[انت منشئ يسطا عتلاء منشئ عاوز حاجه �
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14419,7 +14420,7 @@ local textt = '[ انت هنا منشئ اساسي يعني اعلى رتبه ع
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14447,7 +14448,7 @@ local textt = '[ انت المدير يعني الروم تحت سيطرتك😹
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14475,7 +14476,7 @@ local textt = '[انت مجرد ادمن اجتهد عشان ياخد رتبه�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14503,7 +14504,7 @@ local textt = '[ انت مميز القميل 😊 ](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14531,7 +14532,7 @@ local textt = '[ العضو قميل 🌝💘 ](t.me/S_a_i_d_i)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
