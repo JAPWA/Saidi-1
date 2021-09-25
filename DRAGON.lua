@@ -1698,7 +1698,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺' and DevSoFi(msg) then
 local Text = [[ 
-(t.me/S_a_i_d_i)[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪]'
+[𓆩 انضم الى قناه السورس وتابع كل جديد 𓆪](t.me/S_a_i_d_i)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -14833,7 +14833,7 @@ send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد😹💔](t.me/S_a_
 return false
 end
 
-if text == "🤔"  or text == "🤔🤔" then
+if text == "🤔"  or text == "🤔??" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
@@ -16098,7 +16098,7 @@ local List = {
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
-- 𓏬 𝐈𝐃 : #id 𓂅 .
+- ?? 𝐈𝐃 : #id 𓂅 .
 - 𓏬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
