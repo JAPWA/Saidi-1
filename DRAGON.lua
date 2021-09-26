@@ -18493,11 +18493,11 @@ end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local link = bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_)            
 if link then                              
-send(msg.chat_id_,msg.id_,'.\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..link..')')                          
+send(msg.chat_id_,msg.id_,'.\n╾╾╾╾╾╾╾╾╾╾\n ['..ta.title_..']('..link..')')                          
 else                
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
 if linkgpp.ok == true then 
-linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\n╾╾╾╾╾╾╾╾╾╾\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
 else
 linkgp = ' لا يوجد رابط ارسل ضع رابط'
 end  
@@ -18515,7 +18515,7 @@ end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\n╾╾╾╾╾╾╾╾╾╾\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
@@ -18534,7 +18534,7 @@ end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\nـــــــــــــــــــــــــ\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+local linkgp = '𓆩ＬＩＮＫ ＧＲＯＵＰ𓆪\n╾╾╾╾╾╾╾╾╾╾\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
 local inline = {{{text = ta.title_, url=linkgpp.result}},} 
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 send_inline_key(msg.chat_id_,linkgp,nil,inline,msg.id_/2097152/0.5) 
@@ -18599,7 +18599,7 @@ end
 end,nil)   
 end
 if Text == 'noKikedMe'..data.sender_user_id_ then  
-local Text ="☽ تم الغاء الأمر بنجاح "
+local Text ="𓆩 تم الغاء الأمر بنجاح 𓆪"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
