@@ -18112,7 +18112,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مصري', callback_data="/Mostafa1"},{text = 'عراقي', callback_data="/Jabwa2"}},   
+{{text = 'مصري', callback_data="/Sasa1"},{text = 'عراقي', callback_data="/Jabwa2"}},   
 {{text = 'تركي', callback_data="/Sasa3"},{text = 'اجنبي', callback_data="/Omer2"}},   
 {{text = 'سعودي', callback_data="/Jabwa3"},{text = 'سوري', callback_data="/Taha2"}},   
 }
@@ -18523,7 +18523,7 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪')
 end 
 end,nil) 
 end
-if Text == '/Mostafa1'  then
+if Text == '/Sasa4'  then
 local Text = [[
 𓆩 اختار مقطع اغنيه الي ترودي 𓆪
 ]]
@@ -18549,7 +18549,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if Text == '/Japwa3' then 
+if Text == '/Japwa2' then 
 Num = math.random(8,83)
 Mhm = math.random(108,143)
 Mhhm = math.random(166,179)
