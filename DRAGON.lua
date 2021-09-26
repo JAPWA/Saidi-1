@@ -18112,7 +18112,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مصري', callback_data="/Sasa1"},{text = 'عراقي', callback_data="/Jabwa2"}},   
+{{text = 'مصري', callback_data="/Sasa4"},{text = 'عراقي', callback_data="/Jabwa2"}},   
 {{text = 'تركي', callback_data="/Sasa3"},{text = 'اجنبي', callback_data="/Omer2"}},   
 {{text = 'سعودي', callback_data="/Jabwa3"},{text = 'سوري', callback_data="/Taha2"}},   
 }
