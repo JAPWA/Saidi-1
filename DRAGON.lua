@@ -15375,6 +15375,21 @@ send(msg.chat_id_, msg.id_, sofi)
 end,nil)
 end,nil)
 end 
+if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
+if not database:get(bot_id..'Cick:Me'..msg.chat_id_) then
+if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
+send(msg.chat_id_, msg.id_, '\n ☽ عذرا لا استطيع طرد ( '..Rutba(msg.sender_user_id_,msg.chat_id_)..' )')
+return false
+end
+local Text = "قم بتأكيد العمليه الان"
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text="تأكيد الامر",callback_data="OkKikedMe"..msg.sender_user_id_},{text="الغاء الامر",callback_data="noKikedMe"..msg.sender_user_id_}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
 if text and text:match("^صيح (.*)$") then
 local username = text:match("^صيح (.*)$") 
 if not database:get(bot_id..'Seh:User'..msg.chat_id_) then
@@ -18106,20 +18121,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'اغاني' or text == 'الاغاني' or text == 'موسيقي'  then
-local Text = [[
-𓆩 اختار نوع الاغاني لي فنانك الي ترودي 𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'مصري', callback_data="/Sasa4"},{text = 'عراقي', callback_data="/Jabwa2"}},   
-{{text = 'تركي', callback_data="/Sasa3"},{text = 'اجنبي', callback_data="/Omer2"}},   
-{{text = 'سعودي', callback_data="/Jabwa3"},{text = 'سوري', callback_data="/Taha2"}},   
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
@@ -18182,46 +18183,6 @@ Ok_id  = Text:match("(%d+)")
 if Text == 'okCaptcha'..data.sender_user_id_ then  
 DeleteMessage(Chat_id, {[0] = Msg_id}) 
 return https.request("https://api.telegram.org/bot" .. token .. "/restrictChatMember?chat_id=" .. Chat_id .. "&user_id="..Ok_id .. "&can_send_messages=True&can_send_media_messages=True&can_send_other_messages=True&can_add_web_page_previews=True")
-end
-if Text == 'OkKikedMe'..data.sender_user_id_ then  
-tdcli_function({ID="ChangeChatMemberStatus",chat_id_=Chat_id,user_id_=data.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
-if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ●︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-if (data and data.code_ and data.code_ == 3) then 
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ●︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ●︙عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-if data and data.ID and data.ID == 'Ok' then
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ●︙تم الطرد بنجاح*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-end,nil)   
-end
-if Text == 'noKikedMe'..data.sender_user_id_ then  
-local Text =" ☽ تم الغاء الأمر بنجاح "
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if Text == "/Jab1" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
@@ -18523,43 +18484,6 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪')
 end 
 end,nil) 
 end
-if Text == '/Sasa4'  then
-local Text = [[
-𓆩 اختار مقطع اغنيه الي ترودي 𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'حمو بيكا', callback_data="/Japwa1"},{text = 'مهرجنات', callback_data="/Jabwa2"}},   
-{{text = 'حسن شكوش', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
-{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'حماقي', callback_data="/Taha2"}},   
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if Text == '/Japwa1'  then
-local Text = [[
-𓆩 اختار مقطع اغنيه الي ترودي 𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'هلا والله', callback_data="/Japwa2"},{text = 'مهرجنات', callback_data="/Jabwa2"}},   
-{{text = 'حسن شكوش', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
-{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'حماقي', callback_data="/Taha2"}},   
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-if Text == '/Japwa2' then 
-Num = math.random(8,83)
-Mhm = math.random(108,143)
-Mhhm = math.random(166,179)
-Mmhm = math.random(198,216)
-Mhmm = math.random(257,626)
-local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
-local Rrr = Texting[math.random(#Texting)]
-local abc = msg.id_/2097152/0.5
-https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/JABWAA8/'..Rrr..'') 
-end
 if Text == '/ven3' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
@@ -18808,7 +18732,7 @@ local Teext =[[
 𓆩 اسم بوت + الرتبه 𓆪
 𓆩 تحديث السورس 𓆪
 𓆩 حظر عام 𓆪
-𓆩 كتم عام 𓆪
+𓆩 كتم عام ??
 𓆩 الغاء العام 𓆪
 𓆩 قائمه العام 𓆪
 𓆩 مسح قائمه العام 𓆪
@@ -19895,6 +19819,47 @@ sendnuj = numj[math.random(#numj)]
 xl = 'نسبه الانوثه '..text..' هي : \n '..sendnuj..'%'
 send(msg.chat_id_, msg.id_,xl) 
 database:del(bot_id..":"..msg.sender_user_id_..":ano_Bots"..msg.chat_id_)
+end
+--------------------------------------------------------------------------------------------------------------
+if Text == 'OkKikedMe'..data.sender_user_id_ then  
+tdcli_function({ID="ChangeChatMemberStatus",chat_id_=Chat_id,user_id_=data.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
+if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S0URCE_KING'}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☽︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+if (data and data.code_ and data.code_ == 3) then 
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S0URCE_KING'}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☽︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´ ',url='http://t.me/S0URCE_KING'}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☽︙عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+if data and data.ID and data.ID == 'Ok' then
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´ ',url='http://t.me/S0URCE_KING'}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☽︙الحمد لله ارتحنا منو*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+end,nil)   
+end
+if Text == 'noKikedMe'..data.sender_user_id_ then  
+local Text ="☽ تم الغاء الأمر بنجاح "
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´ ',url='http://t.me/S0URCE_KING'}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 --------------------------------------------------------------------------------------------------------------
 if msg.sender_user_id_ and Muted_User(msg.chat_id_,msg.sender_user_id_) then 
