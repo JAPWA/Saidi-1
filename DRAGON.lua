@@ -18106,6 +18106,20 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'اغاني' or text == 'الاغاني' or text == 'موسيقي'  then
+local Text = [[
+𓆩 اختار نوع الاغاني لي فنانك الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'مصري', callback_data="/Mostafa1"},{text = 'عراقي', callback_data="/Jabwa2"}},   
+{{text = 'تركي', callback_data="/Sasa3"},{text = 'اجنبي', callback_data="/Omer2"}},   
+{{text = 'سعودي', callback_data="/Jabwa3"},{text = 'سوري', callback_data="/Taha2"}},   
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
@@ -18508,6 +18522,43 @@ else
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪') 
 end 
 end,nil) 
+end
+if Text == 'Mostafa1'  then
+local Text = [[
+𓆩 اختار مقطع اغنيه الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'حمو بيكا', callback_data="/Japwa1"},{text = 'مهرجنات', callback_data="/Jabwa2"}},   
+{{text = 'حسن شكوش', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
+{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'حماقي', callback_data="/Taha2"}},   
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if Text == 'Japwa1'  then
+local Text = [[
+𓆩 اختار مقطع اغنيه الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'هلا والله', callback_data="/Japwa2"},{text = 'مهرجنات', callback_data="/Jabwa2"}},   
+{{text = 'حسن شكوش', callback_data="/Sasa3"},{text = 'سامر المدني', callback_data="/Omer2"}},   
+{{text = 'عمر كمال', callback_data="/Jabwa3"},{text = 'حماقي', callback_data="/Taha2"}},   
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if Text == '/Japwa3' then 
+Num = math.random(8,83)
+Mhm = math.random(108,143)
+Mhhm = math.random(166,179)
+Mmhm = math.random(198,216)
+Mhmm = math.random(257,626)
+local Texting = {Num,Mhm,Mhhm,Mmhm,Mhmm}
+local Rrr = Texting[math.random(#Texting)]
+local abc = msg.id_/2097152/0.5
+https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/JABWAA8/'..Rrr..'') 
 end
 if Text == '/ven3' then
 if not CoSu(data) then
