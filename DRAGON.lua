@@ -19833,7 +19833,7 @@ end
 if (data and data.code_ and data.code_ == 3) then 
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = `sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S0URCE_KING'}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S0URCE_KING'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(" ☽︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
