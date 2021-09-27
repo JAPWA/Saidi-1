@@ -18189,7 +18189,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/Astory6"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
