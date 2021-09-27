@@ -1391,11 +1391,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الذاكره العشوائيه ↜  ↚\n* '"$memUsedPrc"'*'
-echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ وحـده الـتـخـزيـن ↜  ↚\n* '"$HardDisk"'*'
-echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الـمــعــالــج ↜  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الــدخــول ↜  ↚\n* '`whoami`'*'
-echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
+echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الذاكره العشوائيه ↜  ⤌\n* '"$memUsedPrc"'*'
+echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ وحـده الـتـخـزيـن ↜  ⤌\n* '"$HardDisk"'*'
+echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الـمــعــالــج ↜  ⤌\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ الــدخــول ↜  ⤌\n* '`whoami`'*'
+echo '⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ ↝ مـده تـشغيـل الـسـيـرفـر ↜ ⤌\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if database:get(bot_id.."Ed:DevBots") then
@@ -1795,8 +1795,8 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == 'الاحصائيات' then
-if Sudo(msg) then
+
+if text == 'الاحصائيات' and Sudo(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
@@ -1820,25 +1820,17 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-end
-if text == 'الاحصائيات' and SudoBot(msg) then 
-local Groups = database:scard(bot_id..'Chek:Groups')  
-local Users = database:scard(bot_id..'User_Bot')  
-Text = ' ☽ الاحصائيات  \n'..' ☽ عدد الجروبات  ⇇{'..Groups..'}'..'\n ☽  عدد المشتركين  ⇇{'..Users..'}'
-send(msg.chat_id_, msg.id_,Text) 
-return false
-end
 if text == 'المشتركين' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = '\n ☽ المشتركين ↚{`'..Users..'`}'
+Text = '\n ☽ المشتركين ⤌{`'..Users..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
 if text == 'الجروبات ' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = '\n ☽ الجروبات ↚{`'..Groups..'`}'
+Text = '\n ☽ الجروبات ⤌{`'..Groups..'`}'
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
@@ -11938,7 +11930,7 @@ if text == 'ضع ترحيب' or text == 'وضع ترحيب' then
 if Mod(msg) then
 database:setex(bot_id.."Welcome:Group" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 t  = ' ☽ ارسل لي الترحيب الان'
-tt = '\n ☽ تستطيع اضافة مايلي !\n ☽ دالة عرض الاسم  ↚{`name`}\n ☽ دالة عرض المعرف  ↚{`user`}'
+tt = '\n ☽ تستطيع اضافة مايلي !\n ☽ دالة عرض الاسم  ⤌{`name`}\n ☽ دالة عرض المعرف  ⤌{`user`}'
 send(msg.chat_id_, msg.id_,t..tt) 
 end
 return false  
@@ -16513,7 +16505,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-ᯓ 𝗨𝗦𝗘??𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
+ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
@@ -20020,7 +20012,7 @@ end
 if #list == 0 then
 t = " ☽ لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ تم التعديل على الميديا\n ☽ الشخص الي قام بالتعديل\n ☽ ايدي الشخص ◂ '..result.sender_user_id_..'\n ☽ معرف الشخص ↚{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ تم التعديل على الميديا\n ☽ الشخص الي قام بالتعديل\n ☽ ايدي الشخص ◂ '..result.sender_user_id_..'\n ☽ معرف الشخص ⤌{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
