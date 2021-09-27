@@ -1795,7 +1795,8 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == "الاحصائيات" then
+if text == 'الاحصائيات' then
+if Sudo(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
@@ -1818,6 +1819,7 @@ send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end
 end
 if text == 'الاحصائيات' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -16511,7 +16513,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
+ᯓ 𝗨𝗦𝗘??𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
 ᯓ 𝗦𝗧𝗮𝗦𝗧 . #stast 🇪🇬 ꙰
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
