@@ -3677,11 +3677,10 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'هيفو' or text == 'Banda' or text == 'banda' then
+if text == 'جابوا' or text == 'مصطفي' or text == 'صاحب سورس' then
 local Text = [[
 ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
+𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴏѕᴛᴀғᴀѕ ᴘᴏѕᴛѕ ᴀɴᴅ ᴄʜᴀɴɴᴇʟѕ
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -3690,7 +3689,7 @@ keyboard.inline_keyboard = {
 {{text = '•الــبــوتــات♪', callback_data="/gqjik"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/68&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'صاحب السورس' or text == 'مبرمج السورس' then
@@ -17212,7 +17211,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
+- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂??𝒆 . #username 𖣂.
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
