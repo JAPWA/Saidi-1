@@ -1805,7 +1805,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14073,7 +14073,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
@@ -14088,14 +14088,29 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'الجروبات' then
-if Sudo(msg) then 
+if text == 'الجروبات' and Sudo(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' ☽ عدد الجروبات  ⇇{`'..Groups..'`}'
-send(msg.chat_id_, msg.id_,Text) 
-end
-return false
+Namebot = "جروبات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{`'..Groups..'`}'
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == 'المشتركين' then
 if Sudo(msg) then 
@@ -14281,7 +14296,7 @@ end
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
-local textt = 'رتبتك ياقلبي ❤️🌚 ⇇ '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = 'رتبتك ياقلبي ❤️🌚 ⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14802,7 +14817,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي..🥺??](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي..🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -16447,7 +16462,7 @@ local List = {
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
-🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
+🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas ??
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 ??🇬 - 𝄬 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
@@ -16491,7 +16506,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
 [[
-➜𝗨𝗦??𝗥??𝗔𝗠𝗘 : #username
+➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
