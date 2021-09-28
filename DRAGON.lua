@@ -18647,7 +18647,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
 {{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴀʙᴏᴀʟᴍᴀɢᴅ', url="t.me/A_B_O_2"}},
-{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
+{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/change-Jabwa"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -18659,7 +18659,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'كـل ما هوا لطـيف',url="t.me/POSTAT_MOSTAFA"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
+{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/change-Jabwa"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -18710,7 +18710,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 
-if Text == '/HHH' then
+if Text == '/change-Jabwa' then
 local Teext =[[
 ╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
 ┆
@@ -19213,7 +19213,7 @@ local Teext =[[
 📎╜ Habayeb survey
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 💘╖ my husband
-??╢ Crown for couples
+💬╢ Crown for couples
 📎╜ Survey of couples
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 🙊╖ My wife
