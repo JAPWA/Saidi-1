@@ -18659,7 +18659,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'كـل ما هوا لطـيف',url="t.me/POSTAT_MOSTAFA"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/WWW"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
