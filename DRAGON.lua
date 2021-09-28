@@ -18724,7 +18724,6 @@ keyboard.inline_keyboard = {
 {{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}},
 {{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
-local msg_id = msg.id_/2097152/0.5
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
@@ -18881,7 +18880,7 @@ local Teext =[[
 𓆩  رفع/تنزيل مدير عام 𓆪
 𓆩  رفع /تنزيل ادمن عام 𓆪
 𓆩 مسح المطورين 𓆪
-𓆩 المطورين 𓆪
+𓆩 المطورين ??
 𓆩 رفع | تنزيل مطور 𓆪
 𓆩 اسم البوت + غادر 𓆪
 𓆩 غادر 𓆪
