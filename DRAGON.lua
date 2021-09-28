@@ -3653,7 +3653,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/theytry"}},
+{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
 {{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}},
 {{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3675,21 +3675,6 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'جابوا' or text == 'مصطفي' or text == 'صاحب سورس' then
-local Text = [[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
-𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴏѕᴛᴀғᴀѕ ᴘᴏѕᴛѕ ᴀɴᴅ ᴄʜᴀɴɴᴇʟѕ
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'M҉҉O҉ ҉S҉҉T҉ ҉A҉҉F҉҉A҉',url="t.me/J_A_B_W_A"}},
-{{text = 'الــقــنــوات', callback_data="/Ajobanf"},{text = 'الــبــارات', callback_data="/banfai"}},  
-{{text = 'الــبــوتــات', callback_data="/gqjik"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'صاحب السورس' or text == 'مبرمج السورس' then
@@ -17211,7 +17196,7 @@ Msᴀɢ ~ #msgs
 金 - 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
 [[
-- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂??𝒆 . #username 𖣂.
+- 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
 - 🇪🇬 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
@@ -18662,11 +18647,11 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
 {{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴀʙᴏᴀʟᴍᴀɢᴅ', url="t.me/A_B_O_2"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-Jabwa"}},
+{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
-if Text == '/theytry then
+if Text == '/change-siusr' then
 local Teext =[[
 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔
 ]]
@@ -18675,85 +18660,6 @@ keyboard.inline_keyboard = {
 {{text = 'كـل ما هوا لطـيف',url="t.me/POSTAT_MOSTAFA"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url="t.me/S_a_i_d_i"}},
 {{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/HHH"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/bnada-yquio' then
-local Teext =[[
-𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴏѕᴛᴀғᴀѕ ᴘᴏѕᴛѕ ᴀɴᴅ ᴄʜᴀɴɴᴇʟѕ
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '• ᴅᴇᴠ ᴊᴀʙᴡᴀ',url="t.me/J_A_B_W_A"},{text = '• ᴅᴇᴠ ᴛᴀʜᴀ', url="t.me/TahaSayed9"}},
-{{text = '• ᴅᴇᴠ ᴏᴍᴇʀ',url="t.me/BOT3mora"},{text = '• ᴅᴇᴠ ᴀʙᴏᴀʟᴍᴀɢᴅ', url="t.me/A_B_O_2"}},
-{{text = 'ʙᴀᴄᴋ', callback_data="/WWW"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
-local Text = [[
-╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
-┆
-┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
-┆
-╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
-{{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}},
-{{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/bnada-Jabwa' then
-local Teext =[[
-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
-{{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}},
-{{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/Ajobanf' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
-𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴏѕᴛᴀғᴀѕ ᴘᴏѕᴛѕ ᴀɴᴅ ᴄʜᴀɴɴᴇʟѕ
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'كل م هوا لطيف',url="t.me/POSTAT_MOSTAFA"},{text = '˹قناة مصطفى˼',url="t.me/DEV_MOSTAFA"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/banfai' then
-local Teext =[[
-𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ᴍᴏѕᴛᴀғᴀѕ ᴘᴏѕᴛѕ ᴀɴᴅ ᴄʜᴀɴɴᴇʟѕ
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '『 𝑻𝑬𝑨𝑴 𝑺𝑨 』 𝙓⃟🇪🇬✘',url="t.me/B_A_R_J_A_B_W_A"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/gqjik' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'بوت حماية جروبات',url="t.me/Bot_JABWA_Bot"}},
-{{text = 'بوت اغاني كول',url="t.me/SOURCE_SAIDI_BOT"}},
-{{text = 'بوت تمويل',url="t.me/tmwelEgyptbot"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -18802,6 +18708,23 @@ if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
+end
+
+if Text == '/HHH' then
+local Teext =[[
+╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
+┆
+┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
+┆
+╰▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╯
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '• ᴍʏ ᴅᴇᴠ', callback_data="/devsoo"},{text = '• ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/change-siusr"}},
+{{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName}},
+{{text = 'ضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
 local Teext =[[
@@ -18937,7 +18860,7 @@ end
 local Teext =[[
 𓆩 مرحب بيك في اوامر للمطورين 𓆪
 ⇊ اوامر المطورين ⇊
-⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
+⩹━━━━⊶❲𖥳 ??𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
 𓆩 تفعيل ⇇ تعطيل 𓆪
 𓆩 المجموعات  المشتركين ⇇ الاحصائيات 𓆪
 𓆩 رفع ⇇ تنزيل منشئ اساسي 𓆪
@@ -19290,7 +19213,7 @@ local Teext =[[
 📎╜ Habayeb survey
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 💘╖ my husband
-💬╢ Crown for couples
+??╢ Crown for couples
 📎╜ Survey of couples
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 🙊╖ My wife
