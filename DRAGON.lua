@@ -18627,7 +18627,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 
 if Text == '/WWW' then
-local Text = [[
+local Teext =[[
 ╭▱▰▱▰𓆩[ 𝗦𝗔𝗜𝗗𝗔 ](http://t.me/S_a_i_d_i)𓆪▱▰▱▰╮
 ┆
 ┆[𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗔](http://t.me/S_a_i_d_i)
