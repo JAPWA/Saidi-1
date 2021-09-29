@@ -3835,7 +3835,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  'بوستات اخري' , callback_data="/Jabwaq"}},
+{{text =  'بوستات اخري' , callback_data="/Most1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4596,7 +4596,7 @@ local TWEET_Msg = {
 "لو خيروك |  بين إجراء المكالمات الهاتفية فقط أو إرسال الرسائل النصية فقط؟ ",
 "لو خيروك |  بين إنهاء الحروب في العالم أو إنهاء الجوع في العالم؟ ",
 "لو خيروك |  بين تغيير لون عينيك أو لون شعرك؟ ",
-"لو خيروك |  بين امتلاك كل عين لون وبين امتلاك نمش على خديك؟ ",
+"لو خيروك |  بين امتلاك كل عين لون وبي ن امتلاك نمش على خديك؟ ",
 "لو خيروك |  بين الخروج بالمكياج بشكل مستمر وبين الحصول على بشرة صحية ولكن لا يمكن لك تطبيق أي نوع من المكياج؟ ",
 "لو خيروك |  بين أن تصبحي عارضة أزياء وبين ميك آب أرتيست؟ ",
 "لو خيروك |  بين مشاهدة كرة القدم أو متابعة الأخبار؟ ",
@@ -18685,12 +18685,12 @@ local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if Text == "/Jabwaq" then  
+if Text == '/Most1' then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  'بوستات اخري' , callback_data="/Jabwaq"}},
+{{text = 'بوستات اخري', callback_data="/Most1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
