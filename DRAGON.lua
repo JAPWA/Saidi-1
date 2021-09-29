@@ -3841,6 +3841,16 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+if text == "بوستات بالصوره" then  
+ght = math.random(1,33);  
+local Text ='مرحبا اليك بوسات بي الصوره'  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text =  'بوستات اخري' ,url="t.me/Saidi"}},
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "روايات رومانسيه" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك روايات رومانسيه 🌼❤️'  
@@ -13671,17 +13681,6 @@ local abc = msg.id_/2097152/0.5
 https.request('https://api.telegram.org/bot'..token..'/sendVoice?chat_id='..msg.chat_id_..'&reply_to_message_id='..abc..'&voice=https://t.me/emeuii/'..T..'') 
 end
 
-if text == "استوري" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
-ban = math.random(4,74); 
-local Text ='دوس علي الزرار لاختيار استوري أخري 🍁' 
-keyboard = {}  
-keyboard.inline_keyboard = {
-{{text = 'استوري أخري', callback_data="/lklpo"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qapplu/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
 if text == "ثيم" then  
 ght = math.random(1,33);  
 local Text ='الستخدم ثيم اخر اكتب ثيم لك ❤️💘'  
@@ -15997,7 +15996,7 @@ local List = {
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
-☆•𝐮𝐬𝐞𝐫 : #username 𖣬  
+☆•𝐮??𝐞𝐫 : #username 𖣬  
 ☆•𝐦𝐬𝐠  : #msgs 𖣬 
 ☆•𝐬𝐭𝐚 : #stast 𖣬 
 ☆•𝐢𝐝  : #id 𖣬
@@ -18691,20 +18690,13 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
-if Text == 'noKikedMe'..data.sender_user_id_ then  
-local Text ="𓆩 تم الغاء الأمر بنجاح 𓆪"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´',url='http://t.me/S_a_i_d_i'}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Text)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
 if Text == '/help1' then
 if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
+
 local Teext =[[
  ⇊ اوامر حماية المجموعه ⇊
 ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
