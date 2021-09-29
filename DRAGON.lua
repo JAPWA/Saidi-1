@@ -18249,7 +18249,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/Astory6"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18279,7 +18279,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك استوري 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18309,7 +18309,7 @@ ght = math.random(2,22);
 local Text ='𓆩  مرحبا اليك استوري قرآن 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18339,7 +18339,7 @@ ght = math.random(2,22);
 local Text ='𓆩  مرحبا اليك استوري مضحك 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18369,7 +18369,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم عربي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18399,7 +18399,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم اجنبي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18429,7 +18429,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم رعب 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18459,7 +18459,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم هنديه 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18489,7 +18489,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك فلم كرتون 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18519,7 +18519,7 @@ ght = math.random(2,22);
 local Text ='𓆩 مرحبا اليك مسرحيه 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '`ʙᴀᴄᴋ´', callback_data="/help8"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -18641,6 +18641,19 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
+if Text == '/MMM' then
+local Teext =[[
+𓆩 اختار نوع استوري الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𓆩 استوري 𓆪', callback_data="/Sas1"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jab1"}},   
+{{text = '𓆩 استوري مضحك 𓆪', callback_data="/Omer1"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/Taha1"}},   
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
 if Text == 'OkKikedMe'..data.sender_user_id_ then  
 tdcli_function({ID="ChangeChatMemberStatus",chat_id_=Chat_id,user_id_=data.sender_user_id_,status_={ID="ChatMemberStatusKicked"},},function(arg,data) 
 if (data and data.code_ and data.code_ == 400 and data.message_ == "CHAT_ADMIN_REQUIRED") then 
@@ -18687,7 +18700,7 @@ local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if Text == '/bnada-yquio' then
+if Text == '/bnada-Jabwa' then
 local Teext =[[
 ʜᴇʀᴇ ᴀʀᴇ ụѕᴇʀɴᴀᴍᴇѕ ᴍᴏѕᴛᴀғᴀ
 ]]
@@ -18707,7 +18720,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗔𝗜𝗗𝗜 𖤍',url="t.me/S_a_i_d_i"},{text = '𓆩 كـل ما هوا لطـيف 𓆪',url="t.me/POSTAT_MOSTAFA"}},
 {{text = '『 𝑻𝑬𝑨𝑴 𝑺𝑨 』 𝙓⃟🇪🇬✘',url="t.me/TE_AM_SA"},{text = 'مـصـطـفى',url="t.me/DEV_MOSTAFA"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-Jabwa"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -18718,7 +18731,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '『 𝑻𝑬𝑨𝑴 𝑺𝑨 』 𝙓⃟🇪🇬✘',url="t.me/B_A_R_J_A_B_W_A"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-Jabwa"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -18734,7 +18747,7 @@ keyboard.inline_keyboard = {
 {{text = 'بــوت مـسـابــقات',url="t.me/Bot_msabah_Bot"}},
 {{text = 'بــوت ازرار',url="t.me/S_a_i_d_i_bot"}},
 {{text = 'مـصـنع بــوتات',url="t.me/Botat_Saidi_Bot"}},
-{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-yquio"}},
+{{text = '`ʙᴀᴄᴋ´', callback_data="/bnada-Jabwa"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
