@@ -3846,7 +3846,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  'بوستات اخري' ,url="t.me/Saidi"}},
+{{text =  'بوستات اخري' , callback_data="/Saidi"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15996,7 +15996,7 @@ local List = {
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
-☆•𝐮??𝐞𝐫 : #username 𖣬  
+☆•𝐮𝐬𝐞𝐫 : #username 𖣬  
 ☆•𝐦𝐬𝐠  : #msgs 𖣬 
 ☆•𝐬𝐭𝐚 : #stast 𖣬 
 ☆•𝐢𝐝  : #id 𖣬
@@ -16435,7 +16435,7 @@ local List = {
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗??𝖆𝖒𝖊 : #username ـ🍭
-⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
+⭐️??𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
 ]],
@@ -18696,12 +18696,12 @@ local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-if text == "Saidi" then  
+if text == "/Saidi" then  
 ght = math.random(1,33);  
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  'بوستات اخري' ,url="t.me/Saidi"}},
+{{text =  'بوستات اخري' , callback_data="/Saidi"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SourceSaidi/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
