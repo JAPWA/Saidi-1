@@ -14585,19 +14585,6 @@ database:del(bot_id.."my_anamen:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
 return false end
 end
-if text == "تفعيل ردود السورس"  then
-if Constructor(msg) then  
-database:set(bot_id.."my_GHoeq2:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل ردود السورس") 
-return false  
-end
-end
-if text == "تعطيل ردود السورس"  then
-if Constructor(msg) then  
-database:del(bot_id.."my_GHoeq2:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل ردود السورس") 
-return false end
-end
 
 if text == 'تيست' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
