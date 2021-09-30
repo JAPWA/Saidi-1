@@ -923,58 +923,7 @@ return false
 end
 ------by-banda--
 if Chat_Type == 'UserBot' then
-if text == 'ukkk' and Dev(msg) then
-if not DevSoFi(msg) then 
-local bl = 'مرحبا بك في كيب العضو بي سورس صعيدي'
-local keyboard = {
-{'تفعيل الكيب اولاين'},
-{'تفعيل الكيب'},
-}
-send_inline_key(msg.chat_id_,bl,keyboard)
-end 
-
-end
-end
-------by-banda--
-if Chat_Type == 'UserBot' then
-if not DevSoFi(msg) then
-if text == '/start' or text == 'العوده ➷'  then  
-local bl = 'مرحبا بك في كيب العضو بي سورس صعيدي'
-local keyboard = {
-{'تفعيل الكيب اولاين'},
-{'تفعيل الكيب'},
-}
-send_inline_key(msg.chat_id_,bl,keyboard)
-end
 if text == "/start" then
-if not DevSoFi(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
-local BANDA_Msg = { 
-' اهـلا بـك فـي بـوت 🤖 '..Namebot..' اختصاصي حمايه المجموعات ☑️\n╢ من السبام و التفليش و الاباحه ☑️\n╢ لي تفعيل البوت داخل المجموعه ☑️\n╢ اضف البوت الى المجموعه ☑️\n╢ ارفع البوت ادمن في المجموعه ☑️\nوارسل تفعيل وسيتم تفعيل البوت ورفع مشرف رتبه في الكروب تلقائين ☑️ ',
-} 
-Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
-local msg_id = msg.id_/2097152/0.5  
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
-end
-
-if text == "/start2" then
 if not msa3d(msg) then
 if not Devban(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فينوم') 
@@ -986,16 +935,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'معلومات📚', callback_data="/change-hhh"},{text = 'السورس🌀', callback_data="/change-siusr"},
-},
-{
-{text = 'الابراج🔮', callback_data="/zDRGd"},{text = 'الالعاب🎮', callback_data="/add"},
-},
-{
-{text = ' مــطــور الــبــوت🔰', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'اضغط لاضافه البوت لمجمعتك✅' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = 'تفعيل الكيب اونلاين', callback_data="/change-hhh"},{text = 'تفعيل الكيب', callback_data="/change-siusr"},
 },
 }
 local function getpro(extra, result, success) 
@@ -1009,10 +949,77 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, l
 end
 end
 end
-if text == 'تفعيل كيب اونلاين' then
-local Text = 'اليك الكيب اونلاين'
+------by-banda--
+if Chat_Type == 'UserBot' then
+if not DevSoFi(msg) then
+if text == "/start" then
+if not msa3d(msg) then
+if not Devban(msg) then
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فينوم') 
+local VENOM_Msg = { 
+' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
+} 
+Namebot = VENOM_Msg[math.random(#VENOM_Msg)] 
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'تفعيل الكيب اونلاين', callback_data="/change-hhh"},{text = 'تفعيل الكيب', callback_data="/change-siusr"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end
+end
+end
+
+if text == "مبرمج السورس" then
+if not DevSoFi(msg) then
+local Text = [[
+𓆩 قنوات وجروبات المبرمج مصطفي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'المبرمج مصطفى', url="t.me/J_A_B_W_A"}},
+{{text = 'بوت مصطفي',url="t.me/Bot_JABWA_Bot"}}, 
+{{text = 'جروب مصطفي', url="t.me/B_A_R_J_A_B_W_A"}},
+{{text = 'قناة مصطفى',url="t.me/POSTAT_MOSTAFA"}}, 
+
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+end
+if text == 'قسم الاغاني' then
+local Text = 'مرحب بيك في قسم الاغاني'
 local Key = {
-{'/start2 لتفعيل الكيب ارسل'},
+{'⩹━━━━━━❪ركن الاغاني❫━━━━━━⩺'},
+{'غنيلي','غنيلي بفديو'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي محمد منير','غنيلي ويجز'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي تامر حسني','غنيلي عمر دياب'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي تامر عاشور','غنيلي محمد فؤاد'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي حماقي','غنيلي ابو الانوار'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي رامي صبري','غنيلي مسلم'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي عمار حسني','غنيلي عنبه'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي بابلو','غنيلي اصاله'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي اليسا','غنيلي كايروكي'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
+{'غنيلي مهرجانات'},
+{'⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺'},
 {'العوده ➷'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -9197,7 +9204,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع الارامل بال
 end
 if text == ("تاك لمايا خليفه") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n ☽ قائمة مايا خليفه\n⩹━━━━⊶❲?? 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة مايا خليفه\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -18897,7 +18904,7 @@ local Teext =[[
 𓆩 رسائلي ⇔ مسح رسائلي 𓆪
 𓆩 زخرفه ⇔ اغاني 𓆪
 𓆩 اسمي ⇔ الرتبه 𓆪
-?? جهاتي 𓆪 
+𓆩 جهاتي 𓆪 
 𓆩 صلاحياتي 𓆪
 𓆩 قول + الكلمه 𓆪
 𓆩 تفعيل  تعطيل + اطردني 𓆪
