@@ -1012,7 +1012,7 @@ end
 if text == 'تفعيل كيب اونلاين' then
 local Text = 'اليك الكيب اونلاين'
 local Key = {
-,{'/start2 لتفعيل الكيب ارسل'}
+{'/start2 لتفعيل الكيب ارسل'},
 {'العوده ➷'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
