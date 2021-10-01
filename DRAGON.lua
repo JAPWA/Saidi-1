@@ -3251,7 +3251,7 @@ end,nil)
 end,nil)
 end
 
-if text and text:match("^عوز بوت$") or text and text:match("^عوز اعمل بوت$") or text and text:match("^عوز اشغل بوتي$") then
+if text and text:match("^عوز بوت$") or text and text:match("^عوز اعمل بوت$") or text and text:match("^banda$") then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 local Name1 = result.first_name_
@@ -3637,22 +3637,6 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'مبرمج السورس' then
-local Text = [[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'Ᏼ Ꭺ Ν Ꭰ Ꭺ~"𖥕𝖋_𝖔𝖋𝖋🇬🇺',url="t.me/de_vi_d"}},
-{{text = '•الــقــنــوات♪', callback_data="/Ajobanf"},{text = '•الــبــارات♪', callback_data="/banfai"}},  
-{{text = '•الــبــوتــات♪', callback_data="/gqjik"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Qtdao/68&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'المبرمج طه' or text == 'طه' or text == 'taha 7x' or text == '²مبرمج السورس' then
@@ -14282,32 +14266,6 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
 
-if text == "رتبتي" and not bot_data:get(ban_id..'ghiktr'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-if result.username_ then
-username = result.username_ 
-else
-username = 'SOURCEVENOM'
-end
-local msg_id = msg.id_/2097152/0.5  
-local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
-local Banda = 'https://t.me/Qtdao/71'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = textt, url="http://t.me/"..username},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Banda).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
-end
-
 
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
@@ -14619,13 +14577,14 @@ return false
 end
 end
 
+
+
 if text == "تعطيل انا مين"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_anamen:status"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
 return false end
 end
-
 if text == "تفعيل ردود السورس"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_GHoeq2:status"..msg.chat_id_,true) 
@@ -14633,7 +14592,6 @@ send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل ردود السورس")
 return false  
 end
 end
-
 if text == "تعطيل ردود السورس"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_GHoeq2:status"..msg.chat_id_) 
@@ -14647,9 +14605,10 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, ' البوت شغال 😒😹 ') 
+send(msg.chat_id_,msg.id_, ' البوت شغال ') 
 return false
 end
+
 
 if text == 'سلام' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
@@ -14657,7 +14616,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني 😹💔🎶](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14667,7 +14626,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ☽ معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خالتك جرت ورايا 😹💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14680,7 +14639,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي 🥺💜](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -14695,7 +14654,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام 🌝💛](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -14710,7 +14669,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره') 
+send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره ????') 
 return false
 end
 end
@@ -14722,7 +14681,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نعم الله عليك 🌚❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نعم الله عليك..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14735,7 +14694,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك..😒♥️](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -14755,14 +14714,13 @@ return false
 end
 end
 end
-
 if text == "شكرا"  or text == "مرسي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[العفو ياروحي 🙈🌝](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[العفو ياروحي..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14772,7 +14730,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر 🤤🌝](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..❤️♥️](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14782,7 +14740,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب 😑😂](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب😑😂](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14792,7 +14750,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي 😹👻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي😹👻](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14802,7 +14760,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[فرح خالتك قريب 😹💋💃🏻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[فرح خالتك قريب😹💋💃🏻](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14812,7 +14770,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب 🙂❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب..🙂](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14822,7 +14780,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶👻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14832,7 +14790,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي..🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14842,7 +14800,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اوه ياه 🌝😂](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[اوه ياه..🌝😂](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14852,7 +14810,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[امك اسمها احلام 😹😹](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[امك اسمها احلام..😹😹](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14862,7 +14820,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[كفيه شقط سيب حاجه لغيرك 😎😂](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[كفيه شقط سيب حاجه لغيرك 💘😂](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14872,7 +14830,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14882,7 +14840,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14892,27 +14850,27 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد 😹💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد😹💔](t.me/S_a_i_d_i)')
 return false
 end
 
-if text == "🤔"  or text == "🤔🤔🤔" then
+if text == "🤔"  or text == "🤔??" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتفكر في اي 🤔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[بتفكر في اي..🤔](t.me/S_a_i_d_i)')
 return false
 end
 
-if text == "حبق"  or text == "بحبك" then
+if text == "حبق"  or text == "احبك" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 🤗🥰](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 💋🥰](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14922,17 +14880,17 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[محات حياتي يروحي 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..❤️💔](t.me/S_a_i_d_i)')
 return false
 end
 
-if text == "🌚"  or text == "🌝" then
+if text == "🙂"  or text == "❤️" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر ده شبهك 🙂❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[القمر ده شبهك..🙂♥️](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14942,7 +14900,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي 👋💛](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي..💛](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14952,7 +14910,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي 🐣😹](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي..🐣😹](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -14962,7 +14920,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[دايما ياحبيبي 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[دايما ياحبيبي..❤️💜](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -15000,7 +14958,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -15012,7 +14970,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الخير يعمري 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[انت الخير يعمري..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 
@@ -15025,12 +14983,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب 😥](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'خاص'}
 for k,v in pairs(list) do
@@ -15040,19 +14997,22 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ونجيب اشخاص 😂😜](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ونجيب اشخاص..😂😜](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
 
-if text == "بموت فيك"  or text == "بوسه" then
+if text then 
+list = {'بحبك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بـعشـقق 🌚😍](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[بـعشـقق..🥰💘](t.me/S_a_i_d_i)')
 return false
 end
 end
@@ -15067,24 +15027,25 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
-if text == "السلام عليكم"  or text == "السلام عليكم ورحمه الله وبركاته" then
+if text then 
+list = {'سلام عليكم'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام 🌝❤️](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام..❤️🖤](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'حصل'}
 for k,v in pairs(list) do
@@ -15094,12 +15055,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خخخ امال 😹😹](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[خخخ امال..😹](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'اه'}
 for k,v in pairs(list) do
@@ -15114,7 +15074,6 @@ return false
 end
 end
 end
-
 if text then 
 list = {'كسم'}
 for k,v in pairs(list) do
@@ -15124,25 +15083,25 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عيب ياوسخ 🙄💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[عيب ياوسخ..🙄💔](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
-if text == "بوتي"  or text == "يا بوتي" then
+list = {'بوتي'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[روح وعقل بوتك 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نعم يا مطوري..🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'تيجي'}
 for k,v in pairs(list) do
@@ -15152,12 +15111,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هروح 😹👻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[مش هروح..😹👻](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'مش'}
 for k,v in pairs(list) do
@@ -15167,15 +15125,20 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هتيجي مش هروح 😹👻](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[مش هتيجي مش هروح..😹👻](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
-if text == "😒"  or text == "😒😒😒" then
-if text ==
+list = {'😒'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
 send(msg.chat_id_,msg.id_, '[اعدل وشك ونت بتكلمني 😒](t.me/S_a_i_d_i)')
 return false
 end
@@ -15190,12 +15153,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[صح النوم 😹💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[صح النوم..😂](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'صباح النور'}
 for k,v in pairs(list) do
@@ -15205,12 +15167,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[صباح العسل 😻🤍](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[صباح العسل 🍯🙂](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'منور'}
 for k,v in pairs(list) do
@@ -15220,12 +15181,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي 🙂💛](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي..🙂💛](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'باي'}
 for k,v in pairs(list) do
@@ -15235,12 +15195,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى🥺💔](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'🥺'}
 for k,v in pairs(list) do
@@ -15250,12 +15209,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[متزعلش بحبك 🥺💔](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[متزعلش بحبك..🥺💘](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'نورت'}
 for k,v in pairs(list) do
@@ -15265,12 +15223,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نورك يا قلبي 🤤🖤](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[نورك يا قلبي..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'ابني'}
 for k,v in pairs(list) do
@@ -15280,12 +15237,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عندو كام سنه 😒😹](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[عندو كام سنه..😹💥](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'خخخخخخ'}
 for k,v in pairs(list) do
@@ -15295,12 +15251,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا 😒😹](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا..😂](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text then 
 list = {'ههههههه'}
 for k,v in pairs(list) do
@@ -15310,12 +15265,11 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه 😻🤍](t.me/S_a_i_d_i)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..❤️💘](t.me/S_a_i_d_i)')
 return false
 end
 end
 end
-
 if text == "اسمي"  then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.first_name_  then
@@ -16025,7 +15979,7 @@ local List = {
 𓄼🇪🇭 𝑴𝒔𝒈𝒔 : #msgs ??
 ]],
 [[
-➞: ??𝒕𝒂𓂅 #stast 𓍯➸💞.
+➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: ??𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
@@ -17938,41 +17892,152 @@ local texting = {"قل لواحد ماتعرفه عطني كف 🧸","🧸سو �
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-
-if text == 'مريم' then
-local my_ph = bot_data:get(ban_id.."my_maryam:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ● مريم  معطله") 
-return false  
-end
-local Text = [[
-🥀اطفي النور واستمتع بلعبه •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'حسنا', callback_data="/may"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/aslak8/51&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == "تفعيل مريم"  then
 if Constructor(msg) then  
-bot_data:set(ban_id.."my_maryam:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," ● تـم تـفعـيل مريم") 
+database:set(bot_id.."my_maryam:status"..msg.chat_id_,true) 
+send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل مريم") 
 return false  
 end
 end
 
 if text == "تعطيل مريم"  then
 if Constructor(msg) then  
-bot_data:del(ban_id.."my_maryam:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ● تـم تـعـطـيل مريم") 
+database:del(bot_id.."my_maryam:status"..msg.chat_id_) 
+send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل مريم") 
 return false end
 end
+if text == "مريم" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_," ☽ مريم  معطله") 
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"هل انت جاهز ؟🧟‍♀🧟‍♂ ❲لو هتكمل ارسل يلا❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "يلا" or text == "هيا بنا"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {" ؟لا تصدر اي صوت ! 🧟‍♀🧟‍♂ ❲لو هتكمل ارسال حاضر ❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "ماشي" or text == "حاضر"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {" لقد وصلنا الى المنزل شكراَ جزيلَ انتطرني ثواني وسوف اعود! 🧟‍♀🧟‍♂ ❲لو هتكمل ارسال مستني ❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "مستني" or text == "منتظر"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {" لقد عودت إليك ظهر شيئ 🧟‍♂🧟‍♀ ❲لو هتكمل إرسال احد ما خرج من المنزل! 🧟‍♀🧟‍♂❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "احد ما خرج من المنزل! 🧟‍♀🧟‍♂" or text == "احد ما خرج من المنزل"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"هيا نذهب داخل المنزل🧟‍♀🧟‍♂ ❲لو هتكمل ارسال هيا❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "هيا"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {" نحنو نتوه في هذه المكان🧟‍♀🧟‍♂❲لو هتكمل ارسال تعالي نذهب الي الضوء❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "تعالي نذهب الي الضوء"  then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"❲لو هتكمل ارسل ياالهي كان هناك❳ 🧟‍♀🧟‍♂لايوجد ضوء هناك انظر"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "ياالهي كان هناك" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"تع نذهب الي الباب الرئيسي🧟‍♀🧟‍♂ ❲لو هتكمل ارسل انهو مغلق❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "انهو مغلق" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"انها النهايه  ❲هتكمل ولا لا❳"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "هكمل" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"سارسل اليك اختيارت لو حليت صح ستنجو من العقاب لو خطأ سيقوم عليك العقاب🧟‍♀🧟‍♂❲عدد يقبل القسمة على 2,3,4,5,6 وعند القسمة في كل مرة يتبقى واحد، ما هو العدد؟❳❲61،44,00,121,90،99,70❳"}
 
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "لا" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"هي انت ستندم سأقتلك🧟‍♀🧟‍♂"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "61" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"لقد فازت ونجوت من العقاب 👻🌟"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
+if text == "99" or text == "70" or text == "44" or text == "00" or text == "121" or text == "90" then
+local my_ph = database:get(bot_id.."my_maryam:status"..msg.chat_id_)
+if not my_ph then
+return false  
+end
+if not database:get(bot_id..'lock:add'..msg.chat_id_) then
+local texting = {"قل لواحد ماتعرفه عطني كف خطأ العقاب هوا ؟؟","خطأ العقاب هوا ؟؟سو مشهد تمثيلي عن مصرية بتولد","خطأ العقاب هوا ؟؟صور اي شيء يطلبه منك الاعبين","خطأ العقاب هوا ؟؟البس طرحه امك او اختك ","خطأ العقاب هوا ؟؟لا خلاص معتش في سمحتك"," خطأ العقاب هوا ؟؟اتصل لاخوك و قول له انك سويت حادث و الخ....","خطأ العقاب هوا ؟؟تكلم باللغة الانجليزية الين يجي دورك مرة ثانية لازم تتكلم اذا ما تكلمت تنفذ عقاب ثاني","خطأ العقاب هوا ؟؟تروح عند شخص تقول له ","خطأ العقاب هوا ؟؟ اتصل على ابوك و قول له انك رحت مع بنت و احين هي حامل....","خطأ العقاب هوا ؟؟اتصل على امك و قول لها انك ","خطأ العقاب هوا ؟؟اذا انت ولد اكسر اغلى او احسن عطور عندك اذا انتي بنت اكسري الروج حقك او الميك اب حقك"}
+send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
+end
+end
 if text == "بنت" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
 local texting = {"اي ي جامده تعي بف هاتي رقمك وهكلمك بليل ي وتكه انتي هاتي بوسه💋😉","اي ي جامده متجبي بوسه ولا اقولك هاتي رقمك اكلمك واتس واخلي بابا يتجوزك??💋🤸‍♂","ي بت كلمي بابا عايزك بف وابعتي رقمك ها بابا بيحبك 💋💘🤍🤸‍♂🤸‍♂😉","يعم دي اقل من اني اديها رقمي 😎😜"}
@@ -18547,70 +18612,6 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 
-if Text == '/bnada-yquio' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'Ᏼ Ꭺ Ν Ꭰ Ꭺ~"𖥕𝖋_𝖔𝖋𝖋🇬🇺',url="t.me/de_vi_d"}},
-{{text = '•الــقــنــوات♪', callback_data="/Ajobanf"},{text = '•الــبــارات♪', callback_data="/banfai"}},  
-{{text = '•الــبــوتــات♪', callback_data="/gqjik"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/Ajobanf' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '⌯ ˹𝙆𝙖𝙧𝙖˼',url="t.me/amrhaj"},{text = '𝑆𝐸𝐸 𝑃𝑂𝑆𝑇',url="t.me/see_post7"}},
-{{text = 'Different 🇪🇬 مختلف',url="t.me/viwo_zx"},{text = '𝙱𝙻𝙰𝙲𝙺 🖤 𝙱𝙾𝙾𝙺 ⚚',url="t.me/black_bookl"}},
-{{text = '𓆩ᏴᎪᎠ ΝᎥᏀᎻͲ𓆪',url="t.me/Sh_e_t_o_s1"},{text = '𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙴𝙽𝙾𝙼 2⤶ 𝙱𝙾𝙾𝙺 ⚚',url="t.me/SOURCEVENOM2"}},
-{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/banfai' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '™ͲᎬᎪᎷ▷Ғ_ΌҒҒ🇨🇷',url="t.me/VeNoM_TeAm1"}},
-{{text = 'Ᏼ.Ꭺ.Ꭱ▷Ᏼ.Ꭺ.Ν.Ꭰ.Ꭺ🇱🇸',url="t.me/Quqsk"}},
-{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/gqjik' then
-local Teext =[[
-ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
- ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
-ғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ  
-
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'بوت زخرفه اسماء ✅',url="t.me/Quick_1bot"}},
-{{text = 'بوت تعليم اوامر السيرفر ✅',url="t.me/Qrao_bot"}},
-{{text = 'بوت دعم قنوات ✅',url="t.me/Qdja_bot"}},
-{{text = 'بوت حمايه الجروبات ✅',url="t.me/Qskr_bot"}},
-{{text = '●𝙱𝙰𝙲𝙺↵', callback_data="/bnada-yquio"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
 if Text == '/MMM' then
 local Teext =[[
 𓆩 اختار نوع استوري الي ترودي 𓆪
@@ -18904,7 +18905,7 @@ return false
 end
 local Teext =[[
 ⇊ اوامر الاعضاء ⇊
-⩹━━━━⊶❲𖥳 𝐒𝐀??𝐃𝐈 𖥳❳⊷━━━━⩺
+⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
 𓆩 غنيلي ⇔ حساب العمر 𓆪
 𓆩 صورتي ⇔ نسبه جمالي 𓆪
 𓆩 نقاطي 𓆪
@@ -18952,7 +18953,7 @@ local Teext =[[
 𓆩 رفع + تنزيل ⇇ متوحد 𓆪
 𓆩 تاك للمتوحدين 𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-𓆩 رفع + تنزيل ⇇ كلب ??
+𓆩 رفع + تنزيل ⇇ كلب 𓆪
 𓆩 تاك للكلاب 𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 𓆩 رفع + تنزيل ⇇ قرد 𓆪
@@ -19358,270 +19359,6 @@ keyboard.inline_keyboard = {
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
------------------------------- callback add dev mr DRG
-if Text == '/may' then
-local Teext =[[
-• يلا بنا نبحث عن المنزل •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'هيا بنا', callback_data="/afkl"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/afkl' then
-local Teext =[[
-• في صوت هل صدر من الامام ام الخلف •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'الامام', callback_data="/amen"},{text = 'الخلف', callback_data="/should"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/amen' then
-local Teext =[[
-• هيا بنا نذهب الي الامام لنرا المنزل •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'هيا', callback_data="/have"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/should' then
-local Teext =[[
-• هيا بنا نذهب الي الخلف لنرا المنزل •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'هيا', callback_data="/have"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/have' then
-local Teext =[[
-• لقد وصلنا الى المنزل شكراَ جزيلَ انتطرني ثواني وسوف اعود •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'منتظر', callback_data="/VBV"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
-if Text == '/VBV' then
-local Teext =[[
-• لقد عودت إليك ظهر شيئ •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'احد ما خرج من المنزل', callback_data="/ALLL"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/ALLL' then
-local Teext =[[
-• هيا نذهب داخل المنزل •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'هيا', callback_data="/Jake"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/Jake' then
-local Teext =[[
-•  نحنو نتوه في هذه المكان •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'تعالي نذهب الي الضوء', callback_data="/GGGG"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/GGGG' then
-local Teext =[[
-• لا يوجد ضواء في هذا المكان •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'ياالهي كان هناك', callback_data="/can"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/can' then
-local Teext =[[
-• تعالى نذهب الي الباب الرئيسي •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'انهو مغلق', callback_data="/zxz"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/zxz' then
-local Teext =[[
-• انها النهاية هتكمل ولا لا •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'هكمل', callback_data="/optionis"},{text = 'انسحب', callback_data="/looks"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/optionis' then
-local Teext =[[
-• سارسل اليك  سوال مع اختيارت لو حليت صح ستنجو من العقاب لو خطأ سيقوم عليك العقاب •
-السوال هوا - شيء لا يتأثر بالماء حتى عندما يمر من خلالها فمن يكون؟
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'السمك', callback_data="/Kelly"},{text = 'المركب', callback_data="/kalalal"},
-},
-{
-{text = 'الضوء', callback_data="/klllag"},{text = 'الحوت', callback_data="/akakakk"},
-},
-{
-{text = 'الخضار', callback_data="/allowj"},{text = 'الموت', callback_data="/allaly"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/klllag' then
-local Teext =[[
-•مبروك لقد فوزت ونجيت من العقاب•
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '✅✅✅✅✅', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/allowj' then
-local Teext =[[
-• غلط القاب هوا-   خلاص سامحتك •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/dulljob' then
-ght = math.random(1,57); 
-local Text ='اكتب ثيم وسيتم اختيار ثيم اخار' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{
-{text = 'ثيم آخر 🌀', callback_data="/dulljob"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagedocument?chat_id='..Chat_id..'&document='..URL.escape(Text)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
-if Text == '/allaly' then
-local Teext =[[
-• غلط القاب هوا-    سكر خشمك و قول كلمة من اختيار الاعبين الي معك•
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/akakakk' then
-local Teext =[[
-• غلط القاب هوا-    اذهب الى واحد ماتعرفه وقل له انا كيوت وابي بوسه •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/kalalal' then
-local Teext =[[
-• غلط القاب هوا-    روح المطبخ و اكسر صحن او كوب•
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/Kelly' then
-local Teext =[[
-• غلط القاب هوا-    تتصل على الوالده  و تقول لها تزوجت با سر•
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-
-
-
-if Text == '/looks' then
-local Teext =[[
-• انت ستندم سأقتلك •
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '❌❌❌❌❌', callback_data="/01ahakaka"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-if Text == '/ahakaka' then
-local Teext = [[
-⍆ هل انت جهاز للعب ⍆
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'حسنا', callback_data="/guitar"},
-},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if Text == '/help90' then
 if not Sudo(data) then
