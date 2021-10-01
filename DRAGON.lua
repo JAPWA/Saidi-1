@@ -14282,15 +14282,15 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
 
-if text == "مطور" and not bot_data:get(ban_id..'ghiktr'..msg.chat_id_) then     
+if text == "رتبتي" and not bot_data:get(ban_id..'ghiktr'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
 else
-username = 'SOURCEVENOM''
+username = 'SOURCEVENOM'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' مـطـور الـبـوت '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Banda = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -18900,7 +18900,7 @@ return false
 end
 local Teext =[[
 ⇊ اوامر الاعضاء ⇊
-⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
+⩹━━━━⊶❲𖥳 𝐒𝐀??𝐃𝐈 𖥳❳⊷━━━━⩺
 𓆩 غنيلي ⇔ حساب العمر 𓆪
 𓆩 صورتي ⇔ نسبه جمالي 𓆪
 𓆩 نقاطي 𓆪
