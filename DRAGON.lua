@@ -14619,14 +14619,13 @@ return false
 end
 end
 
-
-
 if text == "تعطيل انا مين"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_anamen:status"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," ☽ تـم تـعـطـيل انا مين") 
 return false end
 end
+
 if text == "تفعيل ردود السورس"  then
 if Constructor(msg) then  
 database:set(bot_id.."my_GHoeq2:status"..msg.chat_id_,true) 
@@ -14634,6 +14633,7 @@ send(msg.chat_id_, msg.id_," ☽ تـم تـفعـيل ردود السورس")
 return false  
 end
 end
+
 if text == "تعطيل ردود السورس"  then
 if Constructor(msg) then  
 database:del(bot_id.."my_GHoeq2:status"..msg.chat_id_) 
@@ -14660,6 +14660,7 @@ end
 send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني 😹💔🎶](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14669,6 +14670,7 @@ end
 send(msg.chat_id_,msg.id_, '[خالتك جرت ورايا 😹💔](t.me/S_a_i_d_i)')
 return false
 end
+
 if text then 
 list = {'برايفت'}
 for k,v in pairs(list) do
@@ -14683,6 +14685,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'النبي'}
 for k,v in pairs(list) do
@@ -14697,6 +14700,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'قفل المحن'}
 for k,v in pairs(list) do
@@ -14711,6 +14715,7 @@ return false
 end
 end
 end
+
 if text == "نعم"  or text == "نعمم" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14720,6 +14725,7 @@ end
 send(msg.chat_id_,msg.id_, '[نعم الله عليك 🌚❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text then 
 list = {'🙄'}
 for k,v in pairs(list) do
@@ -14734,6 +14740,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'فتح المحن'}
 for k,v in pairs(list) do
@@ -14748,6 +14755,7 @@ return false
 end
 end
 end
+
 if text == "شكرا"  or text == "مرسي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14757,6 +14765,7 @@ end
 send(msg.chat_id_,msg.id_, '[العفو ياروحي 🙈🌝](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "حلوه"  or text == "حلو" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14766,6 +14775,7 @@ end
 send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر 🤤🌝](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "هموت"  or text == "بموت" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14775,6 +14785,7 @@ end
 send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب 😑😂](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "اي"  or text == "ايي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14784,6 +14795,7 @@ end
 send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي 😹👻](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "طيب"  or text == "تيب" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14793,6 +14805,7 @@ end
 send(msg.chat_id_,msg.id_, '[فرح خالتك قريب 😹💋💃🏻](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "حاضر"  or text == "حتر" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14802,6 +14815,7 @@ end
 send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب 🙂❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "جيت"  or text == "انا جيت" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14811,6 +14825,7 @@ end
 send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶👻](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "بخ"  or text == "عو" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14820,6 +14835,7 @@ end
 send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي 🥺💔](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "حبيبي"  or text == "حبيبتي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14829,6 +14845,7 @@ end
 send(msg.chat_id_,msg.id_, '[اوه ياه 🌝😂](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "تمام"  or text == "تمم" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14838,6 +14855,7 @@ end
 send(msg.chat_id_,msg.id_, '[امك اسمها احلام 😹😹](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "سي في"  or text == "سفي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14847,6 +14865,7 @@ end
 send(msg.chat_id_,msg.id_, '[كفيه شقط سيب حاجه لغيرك 😎😂](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "😂"  or text == "😂😂" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14856,6 +14875,7 @@ end
 send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "😹"  or text == "😹😹" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14865,6 +14885,7 @@ end
 send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "خلاص"  or text == "خلص" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14874,6 +14895,7 @@ end
 send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد 😹💔](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "🤔"  or text == "🤔🤔🤔" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14883,6 +14905,7 @@ end
 send(msg.chat_id_,msg.id_, '[بتفكر في اي 🤔](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "حبق"  or text == "بحبك" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14892,6 +14915,7 @@ end
 send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 🤗🥰](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "مح"  or text == "محح" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14901,6 +14925,7 @@ end
 send(msg.chat_id_,msg.id_, '[محات حياتي يروحي 🌝❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "🌚"  or text == "🌝" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14910,6 +14935,7 @@ end
 send(msg.chat_id_,msg.id_, '[القمر ده شبهك 🙂❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "هلا"  or text == "هلو" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14919,6 +14945,7 @@ end
 send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي 👋💛](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "هشش"  or text == "هشششش" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14928,6 +14955,7 @@ end
 send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي 🐣😹](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "تمم"  or text == "تمام" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14937,6 +14965,7 @@ end
 send(msg.chat_id_,msg.id_, '[دايما ياحبيبي 🌝❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text == "زخرفه"  or text == "زخرفة" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14946,6 +14975,7 @@ end
 send(msg.chat_id_,msg.id_, '[اكتب زخرفه + الاسم للي هتزخرفه مثال زخرفه الصعيدي](t.me/S_a_i_d_i)')
 return false
 end
+
 if text then 
 list = {'💋'}
 for k,v in pairs(list) do
@@ -14960,6 +14990,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'بف'}
 for k,v in pairs(list) do
@@ -14974,6 +15005,7 @@ return false
 end
 end
 end
+
 if text == "صباح الخير"  or text == "مسا الخير" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -14983,6 +15015,7 @@ end
 send(msg.chat_id_,msg.id_, '[انت الخير يعمري 🌝❤️](t.me/S_a_i_d_i)')
 return false
 end
+
 if text then 
 list = {'😭'}
 for k,v in pairs(list) do
@@ -14997,6 +15030,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'خاص'}
 for k,v in pairs(list) do
@@ -15011,6 +15045,7 @@ return false
 end
 end
 end
+
 if text == "بموت فيك"  or text == "بوسه" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -15022,6 +15057,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'بيف'}
 for k,v in pairs(list) do
@@ -15036,6 +15072,7 @@ return false
 end
 end
 end
+
 if text == "السلام عليكم"  or text == "السلام عليكم ورحمه الله وبركاته" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -15047,6 +15084,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'حصل'}
 for k,v in pairs(list) do
@@ -15061,6 +15099,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'اه'}
 for k,v in pairs(list) do
@@ -15075,6 +15114,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'كسم'}
 for k,v in pairs(list) do
@@ -15089,6 +15129,7 @@ return false
 end
 end
 end
+
 if text then 
 if text == "بوتي"  or text == "يا بوتي" then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
@@ -15101,6 +15142,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'تيجي'}
 for k,v in pairs(list) do
@@ -15115,6 +15157,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'مش'}
 for k,v in pairs(list) do
@@ -15129,6 +15172,7 @@ return false
 end
 end
 end
+
 if text then 
 if text == "😒"  or text == "😒😒😒" then
 if text ==
@@ -15151,6 +15195,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'صباح النور'}
 for k,v in pairs(list) do
@@ -15165,6 +15210,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'منور'}
 for k,v in pairs(list) do
@@ -15179,6 +15225,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'باي'}
 for k,v in pairs(list) do
@@ -15193,6 +15240,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'🥺'}
 for k,v in pairs(list) do
@@ -15207,6 +15255,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'نورت'}
 for k,v in pairs(list) do
@@ -15221,6 +15270,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'ابني'}
 for k,v in pairs(list) do
@@ -15235,6 +15285,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'خخخخخخ'}
 for k,v in pairs(list) do
@@ -15249,6 +15300,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'ههههههه'}
 for k,v in pairs(list) do
@@ -15263,6 +15315,7 @@ return false
 end
 end
 end
+
 if text == "اسمي"  then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.first_name_  then
@@ -15920,7 +15973,7 @@ local List = {
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ★
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
-• ?? | 𝑰𝑫 : #id ‌‌‏♕
+• 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
 ]],
 [[
@@ -17204,7 +17257,7 @@ Msᴀɢ ~ #msgs
 |• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇵🇷.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇵🇷.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇵🇷.
-|• 𝙸𝙳 ??𝚃𝙰 ⇉ #id  ↝🇵🇷.
+|• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇵🇷.
 |• 𝗶𝗗 - ↝@S_a_i_d_i↜ ☆
 ]],
 [[
