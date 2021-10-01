@@ -3251,7 +3251,7 @@ end,nil)
 end,nil)
 end
 
-if text and text:match("^عوز بوت$") or text and text:match("^عوز اعمل بوت$") or text and text:match("^banda$") then
+if text and text:match("^عوز بوت$") or text and text:match("^عوز اعمل بوت$") or text and text:match("^عوز اشغل بوتي$") then
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp) 
 local Name1 = result.first_name_
@@ -3639,7 +3639,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'هيفو' or text == 'Banda' or text == 'banda' then
+if text == 'جابوا' or text == 'المبرمج جابوا' or text == 'مبرمج السورس' then
 local Text = [[
 ᴘʀᴏɢʀᴀᴍᴍᴇʀ ᴘᴀɴᴅᴀ
  ᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ, 
@@ -15995,7 +15995,7 @@ local List = {
 𓄼🇪🇭 𝑴𝒔𝒈𝒔 : #msgs ??
 ]],
 [[
-➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
+➞: ??𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: ??𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
@@ -18922,7 +18922,7 @@ local Teext =[[
 𓆩 رفع + تنزيل ⇇ متوحد 𓆪
 𓆩 تاك للمتوحدين 𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
-𓆩 رفع + تنزيل ⇇ كلب 𓆪
+𓆩 رفع + تنزيل ⇇ كلب ??
 𓆩 تاك للكلاب 𓆪
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
 𓆩 رفع + تنزيل ⇇ قرد 𓆪
