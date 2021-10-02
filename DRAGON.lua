@@ -5079,14 +5079,14 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[معاك مطور البوت اهو ياروحي ⇈⇊](t.me/S_a_i_d_i)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = 'ᎠᎬᏙ ΝᎬᎷᎬ -> ['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'اأضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = 'اضغط لاضافه البوت لمجمعتك✅ ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
