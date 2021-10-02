@@ -19516,6 +19516,27 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
+if Text == '/Jabwa-sasa' then
+local Teext =[[
+𓆩 انت الان في مميزات السورس 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'افلام', callback_data="/help81"},{text = 'اغاني', callback_data="/help82"}},   
+{{text = 'قران', callback_data="/help83"},{text = 'الصلاوات', callback_data="/help84"}}, 
+{{text = 'ثيم', callback_data="/help85"},{text = 'صنع معرف', callback_data="/help86"}}, 
+{{text = 'الالعاب', callback_data="/help87"},{text = 'تحويل', callback_data="/help88"}}, 
+{{text = 'استوري', callback_data="/help89"},{text = 'غنيلي', callback_data="/help90"}}, 
+{{text = 'اذكار', callback_data="/help91"},{text = 'روايات', callback_data="/help92"}}, 
+{{text = 'بوستات', callback_data="/help93"},{text = 'خلفيات', callback_data="/help94"}}, 
+{{text = 'تصميم', callback_data="/help95"},{text = 'همسه', callback_data="/help96"}},
+{{text = 'الساعه', callback_data="/help97"},{text = 'التاريخ', callback_data="/help98"}},
+{{text = '𓆩 القائمه الرائسيه 𓆪', callback_data="/add"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+
 if Text == '/help30' then
 local Text = 'لتجربه العلبه عليك ان تكتب البات في الشات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
@@ -19586,109 +19607,87 @@ local Text = 'لتجربه العلبه عليك ان تكتب كشف الكذب
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-
-if Text == '/Jabwa-sasa' then
-local Teext =[[
-𓆩 انت الان في مميزات السورس 𓆪
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'افلام', callback_data="/helo2"},{text = 'اغاني', callback_data="/helo3"}},   
-{{text = 'قران', callback_data="/helo4"},{text = 'الصلاوات', callback_data="/helo5"}}, 
-{{text = 'ثيم', callback_data="/helo6"},{text = 'صنع معرف', callback_data="/helo7"}}, 
-{{text = 'الالعاب', callback_data="/helo8"},{text = 'تحويل', callback_data="/helo9"}}, 
-{{text = 'استوري', callback_data="/helo10"},{text = 'غنيلي', callback_data="/helo11"}}, 
-{{text = 'اذكار', callback_data="/helo12"},{text = 'روايات', callback_data="/helo13"}}, 
-{{text = 'بوستات', callback_data="/helo14"},{text = 'خلفيات', callback_data="/helo15"}}, 
-{{text = 'تصميم', callback_data="/helo16"},{text = 'همسه', callback_data="/helo17"}},
-{{text = 'الساعه', callback_data="/helo18"},{text = 'التاريخ', callback_data="/helo19"}},
-{{text = '𓆩 القائمه الرائسيه 𓆪', callback_data="/add"}},
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-
-if Text == '/helo2' then
+if Text == '/help80' then
 local Text = 'لتجربه مميزه الافلام اكتب في الشات افلام ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo3' then
+if Text == '/help81' then
 local Text = 'لتجربه مميزه اغاني اكتب في الشات الاغاني ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo4' then
+if Text == '/help82' then
 local Text = 'لتجربه مميزه قران اكتب في الشات قران ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo5' then
+if Text == '/help83' then
 local Text = 'لتجربه مميزه ثيم اكتب في الشات ثيم ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo6' then
+if Text == '/help84' then
 local Text = 'لتجربه مميزه صنع معرف اكتب في الشات صنع معرف ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo7' then
+if Text == '/help84' then
 local Text = 'لتجربه مميزه الاصلاوات اكتب في الشات الاصلاوات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo8' then
+if Text == '/help85' then
 local Text = 'لتجربه مميزه الالعاب اكتب في الشات الالعاب ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo9' then
+if Text == '/help86' then
 local Text = 'لتجربه مميزه تحويل اكتب في الشات تحويل ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo10' then
+if Text == '/help87' then
 local Text = 'لتجربه مميزه اذكار اكتب في الشات اذكار ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo11' then
+if Text == '/help88' then
 local Text = 'لتجربه مميزه روايات اكتب في الشات روايات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo12' then
+if Text == '/help89' then
 local Text = 'لتجربه مميزه بوستات اكتب في الشات بوستات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo13' then
+if Text == '/help90' then
 local Text = 'لتجربه مميزه همسه اكتب في الشات همسه ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo14' then
+if Text == '/help91' then
 local Text = 'لتجربه مميزه خلفيات اكتب في الشات خلفيات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo15' then
+if Text == '/help92' then
 local Text = 'لتجربه مميزه غنيلي اكتب في الشات غنيلي ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo16' then
+if Text == '/help93' then
 local Text = 'لتجربه مميزه تصميم اكتب في الشات تصميم ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo17' then
+if Text == '/help94' then
 local Text = 'لتجربه مميزه الساعه اكتب في الشات الساعه ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
-if Text == '/helo18' then
+if Text == '/help95' then
 local Text = 'لتجربه مميزه التاريخ اكتب في الشات التاريخ ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
