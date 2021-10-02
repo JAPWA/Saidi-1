@@ -17879,7 +17879,7 @@ keyboard.inline_keyboard = {
 },
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'الالعاب' then
 local Text = [[
@@ -18846,7 +18846,7 @@ local Teext =[[
 𓆩 الصوت  𓆪
 𓆩 الجهات 𓆪
 𓆩 الاشعارات 𓆪
-⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
+⩹━━━━⊶❲𖥳 𝐒𝐀𝐈??𝐈 𖥳❳⊷━━━━⩺
 
 ]]
 keyboard = {} 
