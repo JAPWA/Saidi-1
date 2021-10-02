@@ -14349,32 +14349,6 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 end
 
-if text == "رتبتي" and not bot_data:get(ban_id..'ghiktr'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
-if result.username_ then
-username = result.username_ 
-else
-username = 'SOURCEVENOM'
-end
-local msg_id = msg.id_/2097152/0.5  
-local textt = ' 🌚❤️ رتبتك في البوت⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
-local Banda = 'https://t.me/Qtdao/71'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = textt, url="http://t.me/"..username},
-},
-}
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Banda).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end,nil)
-end
-
 if text == "رتبتي" then
 local msg_id = msg.id_/2097152/0.5  
 local textt = 'رتبتك ياقلبي ❤️🌚 ⤌ '..Rutba(msg.sender_user_id_,msg.chat_id_)
@@ -16837,7 +16811,7 @@ Msᴀɢ ~ #msgs
 [[
  ☽ •𝐮𝐬𝐞𝐫 : #username 𖣬  
  ☽ •𝐦𝐬𝐠  : #msgs 𖣬 
- ☽ •𝐬𝐭𝐚 : #stast 𖣬 
+ ☽ •𝐬??𝐚 : #stast 𖣬 
  ☽ •𝐢𝐝  : #id 𖣬
  ☽ •𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ 
 ]],
@@ -17874,7 +17848,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-name"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/most-afa"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19529,6 +19503,26 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'لعبه البات', callback_data="/help30"},{text = 'لعبه الرياضيات', callback_data="/help37"}},   
+{{text = 'لعبه المختلف', callback_data="/help31"},{text = 'لعبه السمايلات', callback_data="/help38"}}, 
+{{text = 'لعبه التخمين', callback_data="/help32"},{text = 'لعبه العكس', callback_data="/help39"}}, 
+{{text = 'لعبه الاسرع', callback_data="/help33"},{text = 'لعبه الانكليزي', callback_data="/help40"}}, 
+{{text = 'لعبه حزوره', callback_data="/help34"},{text = 'لعبه المعاني', callback_data="/help41"}}, 
+{{text = 'لعبه الامثله', callback_data="/help35"}},
+{{text = 'لعبه كشف الكذب', callback_data="/help47"}},
+{{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
+{{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+
+if Text == '/most-afa' then
+local Teext =[[
+انت الان في مميزات السورس
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'ميزه all بكلام', callback_data="/help30"},{text = 'لعبه الرياضيات', callback_data="/help37"}},   
 {{text = 'لعبه المختلف', callback_data="/help31"},{text = 'لعبه السمايلات', callback_data="/help38"}}, 
 {{text = 'لعبه التخمين', callback_data="/help32"},{text = 'لعبه العكس', callback_data="/help39"}}, 
 {{text = 'لعبه الاسرع', callback_data="/help33"},{text = 'لعبه الانكليزي', callback_data="/help40"}}, 
