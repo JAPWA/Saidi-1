@@ -5072,7 +5072,7 @@ return false
 end
 --------------------------------------------------------------------------------------------------------------
 if text == "المطور" or text == "مطور" then
-local TEXT_SUD = database:get(bot_id..'Tshake:TEXT_SUDO')
+local TEXT_SUD = bot_data:get(ban_id..'TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
@@ -5086,12 +5086,12 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'اأضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Name)..'&photo='..taha.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-else
+else 
 sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
  end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, limit_ = 1 }, taha, nil)
@@ -17839,8 +17839,6 @@ end
 ----------------------------------------------------------------------------
 if text == 'مميزات' then
 local Text = [[
-[╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾](t.me/S_a_i_d_i)
-
 [𓆩 مرحبا بك في مميزات السورس 𓆪]
 
 [╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾╾](t.me/S_a_i_d_i)
@@ -17848,7 +17846,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/Jabwa-sasa"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-name"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
