@@ -17848,7 +17848,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/most-afa"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-name2},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19516,26 +19516,6 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
-if Text == '/most-afa' then
-local Teext =[[
-انت الان في مميزات السورس
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'ميزه all بكلام', callback_data="/help30"},{text = 'لعبه الرياضيات', callback_data="/help37"}},   
-{{text = 'لعبه المختلف', callback_data="/help31"},{text = 'لعبه السمايلات', callback_data="/help38"}}, 
-{{text = 'لعبه التخمين', callback_data="/help32"},{text = 'لعبه العكس', callback_data="/help39"}}, 
-{{text = 'لعبه الاسرع', callback_data="/help33"},{text = 'لعبه الانكليزي', callback_data="/help40"}}, 
-{{text = 'لعبه حزوره', callback_data="/help34"},{text = 'لعبه المعاني', callback_data="/help41"}}, 
-{{text = 'لعبه الامثله', callback_data="/help35"}},
-{{text = 'لعبه كشف الكذب', callback_data="/help47"}},
-{{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
-{{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
-end
-
 if Text == '/help30' then
 local Text = 'لتجربه العلبه عليك ان تكتب البات في الشات ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
@@ -19606,6 +19586,114 @@ local Text = 'لتجربه العلبه عليك ان تكتب كشف الكذب
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
+
+if Text == '/mute-name2' then
+local Teext =[[
+𓆩 انت الان في مميزات السورس 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'افلام', callback_data="/helo2"},{text = 'اغاني', callback_data="/helo3"}},   
+{{text = 'قران', callback_data="/helo4"},{text = 'الصلاوات', callback_data="/helo5"}}, 
+{{text = 'ثيم', callback_data="/helo6"},{text = 'صنع معرف', callback_data="/helo7"}}, 
+{{text = 'الالعاب', callback_data="/helo8"},{text = 'تحويل', callback_data="/helo9"}}, 
+{{text = 'استوري', callback_data="/helo10"},{text = 'غنيلي', callback_data="/helo11"}}, 
+{{text = 'اذكار', callback_data="/helo12"},{text = 'روايات', callback_data="/helo13"}}, 
+{{text = 'بوستات', callback_data="/helo14"},{text = 'خلفيات', callback_data="/helo15"}}, 
+{{text = 'تصميم', callback_data="/helo16"},{text = 'همسه', callback_data="/helo17"}},
+{{text = 'الساعه', callback_data="/helo18"},{text = 'التاريخ', callback_data="/helo19"}},
+{{text = '𓆩 القائمه الرائسيه 𓆪', callback_data="/add"}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+end
+
+if Text == '/helo2' then
+local Text = 'لتجربه مميزه الافلام اكتب في الشات افلام ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo3' then
+local Text = 'لتجربه مميزه اغاني اكتب في الشات الاغاني ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo4' then
+local Text = 'لتجربه مميزه قران اكتب في الشات قران ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo5' then
+local Text = لتجربه مميزه ثيم اكتب في الشات ثيم ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo6' then
+local Text = 'لتجربه مميزه صنع معرف اكتب في الشات صنع معرف ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo7' then
+local Text = 'لتجربه مميزه الاصلاوات اكتب في الشات الاصلاوات ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo8' then
+local Text = 'لتجربه مميزه الالعاب اكتب في الشات الالعاب ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo9' then
+local Text = 'لتجربه مميزه تحويل اكتب في الشات تحويل ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo10' then
+local Text = 'لتجربه مميزه اذكار اكتب في الشات اذكار ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo11' then
+local Text = 'لتجربه مميزه روايات اكتب في الشات روايات ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo12' then
+local Text = 'لتجربه مميزه بوستات اكتب في الشات بوستات ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo13' then
+local Text = 'لتجربه مميزه همسه اكتب في الشات همسه ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo14' then
+local Text = 'لتجربه مميزه خلفيات اكتب في الشات خلفيات ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo15' then
+local Text = 'لتجربه مميزه غنيلي اكتب في الشات غنيلي ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo16' then
+local Text = 'لتجربه مميزه تصميم اكتب في الشات تصميم ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo17' then
+local Text = 'لتجربه مميزه الساعه اكتب في الشات الساعه ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+if Text == '/helo18' then
+local Text = 'لتجربه مميزه التاريخ اكتب في الشات التاريخ ☽'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
+return false
+end
+
 if Text == '/sofi' then
 local Teext =[[
 𓆩 اهلا في قائمه الالعاب المتطوره سورس صعيدي 𓆪
