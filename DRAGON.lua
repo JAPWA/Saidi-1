@@ -19624,7 +19624,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 if Text == '/helo5' then
-local Text = لتجربه مميزه ثيم اكتب في الشات ثيم ☽'
+local Text = 'لتجربه مميزه ثيم اكتب في الشات ثيم ☽'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(Text).."&show_alert=true")
 return false
 end
