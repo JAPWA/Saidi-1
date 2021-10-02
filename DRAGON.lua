@@ -17848,7 +17848,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-name2"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/Jabwa-sasa"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19587,7 +19587,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 
-if Text == '/mute-name2' then
+if Text == '/Jabwa-sasa' then
 local Teext =[[
 𓆩 انت الان في مميزات السورس 𓆪
 ]]
