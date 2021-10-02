@@ -2361,7 +2361,7 @@ keyboard.inline_keyboard = {
 },
 }
 local msg_id = msg.id_/2097152/0.5
-local Texti = "╗ مـرحـبــا انا بــوت"..N.." \n╣ اخـتصـاصـي  ادارة الجـروبــات مـن السـب والشـتيمـه\n╣ لتفعيل البــوت اتبــاع الخـطـوات\n╣ ❶ ارفع البــوت مـشـرف وارسـل تفعيل في مـجـمـوعه\n╝ ❷ لو ارت تفعيل ردود اكتب تفعيل ردود السـورس"
+local Texti = " ╗ مـرحـبــا انا بــوت "..N.." \n╣ اخـتصـاصـي  ادارة الجـروبــات\n╣ مـن السـب والشـتيمـه والابــاحـه\n╣ لتفعيل البــوت اتبــاع الخـطـوات\n╣❶ ارفع البــوت مـشـرف في مـجـمـوعه\n╣ وارسـل تفعيل في مـجـمـوعه\n╣❷ لو ارت تفعيل ردود السـورس\n╝ اكتب تفعيل ردود السـورس"
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(Texti)..'&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end,nil)
