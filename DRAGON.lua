@@ -961,30 +961,38 @@ local keyboard = {
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
 if text == "/start" then
-if not DevSoFi(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
-local BANDA_Msg = { 
-' اهـلا بـك فـي بـوت 🤖 '..Namebot..' اختصاصي حمايه المجموعات ☑️\n╢ من السبام و التفليش و الاباحه ☑️\n╢ لي تفعيل البوت داخل المجموعه ☑️\n╢ اضف البوت الى المجموعه ☑️\n╢ ارفع البوت ادمن في المجموعه ☑️\nوارسل تفعيل وسيتم تفعيل البوت ورفع مشرف رتبه في الكروب تلقائين ☑️ ',
+if not msa3d(msg) then
+if not Devban(msg) then
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فينوم') 
+local VENOM_Msg = { 
+' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
 } 
-Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
+Namebot = VENOM_Msg[math.random(#VENOM_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = 'كيب اونلاين', callback_data="/change-hhh"},{text = 'كيب زراير', callback_data="/change-siusr"},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = 'الابراج🔮', callback_data="/zDRGd"},{text = 'الالعاب🎮', callback_data="/add"},
+},
+{
+{text = ' مــطــور الــبــوت🔰', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'اضغط لاضافه البوت لمجمعتك✅' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
 end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end
 end
 end
 
@@ -3011,8 +3019,8 @@ end
 end
 end
 -------------------------------------------------------------------------------------------------------------
-if msg.content_.ID == "MessageChatDeleteMember" and tonumber(msg.content_.user_.id_) == tonumber(bot_id) then 
-database:srem(bot_id.."Chek:Groups", msg.chat_id_)
+if msg.content_.ID == "MessageChatDeleteMember" and tonumber(msg.content_.user_.id_) == tonumber(ban_id) then 
+bot_data:srem(ban_id.."Chek:Groups", msg.chat_id_)
  tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,dp)
  local Name1 = result.first_name_
@@ -3030,7 +3038,7 @@ local NameChat = NameChat:gsub('"',"")
 local NameChat = NameChat:gsub("*","") 
 local NameChat = NameChat:gsub("{","") 
 local NameChat = NameChat:gsub("}","")
-sendText(SUDO," ☽ تم طرد البوت من جروب \n\n ☽  الشخص  {"..Name.."}\n ☽  اسم الجروب {"..NameChat.."}\n ☽  ايدي الجروب {`"..msg.chat_id_.."`}\n ☽  رابط الجروب \n ["..LinkGroup.."] ",0,'md')
+sendText(SUDO," ☽ تم طرد البوت من جروب \n\n ☽ بواسطة  {"..Name.."}\n ☽ اسم الجروب {"..NameChat.."}\n ☽ ايدي الجروب {`"..msg.chat_id_.."`} ",0,'md')
 end,nil)
 end,nil)
 end
@@ -17267,7 +17275,7 @@ Msᴀɢ ~ #msgs
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇵🇷.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝??🇷.
 |• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇵🇷.
-|• 𝗶𝗗 - ↝@S_a_i_d_i↜ ☆
+|• 𝗶?? - ↝@S_a_i_d_i↜ ☆
 ]],
 [[
 - 🦋 UsErNaMe . #username 𖠲
@@ -18706,6 +18714,19 @@ keyboard.inline_keyboard = {
 {{text = '𓆩 افلام رعب 𓆪', callback_data="/Sasa3"},{text = '𓆩 افلام كرتون 𓆪', callback_data="/Omer2"}},   
 {{text = '𓆩 افلام هنديه 𓆪', callback_data="/Jabwa3"},{text = '𓆩 افلام مسرحيات 𓆪', callback_data="/Taha2"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+if Text == '/change-hhh' then
+local Teext =[[
+𖢜 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙴𝙽𝙾𝙼⇣
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '•ᴅᴇᴠɪᴅ♪',url="t.me/de_vi_d"},{text = '•ᴀʜᴍᴀᴅ♪', url="t.me/YYYBD"}},
+{{text = '•ᴅᴇᴠɪᴅ♪',url="t.me/de_vi_d"},{text = '•ʀᴏʙᴏᴛ♪', url="t.me/P_X_U"}},
+{{text = ' مــطــور الــبــوت🔰', url="http://t.me/"..sudos.UserName}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
