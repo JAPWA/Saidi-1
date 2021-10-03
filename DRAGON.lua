@@ -18223,18 +18223,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'كلب' or text == 'نوع كلب'  then
+if text == 'كلب' or text == 'كلاب'  then
 local Text = [[
 𓆩 اختار نوع صورت الاكلب𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'كلب بلدي', callback_data="/Sasa5"},{text = '𓆩 افلام اجنبي 𓆪', callback_data="/Jabwa2"}},   
-{{text = '𓆩 افلام رعب 𓆪', callback_data="/Sasa3"},{text = '𓆩 افلام كرتون 𓆪', callback_data="/Omer2"}},   
+{{text = 'كلاب بلدي', callback_data="/Sasa5"},{text = 'كلاب بيتبول', callback_data="/Jabwa2"}},   
+{{text = 'كلاب امريكي', callback_data="/Sasa3"},{text = 'كلاب وايلر', callback_data="/Omer2"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/55&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
