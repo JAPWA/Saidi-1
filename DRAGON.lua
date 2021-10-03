@@ -961,38 +961,30 @@ local keyboard = {
 send_inline_key(msg.chat_id_,bl,keyboard)
 end
 if text == "/start" then
-if not msa3d(msg) then
-if not Devban(msg) then
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'فينوم') 
-local VENOM_Msg = { 
-' ـــــــــــــــــــــــــــــــــــــــــــــــ\n   🤖╖ أهلآ بك عزيزي أنا بوت  '..Namebot..'\n🌐╢ وظيفتي حماية المجموعات\n✅╢ لتفعيل البوت عليك اتباع مايلي \n🔘╢ أضِف البوت إلى مجموعتك\n⚡️╢ ارفعهُ » مشرف\n⬆️╜ سيتم ترقيتك مالك في البوت\nــــــــــــــــــــــــــــــــــــــــــــــــــــ ',
+if not DevSoFi(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
+local BANDA_Msg = { 
+' اهلا بــك في بــوت 🤖╗ '..Namebot..' للسـتفسـار راسـل المـطـور 🌐╝\nسـيتم ترقيت المـشـرفين تلقانين ⬆️╣\ارسـل تفعيل في المـجـمـوعه ✅╣\nارفع البــوت مـشـرف في المـجـمـوعه ✅╣\nلي تفعيل البــوت ادخـل بــوت المـجـمـوعه 🌐╣\nاخـتصـاصـي حـمـايه المـجـمـوعات 🌐╣ ',
 } 
-Namebot = VENOM_Msg[math.random(#VENOM_Msg)] 
+Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'كيب اونلاين', callback_data="/change-hhh"},{text = 'كيب زراير', callback_data="/change-siusr"},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
 {
-{text = 'الابراج🔮', callback_data="/zDRGd"},{text = 'الالعاب🎮', callback_data="/add"},
-},
-{
-{text = ' مــطــور الــبــوت🔰', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'اضغط لاضافه البوت لمجمعتك✅' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
 end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
-end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 end
 
@@ -1183,11 +1175,11 @@ end
 if text == "اسعار السرفرات" then
 if not DevSoFi(msg) then
 local Text = [[
-اسعار السرفر احسن سرفرات مضمونه
-سعر السرفر 2 رامه بي 50 جنيه
-سعر السرفر 4 رامه بي 90 جنيه
-سعر السرفر 8 رامه بي 150 جنيه
-يوجود عروض سرفرات
+┌اسعار السرفر احسن سرفرات مضمونه
+├سعر السرفر 2 رامه بي 80
+├سعر السرفر 4 رامه بي 100
+├سعر السرفر 8 رامه بي 180
+└يوجود عروض سرفرات
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
