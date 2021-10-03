@@ -17817,7 +17817,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-name"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/sasa-saidi"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19485,21 +19485,21 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
-if Text == '/Jabwa-sasa' then
+if Text == '/sasa-saidi' then
 local Teext =[[
 𓆩 انت الان في مميزات السورس 𓆪
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'افلام', callback_data="/help81"},{text = 'اغاني', callback_data="/help82"}},   
-{{text = 'قران', callback_data="/help83"},{text = 'الصلاوات', callback_data="/help84"}}, 
-{{text = 'ثيم', callback_data="/help85"},{text = 'صنع معرف', callback_data="/help86"}}, 
-{{text = 'الالعاب', callback_data="/help87"},{text = 'تحويل', callback_data="/help88"}}, 
-{{text = 'استوري', callback_data="/help89"},{text = 'غنيلي', callback_data="/help90"}}, 
-{{text = 'اذكار', callback_data="/help91"},{text = 'روايات', callback_data="/help92"}}, 
-{{text = 'بوستات', callback_data="/help93"},{text = 'خلفيات', callback_data="/help94"}}, 
-{{text = 'تصميم', callback_data="/help95"},{text = 'همسه', callback_data="/help96"}},
-{{text = 'الساعه', callback_data="/help97"},{text = 'التاريخ', callback_data="/help98"}},
+{{text = 'افلام', callback_data="/help80"},{text = 'اغاني', callback_data="/help81"}},   
+{{text = 'قران', callback_data="/help82"},{text = 'الصلاوات', callback_data="/help84"}}, 
+{{text = 'ثيم', callback_data="/help84"},{text = 'صنع معرف', callback_data="/help85"}}, 
+{{text = 'الالعاب', callback_data="/help86"},{text = 'تحويل', callback_data="/help87"}}, 
+{{text = 'استوري', callback_data="/help88"},{text = 'غنيلي', callback_data="/help89"}}, 
+{{text = 'اذكار', callback_data="/help90"},{text = 'روايات', callback_data="/help91"}}, 
+{{text = 'بوستات', callback_data="/help92"},{text = 'خلفيات', callback_data="/help93"}}, 
+{{text = 'تصميم', callback_data="/help94"},{text = 'همسه', callback_data="/help95"}},
+{{text = 'الساعه', callback_data="/help96"},{text = 'التاريخ', callback_data="/help97"}},
 {{text = '𓆩 القائمه الرائسيه 𓆪', callback_data="/add"}},
 {{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
 }
