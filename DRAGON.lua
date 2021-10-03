@@ -964,7 +964,7 @@ if text == "/start" then
 if not DevSoFi(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local BANDA_Msg = { 
-'🌐╖⁩ اهلا بك يرحي انا بوت\n🌐╢ وظيفتي حمايه آلمجموعات\n🌐╢ لتفعيل البوت عليك اتباع مايلي\n🌐╢ اضف البوت إلي مجموعتك\n🌐╢ ثم ارفعه مشرف\n🌐╜ وارسل تفعيل',
+' اهلا بــك في بــوت 🤖╗ '..Namebot..' للسـتفسـار راسـل المـطـور 🌐╝\nسـيتم ترقيت المـشـرفين تلقانين ⬆️╣\nارسـل تفعيل في المـجـمـوعه ✅╣\nارفع البــوت مـشـرف في المـجـمـوعه ✅╣\nلي تفعيل البــوت ادخـل بــوت المـجـمـوعه 🌐╣\nاخـتصـاصـي حـمـايه المـجـمـوعات 🌐╣ ',
 } 
 Namebot = BANDA_Msg[math.random(#BANDA_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -18223,6 +18223,20 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'كلب' or text == 'نوع كلب'  then
+local Text = [[
+𓆩 اختار نوع صورت الاكلب𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'كلب بلدي', callback_data="/Sasa5"},{text = '𓆩 افلام اجنبي 𓆪', callback_data="/Jabwa2"}},   
+{{text = '𓆩 افلام رعب 𓆪', callback_data="/Sasa3"},{text = '𓆩 افلام كرتون 𓆪', callback_data="/Omer2"}},   
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
@@ -18585,6 +18599,17 @@ else
 send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪') 
 end 
 end,nil) 
+end
+if Text == "/Sasa5" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩 مرحبا اليك صورت كلب 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`ʙᴀᴄᴋ´', callback_data="/OOO"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/MO_ST_AFA5/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if Text == '/ven' then
 if not CoSu(data) then
