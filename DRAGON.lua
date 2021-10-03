@@ -17817,7 +17817,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓆩 مميزات السورس 𓆪', callback_data="/sasa-saidi"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
+{text = '𓆩 مميزات السورس 𓆪', callback_data="/mute-namo"},{text = '𓆩 الاضافات 𓆪', callback_data="/change-photo"},
 },
 {
 {text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"},
@@ -19485,9 +19485,9 @@ keyboard.inline_keyboard = {
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 
-if Text == '/sasa-saidi' then
+if Text == '/mute-namo' then
 local Teext =[[
-𓆩 انت الان في مميزات السورس 𓆪
+ أنت الآن في العاب السورس ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
