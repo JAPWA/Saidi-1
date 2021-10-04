@@ -8563,7 +8563,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح المميزين')
 end
 if text == ("المميزين") and Mod(msg) then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n ☽ قائمة مميزين الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة مميزين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8579,7 +8579,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمميزين") or text == ("صيح المميزين") then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n ☽ وينكم تعالو يريدوكم بالجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ وينكم تعالو يريدوكم بالجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8758,7 +8758,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح جميع المتوحدين')
 end
 if text == ("تاك للمتوحدين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n ☽ قائمة متوحدين الجروب \n⧬━┅┅┄⟞❲[??🅞🅞🅽](t.me/S_a_i_d_i)❳⟝┄┉┉━⧬\n"
+t = "\n ☽ قائمة متوحدين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8827,7 +8827,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح جميع الزوجات')
 end
 if text == ("تاك للزوجات") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ☽ قائمه زوجات الجروب \n ☽ ═───═❲[`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´](t.me/S_a_i_d_i)❳═───═??\n"
+t = "\n ☽ قائمه زوجات الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8896,7 +8896,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح جميع الكلاب')
 end
 if text == ("تاك للكلاب") and Mod(msg) then
 local list = database:smembers(bot_id..'Modde:User'..msg.chat_id_)
-t = "\n ☽ قائمه كلاب الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمه كلاب الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8965,7 +8965,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع حمير من الج�
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n ☽ قائمة حمير الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة حمير الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9035,7 +9035,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع وتكات الجرو
 end
 if text == ("تاك للوتكات") and Mod(msg) then
 local list = database:smembers(bot_id..'Motte:User'..msg.chat_id_)
-t = "\n ☽ قائمة وتكات الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة وتكات الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9104,7 +9104,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع القرده بالج
 end
 if text == ("تاك للقرود") and Mod(msg) then
 local list = database:smembers(bot_id..'Motee:User'..msg.chat_id_)
-t = "\n ☽ قائمة القرود الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة القرود الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9173,7 +9173,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع الارامل بال
 end
 if text == ("تاك لمايا خليفه") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n ☽ قائمة مايا خليفه\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة مايا خليفه\n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9242,7 +9242,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع الخولات بال
 end
 if text == ("تاك للخولات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n ☽ قائمة خولات الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة خولات الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9311,7 +9311,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع البقرات بال
 end
 if text == ("تاك للبقرات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bakra:User'..msg.chat_id_)
-t = "\n ☽ قائمة البقرات الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة البقرات الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9380,7 +9380,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع المزز بالجر
 end
 if text == ("تاك للمزز") and Mod(msg) then
 local list = database:smembers(bot_id..'Tele:User'..msg.chat_id_)
-t = "\n ☽ قائمة مزز الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة مزز الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9449,7 +9449,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة كساس الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة كساس الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9517,7 +9517,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع القلوب ')
 end
 if text == ("تاك لقلبي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة القلوب في الجروب\n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة القلوب في الجروب\n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9586,7 +9586,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع أولادي')
 end
 if text == ("تاك لولادي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة كساس الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة كساس الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9655,7 +9655,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك لبناتي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة بناتي الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة بناتي الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9724,7 +9724,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للخاينين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة الخاينين الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة الخاينين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9793,7 +9793,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع زواحف')
 end
 if text == ("تاك للرقاصات") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة رقاصات الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة رقاصات الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9862,7 +9862,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع جريزي')
 end
 if text == ("تاك للمتناكين") and Mod(msg) then
 local list = database:smembers(bot_id..'Jred:User'..msg.chat_id_)
-t = "\n ☽ قائمة المتناكين الجروب \n ☽ ━┅┄⟞𓊈 𝑠𝑜𝑢𝑟𝑐𝑒 ??𝑝𝑝𝑙𝑒 𓊉⟝┄┉━ ☽ \n"
+t = "\n ☽ قائمة المتناكين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9931,7 +9931,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح كل الحكاكين')
 end
 if text == ("تاك للحكاكين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة حكاكين الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة حكاكين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9999,7 +9999,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح كل النسوان بالجروب
 end
 if text == ("تاك للنسوان") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n ☽ قائمة نسوان الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة نسوان الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -10067,7 +10067,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم مسح جميع المتزوجين')
 end
 if text == ("تاك للمتزوجين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n ☽ قائمه ازواج الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمه ازواج الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -10136,7 +10136,7 @@ send(msg.chat_id_, msg.id_, ' ☽ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للميتنين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ☽ قائمة الميتنين \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة الميتنين \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -10204,7 +10204,7 @@ send(msg.chat_id_, msg.id_, '\n ☽ تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n ☽ قائمة محظورين الجروب \n⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n"
+t = "\n ☽ قائمة محظورين الجروب \n◤━───━❲𝐒𝐀𝐈𝐃𝐈❳━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -16533,7 +16533,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝗖𝗛 - ↝@S_a_i_d_i↜ ☽ .
 ]],
 [[
-𝟓 𝟔 𖡻 #username  ࿇🦄
+𝟓 ?? 𖡻 #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
