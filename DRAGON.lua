@@ -18127,6 +18127,20 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/39&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'اذكار' or text == 'الاذكار' or text == 'ادعيه'  then
+local Text = [[
+𓆩 اختار الاذكار الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'اذكار الصباح', callback_data="/Jabwa5"},{text = 'اذكار المساء', callback_data="/Jabwa6"}},   
+{{text = 'اذكار النوم', callback_data="/Jabwa7"}},
+{{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/56&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == 'اطردني' or text == 'طردني' and GetChannelMember(msg) then   
 if not bot_data:get(ban_id..'Cick:Me'..msg.chat_id_) then
 if Can_or_NotCan(msg.sender_user_id_, msg.chat_id_) == true then
@@ -18899,7 +18913,7 @@ local Teext =[[
 𓆩 صورتي ⇔ نسبه جمالي 𓆪
 𓆩 نقاطي 𓆪
 𓆩 مسح ⇔ بيع نقاطي 𓆪
-𓆩 رسائلي ⇔ مسح رسائلي 𓆪
+?? رسائلي ⇔ مسح رسائلي 𓆪
 𓆩 زخرفه ⇔ اغاني 𓆪
 𓆩 اسمي ⇔ الرتبه 𓆪
 𓆩 جهاتي 𓆪 
