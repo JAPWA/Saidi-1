@@ -18631,7 +18631,7 @@ end
 end,nil) 
 end
 if Text == "/Sasa2" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
+ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -18661,7 +18661,7 @@ end
 end,nil) 
 end
 if Text == "/Sasa3" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
+ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -18691,7 +18691,7 @@ end
 end,nil) 
 end
 if Text == "/Sasa4" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(2,22); 
+ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
