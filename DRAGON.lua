@@ -12777,14 +12777,12 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
-local msg_id = msg.id_/2097152/0.5  
+local textt = ' اسمي بوت '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Banda = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"},
+{text = textt, url="http://t.me/"..sudos.UserName},
 },
 }
 local function getpro(extra, result, success) 
@@ -16535,7 +16533,7 @@ Msᴀɢ ~ #msgs
 [[
 𝟓 ?? 𖡻 #username  ࿇🦄
 𝟓 𝟔 𖡻 #msgs  ࿇🦄
-𝟓 𝟔 𖡻 #auto  ࿇🦄
+𝟓 𝟔 𖡻 #auto  ࿇??
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
 𝟓 𝟔 𖡻 𝗖𝗛 - ↝@S_a_i_d_i↜ 💞.
