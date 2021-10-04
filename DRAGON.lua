@@ -18229,7 +18229,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'كلاب مصري', callback_data="/Jabwa11"},{text = 'كلاب بيتبول', callback_data="/Sasa2"}},   
+{{text = 'كلاب مصري', callback_data="/Sasa"},{text = 'كلاب بيتبول', callback_data="/Sasa2"}},   
 {{text = 'كلاب امريكي', callback_data="/Sasa3"},{text = 'كلاب وايلر', callback_data="/Sasa4"}},   
 {{text = '𓆩 𝐂𝐇 𓆪', url="t.me/S_a_i_d_i"}},
 }
@@ -18386,7 +18386,7 @@ keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA7/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-send(msg.chat_id_, msg.id_,'𓆩  مرحبا اليك استوري قرآن ??') 
+send(msg.chat_id_, msg.id_,'𓆩  مرحبا اليك استوري قرآن 𓆪') 
 end 
 end,nil) 
 end
@@ -18600,7 +18600,7 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك مسرحيه 𓆪')
 end 
 end,nil) 
 end
-if Text == "/Jabwa11" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if Text == "/Sasa" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
@@ -18611,7 +18611,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MO_ST_AFA5/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if Text == '/Jabwa11' then
+if Text == '/Sasa' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
@@ -18630,7 +18630,7 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك كلاب 𓆪')
 end 
 end,nil) 
 end
-if Text == "/Jabwa12" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if Text == "/Sasa2" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
@@ -18641,7 +18641,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dog_Sasa2/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if Text == '/Jabwa12' then
+if Text == '/Sasa2' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
@@ -18660,7 +18660,7 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك كلاب 𓆪')
 end 
 end,nil) 
 end
-if Text == "/Jabwa13" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if Text == "/Sasa3" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
@@ -18671,7 +18671,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dog_Sasa3/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if Text == '/Jabwa13' then
+if Text == '/Sasa3' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
@@ -18690,7 +18690,7 @@ send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك كلاب 𓆪')
 end 
 end,nil) 
 end
-if Text == "/Jabwa14" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if Text == "/Sasa4" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,33); 
 local Text ='𓆩 مرحبا اليك صور كلاب 𓆪' 
 keyboard = {}  
@@ -18701,7 +18701,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/dog_Sasa4/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if Text == '/Jabwa14' then
+if Text == '/Sasa4' then
 if not CoSu(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
